@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Palmdale-Regular';
+  src: url('fonts/palmdale/palmdale-regular.eot');
+  src: url('fonts/palmdale/palmdale-regular.eot?#iefix') format('embedded-opentype'), url('fonts/palmdale/palmdale-regular.woff2') format('woff2'),
+    url('fonts/palmdale/palmdale-regular.woff') format('woff'), url('fonts/palmdale/palmdale-regular.ttf') format('truetype'),
+    url('fonts/palmdale/palmdale-regular.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SharpGroteskMedium';
+  src: url('fonts/sharp-grotesk/SharpGroteskMedium22.eot');
+  src: url('fonts/sharp-grotesk/SharpGroteskMedium22.eot?#iefix') format('embedded-opentype'),
+    url('fonts/sharp-grotesk/SharpGroteskMedium22.woff2') format('woff2'), url('fonts/sharp-grotesk/SharpGroteskMedium22.woff') format('woff');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SharpGroteskMediumItalic';
+  src: url('fonts/sharp-grotesk/SharpGroteskMediumItalic22.eot');
+  src: url('fonts/sharp-grotesk/SharpGroteskMediumItalic22.eot?#iefix') format('embedded-opentype'),
+    url('fonts/sharp-grotesk/SharpGroteskMediumItalic22.woff2') format('woff2'),
+    url('fonts/sharp-grotesk/SharpGroteskMediumItalic22.woff') format('woff');
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TroisMilleBlack';
+  src: url('fonts/trois-mille/TroisMilleBlack-20.eot');
+  src: url('fonts/trois-mille/TroisMilleBlack-20.eot?#iefix') format('embedded-opentype'),
+    url('fonts/trois-mille/TroisMilleBlack-20.eot.woff2') format('woff2'), url('fonts/trois-mille/TroisMilleBlack-20.eot.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-palmdale {
+  font-family: 'Palmdale-Regular', sans-serif;
+}
+.font-sharp {
+  font-family: 'SharpGroteskMedium', sans-serif;
+}
+.font-sharp-italic {
+  font-family: 'SharpGroteskMediumItalic', sans-serif;
+}
+.font-trois {
+  font-family: 'TroisMilleBlack', sans-serif;
+}
+
+.sq-section {
+  padding: 150px 0;
+}
+.section-2 {
+  background-color: #f0dedb;
+}
+.section-3 {
+  background-color: #fadfad;
+}
+.section-4 {
+  background-color: #fbccb8;
+}
+.section-2 h2,
+.section-3 h2,
+.section-4 h2 {
+  font-size: 72px;
+  padding-bottom: 30px;
+  margin-bottom: 70px;
+  border-bottom: 1px solid #333;
+}
+.section-2 h2 span,
+.section-3 h2 span,
+.section-4 h2 span {
+  font-size: 80px;
+}
+.section-2 p {
+  font-size: 48px;
+  line-height: 1.3;
+  margin-bottom: 70px;
+}
+.section-3 p,
+.section-4 p {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 70px;
+}
+.section-2 p span {
+  padding-left: 40%;
+}
+.section-3 p span {
+  padding-left: 28%;
+}
+.section-4 p span {
+  padding-left: 17%;
+}
+.button-with-hover {
+  background-color: #f8f3ec;
+  display: block;
+  padding: 30px;
+  height: 160px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+.button-with-hover span {
+  position: absolute;
+  transition: transform 0.25s ease-in-out;
+}
+.button-with-hover span.button-before-text {
+  font-size: 48px;
+  transform: translateY(0);
+  color: #000;
+}
+.button-with-hover span.button-after-text {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  color: #fff;
+  font-size: 40px;
+}
+.button-with-hover:hover {
+  background-color: #000;
+  border-radius: 150px;
+}
+.button-with-hover:hover span.button-before-text {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+.button-with-hover:hover span.button-after-text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
