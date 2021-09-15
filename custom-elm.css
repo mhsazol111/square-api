@@ -46,7 +46,21 @@
   font-family: 'TroisMilleBlack', sans-serif;
 }
 
-.sq-section {
+.loading-screen-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.sq-section,
+#hSRIav {
   padding: 150px 0;
 }
 .section-2 {
@@ -60,16 +74,26 @@
 }
 .section-2 h2,
 .section-3 h2,
-.section-4 h2 {
+.section-4 h2,
+#hSRIav > .container > h2 {
   font-size: 72px;
   padding-bottom: 30px;
   margin-bottom: 70px;
   border-bottom: 1px solid #333;
 }
+#hSRIav > .container > h2 {
+  text-align: right;
+  margin-bottom: 30px;
+}
 .section-2 h2 span,
 .section-3 h2 span,
-.section-4 h2 span {
+.section-4 h2 span,
+#hSRIav > .container > h2 span {
   font-size: 80px;
+}
+#hSRIav > .container > h2 img {
+  margin-right: 25px;
+  margin-bottom: -15px;
 }
 .section-2 p {
   font-size: 48px;
@@ -135,4 +159,41 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+#hSRIav {
+  background-color: #f8f3ec;
+}
+#hSRIav .fluid-carousel--item .figure__aspect-ratio {
+  border-radius: 30px;
+}
+#hSRIav .fluid-carousel--item.carousel-item--large {
+  position: relative;
+}
+#hSRIav .fluid-carousel--item.carousel-item--large > a > .w-wrapper[data-v-ab1ca44a]:last-child {
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  transform: translateY(0);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#hSRIav .fluid-carousel--item.carousel-item--large:hover > a > .w-wrapper[data-v-ab1ca44a]:last-child {
+  transform: translateY(-60px);
+  visibility: visible;
+  opacity: 1;
+}
+#hSRIav .fluid-carousel--item.carousel-item--large > a > .w-wrapper[data-v-ab1ca44a]:last-child button {
+  background-color: #f8f3ec;
+  font-size: 24px;
+  font-family: 'SharpGroteskMedium', sans-serif;
+  height: 80px;
+  border-radius: 15px;
+  transition: all .3s ease-in-out;
+}
+#hSRIav .fluid-carousel--item.carousel-item--large > a > .w-wrapper[data-v-ab1ca44a]:last-child button:hover {
+  background-color: #29fd3a;
+  border-radius: 80px;
 }

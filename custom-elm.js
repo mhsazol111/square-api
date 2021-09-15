@@ -1,6 +1,42 @@
+// (function (history) {
+//   var pushState = history.pushState;
+//   history.pushState = function (state) {
+//     // YOUR CUSTOM HOOK / FUNCTION
+//     console.log('I am called from pushStateHook', state, history, arguments);
+//     window.location.reload();
+//     return pushState.apply(history, arguments);
+//   };
+// })(window.history);
+
 (function ($) {
   $(document).ready(function () {
     console.log('on ready script');
+
+    (function (history) {
+      var pushState = history.pushState;
+      history.pushState = function (state) {
+        if (typeof history.onpushstate == 'function') {
+          history.onpushstate({ state: state });
+        }
+        // whatever else you want to do
+        // maybe call onhashchange e.handler
+        console.log('on function call', arguments);
+
+        $('body').append(`<div class="loading-screen-wrapper">Loading</div>`);
+
+        // window.location.reload();
+        window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
+
+        return pushState.apply(history, arguments);
+      };
+    })(window.history);
+
+    window.onpopstate = history.onpushstate = function (e) {
+      console.log('onpopstate', e);
+      $('body').append(`<div class="loading-screen-wrapper">Loading</div>`);
+      // window.location.reload();
+      window.location.href = e.target.location.href;
+    };
 
     setTimeout(() => {
       var cssId = 'myCss'; // you could encode the css path itself to generate id..
@@ -59,11 +95,15 @@
       `);
       oldSection2.append(newSection4);
 
-      // $('a').on('click', function (e) {
-      //   e.preventDefault();
-
-      //   window.location.href = 'https://orderhungryhouse.square.site/text-us';
-      // });
-    }, 500);
+      const oldSection5 = $('#hSRIav');
+      const newSection5 = $(`
+      <div class="container">
+        <h2 class="font-sharp">
+        <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Right Arrow" />
+        <span class="font-palmdale">spice up</span> your order</h2>
+      </div>
+      `);
+      oldSection5.prepend(newSection5);
+    }, 600);
   });
 })(jQuery);
