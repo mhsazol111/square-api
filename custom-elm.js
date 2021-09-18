@@ -51,9 +51,8 @@
         head.appendChild(link);
       }
 
-      const oldSection2 = $('#jLvMhP');
-
-      const newSection2 = $(`
+      const oldAboutSection = $('#jLvMhP');
+      const newAboutSection = $(`
       <div class="sq-section section-2">
         <div class="container">
           <h2 class="font-sharp"><span class="font-palmdale">about</span> Hungry House</h2>
@@ -65,23 +64,39 @@
         </div>
       </div>
       `);
-      oldSection2.append(newSection2);
+      oldAboutSection.append(newAboutSection);
 
-      const newSection3 = $(`
-      <div class="sq-section section-3">
-        <div class="container">
-          <h2 class="font-sharp"><span class="font-palmdale">daily</span> serves</h2>
-          <p class="font-sharp-italic"><span>Sweet deals, hot news, recipes, and sometimes</span> half-baked ideas. Make sure you always get the latest updates delivered to your inbox. And don’t worry, we only sell good food, so your personal data is safe with us.</p>
-          <a href="/" class="button-with-hover">
-            <span class="button-before-text font-palmdale">ready?</span>
-            <span class="button-after-text font-sharp">subscribe</span>
-          </a>
-        </div>
+      const oldInstagramSection = $('#HgjPAk');
+
+      const oldNewsLetter = $('#yeCMuv');
+      const newsletterBtn = $('#yeCMuv .action-button__button');
+
+      newsletterBtn.html(`
+      <div class="button-with-hover">
+        <span class="button-before-text font-palmdale">ready?</span>
+        <span class="button-after-text font-sharp">subscribe</span>
       </div>
       `);
-      oldSection2.append(newSection3);
 
-      const newSection4 = $(`
+      const newNewsletterSection = $(`
+      <div class="container">
+        <h2 class="font-sharp"><span class="font-palmdale">daily</span> serves</h2>
+        <p class="font-sharp-italic"><span>Sweet deals, hot news, recipes, and sometimes</span> half-baked ideas. Make sure you always get the latest updates delivered to your inbox. And don’t worry, we only sell good food, so your personal data is safe with us.</p>
+      </div>
+      `);
+      oldNewsLetter.prepend(newNewsletterSection);
+
+      const oldOrderSection = $('#hSRIav');
+      const newOrderSection = $(`
+      <div class="container">
+        <h2 class="font-sharp">
+        <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Right Arrow" />
+        <span class="font-palmdale">spice up</span> your order</h2>
+      </div>
+      `);
+      oldOrderSection.prepend(newOrderSection);
+
+      const newHotlineSection = $(`
       <div class="sq-section section-4">
         <div class="container">
           <h2 class="font-sharp"><span class="font-palmdale">our</span> hot line</h2>
@@ -93,17 +108,7 @@
         </div>
       </div>
       `);
-      oldSection2.append(newSection4);
-
-      const oldSection5 = $('#hSRIav');
-      const newSection5 = $(`
-      <div class="container">
-        <h2 class="font-sharp">
-        <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Right Arrow" />
-        <span class="font-palmdale">spice up</span> your order</h2>
-      </div>
-      `);
-      oldSection5.prepend(newSection5);
-    }, 600);
+      oldOrderSection.append(newHotlineSection);
+    }, 1000);
   });
 })(jQuery);
