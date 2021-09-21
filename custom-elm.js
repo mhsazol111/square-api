@@ -55,11 +55,11 @@
           <div class="hover-thumb-wrapper" id="woldy-thumb">
             <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
           </div>
-          <div class="hover-thumb-wrapper" id="sermon-thumb">
-            <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/products/sermon-thumb.png" alt="sermon" />
-          </div>
           <div class="hover-thumb-wrapper" id="apocalypse-thumb">
             <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
+          </div>
+          <div class="hover-thumb-wrapper" id="sermon-thumb">
+            <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/products/sermon-thumb.png" alt="sermon" />
           </div>
           <div class="hover-thumb-wrapper" id="house-thumb">
             <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
@@ -71,92 +71,142 @@
         <nav class="menu">
           <div class="menu__item" data-id="woldy-thumb">
             <div class="container">
-              <a class="menu__item-link" href="#"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
+              <a class="menu__item-link" href="/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
             </div>
             <div class="marquee">
               <div class="marquee__inner-wrap">
                 <div class="marquee__inner" aria-hidden="true">
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Dom Dom</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Santa Maria</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="menu__item" data-id="sermon-thumb">
-            <div class="container">
-              <a class="menu__item-link" href="#"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
-            </div>
-            <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner" aria-hidden="true">
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Dom Dom</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Santa Maria</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <div>
+                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="menu__item" data-id="apocalypse-thumb">
             <div class="container">
-              <a class="menu__item-link" href="#"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
+              <a class="menu__item-link" href="/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
             </div>
             <div class="marquee">
               <div class="marquee__inner-wrap">
                 <div class="marquee__inner" aria-hidden="true">
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Dom Dom</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Santa Maria</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <div>
+                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__item" data-id="sermon-thumb">
+            <div class="container">
+              <a class="menu__item-link" href="/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
+            </div>
+            <div class="marquee">
+              <div class="marquee__inner-wrap">
+                <div class="marquee__inner" aria-hidden="true">
+                  <div>
+                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="menu__item" data-id="house-thumb">
             <div class="container">
-              <a class="menu__item-link" href="#"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
+              <a class="menu__item-link" href="/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
             </div>
             <div class="marquee">
               <div class="marquee__inner-wrap">
                 <div class="marquee__inner" aria-hidden="true">
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Dom Dom</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Santa Maria</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <div>
+                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="menu__item" data-id="good-thumb">
             <div class="container">
-              <a class="menu__item-link" href="#"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
+              <a class="menu__item-link" href="/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
             </div>
             <div class="marquee">
               <div class="marquee__inner-wrap">
                 <div class="marquee__inner" aria-hidden="true">
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Dom Dom</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-sharp">Santa Maria</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <div>
+                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
+                  <div>
+                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </nav>
         <div class="container">
-          <a href="/" class="view-full-menu font-sharp">View Full Menu</a>
+          <a href="/view-all" class="view-full-menu font-sharp">View Full Menu</a>
         </div>
       </div>
       `);
@@ -229,6 +279,64 @@
       </div>
       `);
       oldOrderSection.append(newHotlineSection);
+
+      const oldFooterSection = $('#JwucGZ');
+
+      const newFooterSection = $(`
+      <div class="sq-section main-footer">
+        <div class="container">
+          <div class="footer-menu">
+            <div class="footer-surprize">
+              <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize" />
+            </div>
+            <div class="footer-left-menu">
+              <div>
+                <a href="/woldy-kusina">Woldy Kusina</a>
+                <a href="/apocalypse-burger">The Food Sermon</a>
+                <a href="/the-food-sermon">Apocalypse Burger</a>
+              </div>
+              <div>
+                <a href="/house-specials">House Specials</a>
+                <a href="/the-goods-mart">The Goods Mart</a>
+                <a href="/view-all">Full Menu</a>
+              </div>
+            </div>
+            <div class="footer-middle-menu">
+              <div>
+                <a href="/goodies">Goodies</a>
+              </div>
+            </div>
+            <div class="footer-right-menu">
+              <div>
+                <a href="/goodies">About Us</a>
+                <a href="#">Our mission</a>
+                <a href="#">FAQs</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social-wrapper">
+            <div>
+              <a href="#" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
+            </div>
+            <div class="insta-ticktock">
+              <a href="#" class="has-flash-bg">
+                <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="has-flash-bg">
+                <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
+                <span>Tiktok</span>
+              </a>
+            </div>
+            <div class="">
+              <a href="#">Text Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      oldFooterSection.append(newFooterSection);
     }, 1000);
   });
 })(jQuery);
