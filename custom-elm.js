@@ -11,7 +11,11 @@
     head.appendChild(link);
   }
 
-  $('body').append(`<div class="loading-screen-wrapper">Loading</div>`);
+  $('body').append(`
+  <div class="loading-screen-wrapper">
+    <div class="loader">Loading...</div>
+  </div>
+  `);
 
   $(window).on('load', function () {
     $('.loading-screen-wrapper').fadeOut();
@@ -69,8 +73,8 @@
           </div>
         </div>
         <nav class="menu">
-          <div class="menu__item" data-id="woldy-thumb">
-            <div class="container">
+          <div class="menu__item">
+            <div class="container" data-id="woldy-thumb">
               <a class="menu__item-link" href="/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
             </div>
             <div class="marquee">
@@ -96,8 +100,8 @@
               </div>
             </div>
           </div>
-          <div class="menu__item" data-id="apocalypse-thumb">
-            <div class="container">
+          <div class="menu__item">
+            <div class="container" data-id="apocalypse-thumb">
               <a class="menu__item-link" href="/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
             </div>
             <div class="marquee">
@@ -123,8 +127,8 @@
               </div>
             </div>
           </div>
-          <div class="menu__item" data-id="sermon-thumb">
-            <div class="container">
+          <div class="menu__item">
+            <div class="container" data-id="sermon-thumb">
               <a class="menu__item-link" href="/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
             </div>
             <div class="marquee">
@@ -150,8 +154,8 @@
               </div>
             </div>
           </div>
-          <div class="menu__item" data-id="house-thumb">
-            <div class="container">
+          <div class="menu__item">
+            <div class="container" data-id="house-thumb">
               <a class="menu__item-link" href="/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
             </div>
             <div class="marquee">
@@ -177,8 +181,8 @@
               </div>
             </div>
           </div>
-          <div class="menu__item" data-id="good-thumb">
-            <div class="container">
+          <div class="menu__item">
+            <div class="container" data-id="good-thumb">
               <a class="menu__item-link" href="/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
             </div>
             <div class="marquee">
@@ -206,19 +210,22 @@
           </div>
         </nav>
         <div class="container">
-          <a href="/view-all" class="view-full-menu font-sharp">View Full Menu</a>
+          <a href="/view-all" class="view-full-menu font-sharp">
+            <span>View Full Menu</span>
+            <img src="https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu" />
+          </a>
         </div>
       </div>
       `);
       oldAboutSection.prepend(animateBanner);
 
-      $('body').on('mouseenter', '.menu__item', function (e) {
+      $('body').on('mouseenter', '.menu__item > .container', function (e) {
         const id = $(this).data('id');
         $('.hover-thumb-wrapper').removeClass('hover-active');
         $(`#${id}`).addClass('hover-active');
       });
 
-      $('body').on('mouseleave', '.menu__item', function (e) {
+      $('body').on('mouseleave', '.menu__item > .container', function (e) {
         $('.hover-thumb-wrapper').removeClass('hover-active');
       });
 
