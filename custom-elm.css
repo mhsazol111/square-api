@@ -113,6 +113,26 @@
 .square__navigation-desktop_desktopNav--ZEnDx .square__navigation-desktop_subnavDropdown--3onPj li a {
   font-size: 24px;
   font-family: 'SharpGroteskMedium', sans-serif !important;
+  position: relative;
+}
+.nav--desktop ul li a[data-v-377bce9f]::after,
+.square__navigation-desktop_desktopNav--ZEnDx .square__navigation-desktop_subnavDropdown--3onPj li a::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 8px;
+  background-color: #29fd3a;
+  left: 0;
+  bottom: 6px;
+  opacity: 0.5;
+  transition: width 0.3s ease-in-out;
+}
+.nav--desktop ul li a[data-v-377bce9f]:hover::after,
+.square__navigation-desktop_desktopNav--ZEnDx .square__navigation-desktop_subnavDropdown--3onPj li a:hover::after {
+  width: 100%;
+  transform: none !important;
+  border: none !important;
+  top: unset !important;
 }
 .square__navigation-desktop_desktopNav--ZEnDx .square__navigation-desktop_subnavDropdown--3onPj {
   min-width: 250px;
@@ -127,6 +147,29 @@ body .bg-sticky[data-v-4b946d90] {
 }
 .bg-sticky .header__logo {
   visibility: visible !important;
+}
+button.nav-btn.cart-icon__wrap {
+  margin-top: -10px;
+  position: relative;
+}
+button.nav-btn.cart-icon__wrap svg {
+  display: none;
+}
+.nav-icon__cart-number.square__icons-cart_iconCartNumber--3Rp4f {
+  background-color: #29fd3a;
+  min-width: 24px;
+  height: 24px;
+  padding: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'SharpGroteskMedium', sans-serif !important;
+  position: absolute;
+  right: -4px;
+  top: -15px;
+  border: 2px solid #000;
 }
 
 /* Footer */
@@ -348,7 +391,7 @@ body .bg-sticky[data-v-4b946d90] {
   top: 45%;
   width: 21px;
   height: 14px;
-  background-image: url(https://pauli81.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg);
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg);
   z-index: 99;
   background-size: cover;
 }
@@ -383,6 +426,10 @@ body .bg-sticky[data-v-4b946d90] {
 }
 #hSRIav .fluid-carousel--item.carousel-item--large {
   position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 #hSRIav .fluid-carousel--item.carousel-item--large > a > .w-wrapper[data-v-ab1ca44a]:last-child {
   position: absolute;
@@ -607,7 +654,7 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
   top: 6px;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .view-full-menu:hover img {
   right: -30px;
