@@ -68,6 +68,9 @@
       const animateBanner = $(`
       <div class="sq-section section-1">
         <div class="container">
+          <div class="banner-surprize">
+            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize">
+          </div>
           <div class="hover-thumb-wrapper" id="woldy-thumb">
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
           </div>
@@ -85,9 +88,6 @@
           </div>
         </div>
         <nav class="menu">
-          <div class="banner-surprize">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize">
-          </div>
           <div class="menu__item">
             <div class="container" data-id="woldy-thumb">
               <a class="menu__item-link" href="/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
@@ -290,7 +290,7 @@
 
       const pcWidth = $('#hSRIav .fluid-carousel').width();
       document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / 3}px`;
-      document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
+      // document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
 
       $(window).on('resize', function () {
         const pcWidth = $('#hSRIav .fluid-carousel').width();
