@@ -13,7 +13,7 @@
 
   $('body').append(`
   <div class="loading-screen-wrapper">
-    <div class="loader">Loading...</div>
+    <div class="loader"></div>
   </div>
   `);
 
@@ -36,7 +36,7 @@
 
         $('body').append(`
         <div class="loading-screen-wrapper">
-          <div class="loader">Loading...</div>
+          <div class="loader"></div>
         </div>
         `);
 
@@ -51,7 +51,7 @@
       console.log('onpopstate', e);
       $('body').append(`
       <div class="loading-screen-wrapper">
-        <div class="loader">Loading...</div>
+        <div class="loader"></div>
       </div>`);
       // window.location.reload();
       window.location.href = e.target.location.href;
@@ -62,6 +62,68 @@
       headerCart.prepend(`
         <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/bag.svg" alt="cart" class="sq-cart-icon" />
       `);
+
+      const oldFooterSection = $('#JwucGZ');
+
+      const newFooterSection = $(`
+      <div class="sq-section main-footer">
+        <div class="container">
+          <div class="footer-menu">
+            <div class="footer-surprize">
+              <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize" />
+            </div>
+            <div class="footer-left-menu">
+              <div>
+                <a href="/woldy-kusina">Woldy Kusina</a>
+                <a href="/apocalypse-burger">The Food Sermon</a>
+                <a href="/the-food-sermon">Apocalypse Burger</a>
+              </div>
+              <div>
+                <a href="/house-specials">House Specials</a>
+                <a href="/the-goods-mart">The Goods Mart</a>
+                <a href="/view-all">Full Menu</a>
+              </div>
+            </div>
+            <div class="footer-middle-menu">
+              <div>
+                <a href="/goodies">Goodies</a>
+              </div>
+            </div>
+            <div class="footer-right-menu">
+              <div>
+                <a href="/goodies">About Us</a>
+                <a href="#">Our mission</a>
+                <a href="#">FAQs</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social-wrapper">
+            <div>
+              <a href="#" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
+            </div>
+            <div class="insta-ticktock">
+              <a href="#" class="has-flash-bg">
+                <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="has-flash-bg">
+                <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
+                <span>Tiktok</span>
+              </a>
+            </div>
+            <div class="">
+              <a href="#">Text Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      oldFooterSection.append(newFooterSection);
+
+      // ==============================
+      // ========= Home page ==========
+      // ==============================
 
       const oldAboutSection = $('#jLvMhP');
 
@@ -225,7 +287,7 @@
           </div>
         </nav>
         <div class="container">
-          <a href="/view-all" class="view-full-menu font-sharp">
+          <a href="/view-all" class="regular-line-button view-full-menu font-sharp">
             <span>View Full Menu</span>
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu" />
           </a>
@@ -249,7 +311,7 @@
         <div class="container">
           <h2 class="font-sharp"><span class="font-palmdale">about</span> Hungry House</h2>
           <p class="font-sharp-italic"><span>“Our core values guide our</span> actions and we aim to empower our customers, team members and partners to be a positive force on the food system.”</p>
-          <a href="/" class="button-with-hover">
+          <a href="/" class="button_with_hover">
             <span class="button-before-text font-palmdale">pretty sweet right?</span>
             <span class="button-after-text font-sharp">learn more about why we do what we do</span>
           </a>
@@ -264,7 +326,7 @@
       const newsletterBtn = $('#yeCMuv .action-button__button');
 
       newsletterBtn.html(`
-      <div class="button-with-hover">
+      <div class="button_with_hover">
         <span class="button-before-text font-palmdale">ready?</span>
         <span class="button-after-text font-sharp">subscribe</span>
       </div>
@@ -288,26 +350,14 @@
       `);
       oldOrderSection.prepend(newOrderSection);
 
-      const pcWidth = $('#hSRIav .fluid-carousel').width();
-      document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / 3}px`;
-      // document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
-
-      $(window).on('resize', function () {
-        const pcWidth = $('#hSRIav .fluid-carousel').width();
-
-        if ($(window).width() < 840) {
-          document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
-        } else {
-          document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / 3}px`;
-        }
-      });
+      fixSliderWidth('hSRIav', 3);
 
       const newHotlineSection = $(`
       <div class="sq-section section-4">
         <div class="container">
           <h2 class="font-sharp"><span class="font-palmdale">our</span> hot line</h2>
           <p class="font-sharp-italic"><span>Who likes waiting on the other site of the line anyways?</span> Avoid those infamous tunes and text us for immediate updates, promos, recipes, and more. We’ll be waiting!</p>
-          <a href="/" class="button-with-hover">
+          <a href="/" class="button_with_hover">
             <span class="button-before-text font-palmdale">ready?</span>
             <span class="button-after-text font-sharp">shoot us a text</span>
           </a>
@@ -316,63 +366,79 @@
       `);
       oldOrderSection.append(newHotlineSection);
 
-      const oldFooterSection = $('#JwucGZ');
+      // ===================================
+      // ==== Inner page (Woldy Kusina) ====
+      // ===================================
 
-      const newFooterSection = $(`
-      <div class="sq-section main-footer">
-        <div class="container">
-          <div class="footer-menu">
-            <div class="footer-surprize">
-              <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize" />
-            </div>
-            <div class="footer-left-menu">
-              <div>
-                <a href="/woldy-kusina">Woldy Kusina</a>
-                <a href="/apocalypse-burger">The Food Sermon</a>
-                <a href="/the-food-sermon">Apocalypse Burger</a>
-              </div>
-              <div>
-                <a href="/house-specials">House Specials</a>
-                <a href="/the-goods-mart">The Goods Mart</a>
-                <a href="/view-all">Full Menu</a>
-              </div>
-            </div>
-            <div class="footer-middle-menu">
-              <div>
-                <a href="/goodies">Goodies</a>
-              </div>
-            </div>
-            <div class="footer-right-menu">
-              <div>
-                <a href="/goodies">About Us</a>
-                <a href="#">Our mission</a>
-                <a href="#">FAQs</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-social-wrapper">
-            <div>
-              <a href="#" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
-            </div>
-            <div class="insta-ticktock">
-              <a href="#" class="has-flash-bg">
-                <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
-                <span>Instagram</span>
-              </a>
-              <a href="#" class="has-flash-bg">
-                <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
-                <span>Tiktok</span>
-              </a>
-            </div>
-            <div class="">
-              <a href="#">Text Us</a>
-            </div>
-          </div>
-        </div>
+      const woldyBanner = $('#VsDiNU');
+
+      $('#VsDiNU p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">pickup & delivery</span>
+      </a>
+
+      <a href="/view-all" class="regular-line-button font-sharp">
+        <span>*Check our delivery zone</span>
+        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+      </a>
+      `);
+
+      $('#qinWeQ').prepend(`
+      <div class="container">
+        <h2 class="font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      oldFooterSection.append(newFooterSection);
+      $('#pNoduI').prepend(`
+      <div class="container">
+        <h2 class="font-sharp"><span class="font-palmdale">the</span> addons</h2>
+      </div>
+      `);
+
+      $('#pNoduI').append(`
+      <div class="container">
+        <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+          <span class="button-before-text font-palmdale">can’t decide?</span>
+          <span class="button-after-text font-sharp">see the full menu</span>
+        </a>
+      </div>
+      `);
+
+      $('#vrEVGZ').prepend(`
+      <div class="container">
+        <h2 class="font-sharp"><span class="font-palmdale">Woldy’s</span> must-haves</h2>
+      </div>
+      `);
+
+      $('#vrEVGZ').append(`
+      <div class="container">
+        <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
+          <span class="button-before-text font-palmdale">can’t decide?</span>
+          <span class="button-after-text font-sharp">see the full menu</span>
+        </a>
+      </div>
+      `);
+      
+      fixSliderWidth('vrEVGZ', 3);
+
+      function fixSliderWidth(sectionId, item) {
+        const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
+        if (pcWidth) {
+          document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
+        }
+
+        $(window).on('resize', function () {
+          const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
+          if (pcWidth) {
+            if ($(window).width() < 840) {
+              document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
+            } else {
+              document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
+            }
+          }
+        });
+      }
     }, 1000);
   });
 })(jQuery);
