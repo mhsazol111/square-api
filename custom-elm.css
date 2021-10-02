@@ -539,12 +539,12 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
   position: absolute;
   transition: transform 0.25s ease-in-out;
 }
-.button_with_hover span.button-before-text {
+.button_with_hover .button-before-text {
   font-size: 48px;
   transform: translateY(0);
   color: #000;
 }
-.button_with_hover span.button-after-text {
+.button_with_hover .button-after-text {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -555,12 +555,12 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
   background-color: #000;
   border-radius: 150px;
 }
-.button_with_hover:hover span.button-before-text {
+.button_with_hover:hover .button-before-text {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
 }
-.button_with_hover:hover span.button-after-text {
+.button_with_hover:hover .button-after-text {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -665,6 +665,55 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
   visibility: visible;
   opacity: 1;
 }
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae],
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] {
+  align-items: center;
+  position: absolute;
+  top: 41%;
+  left: 0;
+  transform: translateY(-41%);
+  width: 100%;
+}
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0],
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] {
+  width: 93%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child,
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child {
+  position: relative;
+  padding: 0;
+}
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child svg,
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child svg,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child svg,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child svg {
+  display: none;
+}
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child::before,
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child::before,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child::before,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child::before {
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 17px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child::before,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:first-child::before {
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/left-arrow.svg);
+}
+#hSRIav .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child::before,
+#vrEVGZ .featured-products-carousel__title-row[data-v-c34fadae] > div[data-v-125ee3d0] .carousel__arrow.carousel__arrow--enabled:last-child::before {
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/right-arrow.svg);
+}
 #HgjPAk > .w-block.w-background-light {
   background-color: #f8f3ec !important;
   padding: 60px 0 100px;
@@ -675,7 +724,6 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
   border: 3px solid #000;
   box-shadow: 0 0 5px rgb(0 0 0 / 30%);
 }
-
 /* ===================================
 ===== Inner page (Woldy Kusina) ======
 ==================================== */
@@ -707,10 +755,10 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
   height: 64px;
   border-radius: 13px;
 }
-.button_with_hover_smaller span.button-before-text {
+.button_with_hover_smaller .button-before-text {
   font-size: 32px;
 }
-.button_with_hover_smaller span.button-after-text {
+.button_with_hover_smaller .button-after-text {
   font-size: 24px;
 }
 #VsDiNU .button_with_hover {
@@ -734,19 +782,16 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
 #pNoduI {
   padding-bottom: 100px;
 }
-#qinWeQ > .container > h2,
-#pNoduI > .container > h2,
-#vrEVGZ > .container > h2 {
+.sq_section_heading {
   margin-bottom: 20px;
   font-size: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid #333;
 }
-#qinWeQ > .container > h2 .font-palmdale,
-#pNoduI > .container > h2 .font-palmdale,
-#vrEVGZ > .container > h2 .font-palmdale {
+.sq_section_heading .font-palmdale {
   font-size: 48px;
 }
+
 #qinWeQ .featured-product__image,
 #pNoduI .featured-product__image {
   border-radius: 20px;
@@ -820,4 +865,73 @@ div#\31 7ce53d1-084b-11ec-87f6-a171d7cab8a1 {
 }
 #vrEVGZ {
   padding-bottom: 140px;
+}
+#vrEVGZ .button_with_hover {
+  margin-top: 50px;
+}
+#TyGiHO {
+  background-color: #e0e8c7;
+  padding-top: 110px;
+  padding-bottom: 140px;
+}
+#TyGiHO .sq_section_heading {
+  margin-bottom: 0;
+}
+#TyGiHO .slideshow__slide .slideshow__image {
+  padding: 25px 100px;
+}
+#TyGiHO .slideshow__slide .slideshow__image .image__wrapper {
+  border: 3px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgb(0 0 0 / 50%);
+  overflow: hidden;
+}
+.w-slideshow[data-v-6f0fe5ea] {
+  padding-bottom: 40px;
+}
+.swiper__prev[data-v-6f0fe5ea] {
+  left: 30px !important;
+}
+.swiper__next[data-v-6f0fe5ea] {
+  right: 30px !important;
+}
+.swiper-arrow[data-v-6f0fe5ea] {
+  position: relative;
+}
+.swiper-arrow[data-v-6f0fe5ea] svg {
+  display: none;
+}
+.swiper-arrow[data-v-6f0fe5ea]::before {
+  position: absolute;
+  content: '';
+  width: 21px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.swiper__prev[data-v-6f0fe5ea] .swiper-arrow[data-v-6f0fe5ea]::before {
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/left-arrow.svg);
+  left: 0;
+}
+.swiper__next[data-v-6f0fe5ea] .swiper-arrow[data-v-6f0fe5ea]::before {
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/right-arrow.svg);
+  right: 0;
+}
+.square__slideshow-dots_slideshow--1zLiy .square__slideshow-dots_slideshowDot--35R4i {
+  background-color: #000000;
+  margin: 0 10px !important;
+}
+.square__slideshow-dots_slideshow--1zLiy .square__slideshow-dots_slideshowDot--35R4i.swiper-pagination-bullet-active {
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/green-star.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 25px;
+  width: 25px;
+}
+.about-bio-text {
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 70px;
 }

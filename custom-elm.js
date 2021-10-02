@@ -57,6 +57,41 @@
       window.location.href = e.target.location.href;
     };
 
+    function fixSliderWidth(sectionId, item) {
+      const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
+      if (pcWidth) {
+        document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
+      }
+
+      $(window).on('resize', function () {
+        const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
+        if (pcWidth) {
+          if ($(window).width() < 840) {
+            document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
+          } else {
+            document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
+          }
+        }
+      });
+    }
+
+    function fixNewsletterSection(sectionId) {
+      const newsletterBtn = $(`#${sectionId} .action-button__button`);
+
+      newsletterBtn.html(`
+      <div class="button_with_hover button_with_hover_medium">
+        <span class="button-before-text font-palmdale">ready?</span>
+        <span class="button-after-text font-sharp">submit</span>
+      </div>
+      `);
+
+      $(`#${sectionId}`).prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp">Subscribe now to receive the newsletter and SMS with updates about our lineup, giveaways, recipes, and more.</h2>
+      </div>
+      `);
+    }
+
     setTimeout(() => {
       const headerCart = $('button.nav-btn.cart-icon__wrap');
       headerCart.prepend(`
@@ -306,10 +341,10 @@
         $('.hover-thumb-wrapper').removeClass('hover-active');
       });
 
-      const newAboutSection = $(`
+      oldAboutSection.append(`
       <div class="sq-section section-2">
         <div class="container">
-          <h2 class="font-sharp"><span class="font-palmdale">about</span> Hungry House</h2>
+          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Hungry House</h2>
           <p class="font-sharp-italic"><span>“Our core values guide our</span> actions and we aim to empower our customers, team members and partners to be a positive force on the food system.”</p>
           <a href="/" class="button_with_hover">
             <span class="button-before-text font-palmdale">pretty sweet right?</span>
@@ -318,11 +353,9 @@
         </div>
       </div>
       `);
-      oldAboutSection.append(newAboutSection);
 
       // const oldInstagramSection = $('#HgjPAk');
 
-      const oldNewsLetter = $('#yeCMuv');
       const newsletterBtn = $('#yeCMuv .action-button__button');
 
       newsletterBtn.html(`
@@ -332,18 +365,17 @@
       </div>
       `);
 
-      const newNewsletterSection = $(`
+      $('#yeCMuv').prepend(`
       <div class="container">
-        <h2 class="font-sharp"><span class="font-palmdale">daily</span> serves</h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">daily</span> serves</h2>
         <p class="font-sharp-italic"><span>Sweet deals, hot news, recipes, and sometimes</span> half-baked ideas. Make sure you always get the latest updates delivered to your inbox. And don’t worry, we only sell good food, so your personal data is safe with us.</p>
       </div>
       `);
-      oldNewsLetter.prepend(newNewsletterSection);
 
       const oldOrderSection = $('#hSRIav');
       const newOrderSection = $(`
       <div class="container">
-        <h2 class="font-sharp">
+        <h2 class="sq_section_heading font-sharp">
         <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Right Arrow" />
         <span class="font-palmdale">spice up</span> your order</h2>
       </div>
@@ -355,7 +387,7 @@
       const newHotlineSection = $(`
       <div class="sq-section section-4">
         <div class="container">
-          <h2 class="font-sharp"><span class="font-palmdale">our</span> hot line</h2>
+          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">our</span> hot line</h2>
           <p class="font-sharp-italic"><span>Who likes waiting on the other site of the line anyways?</span> Avoid those infamous tunes and text us for immediate updates, promos, recipes, and more. We’ll be waiting!</p>
           <a href="/" class="button_with_hover">
             <span class="button-before-text font-palmdale">ready?</span>
@@ -386,13 +418,13 @@
 
       $('#qinWeQ').prepend(`
       <div class="container">
-        <h2 class="font-sharp"><span class="font-palmdale">the</span> menu</h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
       $('#pNoduI').prepend(`
       <div class="container">
-        <h2 class="font-sharp"><span class="font-palmdale">the</span> addons</h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
@@ -407,7 +439,7 @@
 
       $('#vrEVGZ').prepend(`
       <div class="container">
-        <h2 class="font-sharp"><span class="font-palmdale">Woldy’s</span> must-haves</h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Woldy’s</span> must-haves</h2>
       </div>
       `);
 
@@ -419,26 +451,28 @@
         </a>
       </div>
       `);
-      
+
       fixSliderWidth('vrEVGZ', 3);
 
-      function fixSliderWidth(sectionId, item) {
-        const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
-        if (pcWidth) {
-          document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
-        }
+      $('#TyGiHO').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Waldy Kusina</h2>
+      </div>
+      `);
 
-        $(window).on('resize', function () {
-          const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
-          if (pcWidth) {
-            if ($(window).width() < 840) {
-              document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
-            } else {
-              document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
-            }
-          }
-        });
-      }
+      $('#TyGiHO').append(`
+      <div class="container">
+        <div class="about-bio-text font-sharp-italic">
+          Woldy Kusina is recognized as one of New York’s top caterers, featured in Goop and New York Magazine, with a noteworthy clientele that includes brands like 3.1 Phillip Lim, West Elm, Kosas, and Well+Good.
+        </div>
+        <a href="/" class="button_with_hover button_with_hover_medium">
+          <span class="button-before-text font-palmdale">want to know more?</span>
+          <span class="button-after-text font-sharp">read the interview</span>
+        </a>
+      </div>
+      `);
+
+      fixNewsletterSection('lJTXrj');
     }, 1000);
   });
 })(jQuery);
