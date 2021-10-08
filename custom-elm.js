@@ -76,8 +76,10 @@
     }
 
     function fixNewsletterSection(sectionId) {
+      const newsletterInput = $(`#${sectionId} .w-cell .action-button .input-group__input`);
       const newsletterBtn = $(`#${sectionId} .action-button__button`);
 
+      newsletterInput.attr('placeholder', 'Enter your email here');
       newsletterBtn.html(`
       <div class="button_with_hover button_with_hover_medium">
         <span class="button-before-text font-palmdale">ready?</span>
@@ -88,6 +90,12 @@
       $(`#${sectionId}`).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp">Subscribe now to receive the newsletter and SMS with updates about our lineup, giveaways, recipes, and more.</h2>
+      </div>
+      `);
+
+      $(`#${sectionId}`).append(`
+      <div class="container">
+        <p class="sq_contact_disclaimer">By clicking SUBMIT, you agree to receive marketing text messages from Hungry House at the number provided. Consent is not condition of any purchase. Messages and data rate may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View Terms & Privacy Policy.</p>
       </div>
       `);
     }
@@ -402,15 +410,13 @@
       // ==== Inner page (Woldy Kusina) ====
       // ===================================
 
-      const woldyBanner = $('#VsDiNU');
-
       $('#VsDiNU p').parent().append(`
       <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
         <span class="button-before-text font-palmdale">order now</span>
         <span class="button-after-text font-sharp">pickup & delivery</span>
       </a>
 
-      <a href="/view-all" class="regular-line-button font-sharp">
+      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
         <span>*Check our delivery zone</span>
         <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
       </a>
@@ -473,6 +479,75 @@
       `);
 
       fixNewsletterSection('lJTXrj');
+
+      // View all page
+      $('#qnYtAa').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">Woldy Kusina</span> modern filipino</h2>
+        <a href="https://orderhungryhouse.square.site/woldy-kusina" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+          <span>Learn more</span>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+        </a>
+      </div>
+      `);
+
+      $('#MlUWwE').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">The Food Sermon</span> caribbean inspired</h2>
+        <a href="https://orderhungryhouse.square.site/apocalypse-burger" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+          <span>Learn more</span>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+        </a>
+      </div>
+      `);
+
+      $('#sdRhmA').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">Apocalypse Burger</span> burgers to die for</h2>
+        <a href="https://orderhungryhouse.square.site/the-food-sermon" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+          <span>Learn more</span>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+        </a>
+      </div>
+      `);
+
+      $('#bLdkpf').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">House Specials</span> your everydays</h2>
+        <a href="https://orderhungryhouse.square.site/house-specials" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+          <span>Learn more</span>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+        </a>
+      </div>
+      `);
+
+      $('#LoJjMB').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">The Goods Mart</span> snacks & drinks</h2>
+        <a href="https://orderhungryhouse.square.site/the-goods-mart" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+          <span>Learn more</span>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+        </a>
+      </div>
+      `);
+
+      $('.card.item-card .image .figure__aspect-ratio').append(`
+        <button type="button" class="menu_item_button">
+          Order Now
+        </button>
+      `);
+
+      fixNewsletterSection('MZPidF');
+
+
+      // Goodies page
+      $('#PHKkOX').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">daily</span> must-haves</h2>
+      </div>
+      `);
+
+      fixNewsletterSection('COwPVL');
     }, 1000);
   });
 })(jQuery);
