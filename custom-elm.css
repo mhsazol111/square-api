@@ -1089,3 +1089,54 @@ div[data-block-purpose='newsletter@^1.2.1'] .action-button__button[data-v-a997ca
 #PHKkOX {
   padding: 110px 0 70px;
 }
+
+/* About us page */
+#jdkwUD {
+  background-color: #FFEDEA;
+}
+#jdkwUD > div#\33 ddb1ad1-082e-11ec-891d-adf924fbe50d {
+  display: none;
+}
+#jdkwUD .about-header {
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding: 150px 0 130px;
+  position: relative;
+}
+#jdkwUD .about-header::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 121px;
+  height: 114px;
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg);
+  z-index: 99;
+  background-size: cover;
+}
+#jdkwUD .sq_about_heading {
+  font-size: 56px;
+  line-height: 72px;
+}
+#jdkwUD .sq_about_heading .font-palmdale {
+  font-size: 72px;
+}
+#RQadKc .figure__aspect-ratio {
+  height: auto !important;
+}
+#RQadKc .text-component {
+  padding: 70px 0;
+}
+#RQadKc .text-component p {
+  font-size: 32px;
+  line-height: 1.5;
+  font-family: 'SharpGroteskMediumItalic', sans-serif !important;
+}
+#dtiazq > div#f09bed21-2917-11ec-94fc-5972c791d9b5 > .container {
+  max-width: var(--max-container);
+}
+#dtiazq .figure__aspect-ratio {
+  height: auto !important;
+}

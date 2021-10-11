@@ -548,6 +548,15 @@
       `);
 
       fixNewsletterSection('COwPVL');
+
+      // About Us
+      $('#jdkwUD').append(`
+      <div class="container">
+        <div class="about-header">
+          <h2 class="sq_about_heading font-sharp">Welcome to Hungry House, a place for those <span class="font-palmdale">always hungry, always fresh.</span></h2>
+        </div>
+      </div>
+      `)
     }, 1000);
   });
 })(jQuery);
