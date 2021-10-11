@@ -556,7 +556,17 @@
           <h2 class="sq_about_heading font-sharp">Welcome to Hungry House, a place for those <span class="font-palmdale">always hungry, always fresh.</span></h2>
         </div>
       </div>
-      `)
+      `);
+
+      $('#dtiazq').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">our</span> locations</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">Hungry House is currently operating from the Navy Yard, delivering within a 2 mile radios in Brooklyn, NYC.</p>
+      </div>
+      `);
+
+      fixNewsletterSection('sKmHWh');
+      
     }, 1000);
   });
 })(jQuery);
