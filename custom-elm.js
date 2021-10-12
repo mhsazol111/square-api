@@ -539,7 +539,6 @@
 
       fixNewsletterSection('MZPidF');
 
-
       // Goodies page
       $('#PHKkOX').prepend(`
       <div class="container">
@@ -566,7 +565,56 @@
       `);
 
       fixNewsletterSection('sKmHWh');
-      
+
+      $('#woPJFK').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">our</span> commitment to transparency</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">We work with suppliers, farmers and producers who share our commitment to quality and sustainability. Our goal is to create long-term positive impact with the local food system and allowing our partners to support this mission through their work with Hungry House. Meet some of our partners below. </p>
+      </div>
+      `);
+
+      $('#woPJFK .text-component p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+        <span class="button-before-text font-palmdale">learn more</span>
+        <span class="button-after-text font-sharp">visit Smallhold</span>
+      </a>
+      `);
+
+      $('#EtPBUy .text-component p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+        <span class="button-before-text font-palmdale">learn more</span>
+        <span class="button-after-text font-sharp">visit Smallhold</span>
+      </a>
+      `);
+
+      $('#zROXtU .text-component p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+        <span class="button-before-text font-palmdale">learn more</span>
+        <span class="button-after-text font-sharp">visit Smallhold</span>
+      </a>
+      `);
+
+      $('#kUyoZa form .w-button').html(`
+      <div class="button_with_hover button_with_hover_medium">
+        <span class="button-before-text font-palmdale">learn more</span>
+        <span class="button-after-text font-sharp">visit Smallhold</span>
+      </div>
+      `);
+
+      $('#SAVlXv').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">come</span> work with us</h2>
+      </div>
+      `);
+
+      $('#SAVlXv').append(`
+      <div class="container">
+        <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+          <span class="button-before-text font-palmdale">interested?</span>
+          <span class="button-after-text font-sharp">view our openings</span>
+        </a>
+      </div>
+      `);
     }, 1000);
   });
 })(jQuery);
