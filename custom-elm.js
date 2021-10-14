@@ -75,6 +75,25 @@
       });
     }
 
+    function fixInstagramSliderWidth(sectionId, item) {
+      const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
+      if (pcWidth) {
+        $(`#${sectionId} .fluid-carousel .gallery-carousel__item`).css('width', pcWidth / item);
+        $(window).resize();
+      }
+
+      $(window).on('resize', function () {
+        const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
+        if (pcWidth) {
+          if ($(window).width() < 840) {
+            $(`#${sectionId} .fluid-carousel .gallery-carousel__item`).css('width', pcWidth / 2);
+          } else {
+            $(`#${sectionId} .fluid-carousel .gallery-carousel__item`).css('width', pcWidth / item);
+          }
+        }
+      });
+    }
+
     function fixNewsletterSection(sectionId) {
       const newsletterInput = $(`#${sectionId} .w-cell .action-button .input-group__input`);
       const newsletterBtn = $(`#${sectionId} .action-button__button`);
@@ -97,6 +116,17 @@
       <div class="container">
         <p class="sq_contact_disclaimer">By clicking SUBMIT, you agree to receive marketing text messages from Hungry House at the number provided. Consent is not condition of any purchase. Messages and data rate may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View Terms & Privacy Policy.</p>
       </div>
+      `);
+    }
+
+    function addButtonToImageTextSection(sectionId, url, buttonText) {
+      $(`#${sectionId}`).addClass('image_text_section');
+
+      $(`#${sectionId} .text-component p`).parent().append(`
+      <a href="${url}" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+        <span class="button-before-text font-palmdale">learn more</span>
+        <span class="button-after-text font-sharp">${buttonText}</span>
+      </a>
       `);
     }
 
@@ -167,169 +197,167 @@
       // ==============================
       // ========= Home page ==========
       // ==============================
-
-      const oldAboutSection = $('#jLvMhP');
-
       const animateBanner = $(`
-      <div class="sq-section section-1">
-        <div class="container">
-          <div class="banner-surprize">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize">
+      <div class="container">
+        <div class="hover-thumb-wrapper" id="woldy-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
+        </div>
+        <div class="hover-thumb-wrapper" id="apocalypse-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
+        </div>
+        <div class="hover-thumb-wrapper" id="sermon-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/sermon-thumb.png" alt="sermon" />
+        </div>
+        <div class="hover-thumb-wrapper" id="house-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
+        </div>
+        <div class="hover-thumb-wrapper" id="good-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/good-thumb.png" alt="good" />
+        </div>
+      </div>
+      <nav class="menu">
+        <div class="menu__item">
+          <div class="container" data-id="woldy-thumb">
+            <a class="menu__item-link" href="/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
           </div>
-          <div class="hover-thumb-wrapper" id="woldy-thumb">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
-          </div>
-          <div class="hover-thumb-wrapper" id="apocalypse-thumb">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
-          </div>
-          <div class="hover-thumb-wrapper" id="sermon-thumb">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/sermon-thumb.png" alt="sermon" />
-          </div>
-          <div class="hover-thumb-wrapper" id="house-thumb">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
-          </div>
-          <div class="hover-thumb-wrapper" id="good-thumb">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/good-thumb.png" alt="good" />
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <nav class="menu">
-          <div class="menu__item">
-            <div class="container" data-id="woldy-thumb">
-              <a class="menu__item-link" href="/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
-            </div>
-            <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner" aria-hidden="true">
-                  <div>
-                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
+        <div class="menu__item">
+          <div class="container" data-id="apocalypse-thumb">
+            <a class="menu__item-link" href="/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="menu__item">
-            <div class="container" data-id="apocalypse-thumb">
-              <a class="menu__item-link" href="/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
-            </div>
-            <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner" aria-hidden="true">
-                  <div>
-                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="sermon-thumb">
+            <a class="menu__item-link" href="/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="menu__item">
-            <div class="container" data-id="sermon-thumb">
-              <a class="menu__item-link" href="/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
-            </div>
-            <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner" aria-hidden="true">
-                  <div>
-                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="house-thumb">
+            <a class="menu__item-link" href="/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="menu__item">
-            <div class="container" data-id="house-thumb">
-              <a class="menu__item-link" href="/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
-            </div>
-            <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner" aria-hidden="true">
-                  <div>
-                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="good-thumb">
+            <a class="menu__item-link" href="/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="menu__item">
-            <div class="container" data-id="good-thumb">
-              <a class="menu__item-link" href="/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
-            </div>
-            <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner" aria-hidden="true">
-                  <div>
-                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                  <div>
-                    <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                    <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="home-banner-bottom">
+          <div class="home-live-banner">
+            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-green.svg" alt="Live in Brooklyn!">
+            <span class="font-palmdale">Live in Brooklyn!</span>
           </div>
-        </nav>
-        <div class="container">
           <a href="/view-all" class="regular-line-button view-full-menu font-sharp">
             <span>View Full Menu</span>
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu" />
@@ -337,7 +365,7 @@
         </div>
       </div>
       `);
-      oldAboutSection.prepend(animateBanner);
+      $('#dNjJIL').prepend(animateBanner);
 
       $('body').on('mouseenter', '.menu__item > .container', function (e) {
         const id = $(this).data('id');
@@ -349,62 +377,56 @@
         $('.hover-thumb-wrapper').removeClass('hover-active');
       });
 
-      oldAboutSection.append(`
-      <div class="sq-section section-2">
-        <div class="container">
-          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Hungry House</h2>
-          <p class="font-sharp-italic"><span>“Our core values guide our</span> actions and we aim to empower our customers, team members and partners to be a positive force on the food system.”</p>
-          <a href="/" class="button_with_hover">
-            <span class="button-before-text font-palmdale">pretty sweet right?</span>
-            <span class="button-after-text font-sharp">learn more about why we do what we do</span>
-          </a>
-        </div>
-      </div>
+      $('#XcvNOf .text-component p').parent().append(`
+      <a href="/" class="button_with_hover">
+        <span class="button-before-text font-palmdale">pretty sweet right?</span>
+        <span class="button-after-text font-sharp">learn more about why we do what we do</span>
+      </a>
       `);
 
-      // const oldInstagramSection = $('#HgjPAk');
+      fixNewsletterSection('yeCMuv');
 
-      const newsletterBtn = $('#yeCMuv .action-button__button');
-
-      newsletterBtn.html(`
-      <div class="button_with_hover">
-        <span class="button-before-text font-palmdale">ready?</span>
-        <span class="button-after-text font-sharp">subscribe</span>
-      </div>
-      `);
-
-      $('#yeCMuv').prepend(`
+      $('#jpVBdt').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">daily</span> serves</h2>
-        <p class="font-sharp-italic"><span>Sweet deals, hot news, recipes, and sometimes</span> half-baked ideas. Make sure you always get the latest updates delivered to your inbox. And don’t worry, we only sell good food, so your personal data is safe with us.</p>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">meet</span> the lineup</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">In our inaugural season of Hungry House, we’re are humbled and excited to introduce these incredible concepts to the world.</p>
       </div>
       `);
 
-      const oldOrderSection = $('#hSRIav');
-      const newOrderSection = $(`
+      addButtonToImageTextSection('jpVBdt', 'https://orderhungryhouse.square.site/woldy-kusina', 'about Woldy Kusina');
+      addButtonToImageTextSection('qPvofj', 'https://orderhungryhouse.square.site/apocalypse-burger', 'about The Food Sermon');
+      addButtonToImageTextSection('iYEedf', 'https://orderhungryhouse.square.site/the-food-sermon', 'about Apocalypse Burger');
+      addButtonToImageTextSection('mpRzHZ', 'https://orderhungryhouse.square.site/house-specials', 'about House Specials');
+      addButtonToImageTextSection('Bjopvb', 'https://orderhungryhouse.square.site/the-goods-mart', 'about The Goods Mart');
+
+      $('#Bjopvb').append(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp">
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Right Arrow" />
-        <span class="font-palmdale">spice up</span> your order</h2>
+        <a href="/" class="button_with_hover button_with_hover_yellow">
+          <span class="button-before-text font-palmdale">can't decide?</span>
+          <span class="button-after-text font-sharp">see the full menu</span>
+        </a>
       </div>
       `);
-      oldOrderSection.prepend(newOrderSection);
+
+      $('#hSRIav').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">hungry</span> for more?</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">Check out our product selection, perfect to complement your meals, daily routines, or just to spice up your picnic at the park.</p>
+      </div>
+      `);
 
       fixSliderWidth('hSRIav', 3);
 
-      const newHotlineSection = $(`
-      <div class="sq-section section-4">
-        <div class="container">
-          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">our</span> hot line</h2>
-          <p class="font-sharp-italic"><span>Who likes waiting on the other site of the line anyways?</span> Avoid those infamous tunes and text us for immediate updates, promos, recipes, and more. We’ll be waiting!</p>
-          <a href="/" class="button_with_hover">
-            <span class="button-before-text font-palmdale">ready?</span>
-            <span class="button-after-text font-sharp">shoot us a text</span>
-          </a>
-        </div>
+      $('#hSRIav').append(`
+      <div class="container">
+        <a href="/" class="button_with_hover button_with_hover_yellow">
+          <span class="button-before-text font-palmdale">can't decide?</span>
+          <span class="button-after-text font-sharp">see the full menu</span>
+        </a>
       </div>
       `);
-      oldOrderSection.append(newHotlineSection);
+
+      fixInstagramSliderWidth('SyVAwP', 3);
 
       // ===================================
       // ==== Inner page (Woldy Kusina) ====
@@ -596,8 +618,8 @@
 
       $('#kUyoZa form .w-button').html(`
       <div class="button_with_hover button_with_hover_medium">
-        <span class="button-before-text font-palmdale">learn more</span>
-        <span class="button-after-text font-sharp">visit Smallhold</span>
+        <span class="button-before-text font-palmdale">ready?</span>
+        <span class="button-after-text font-sharp">submit</span>
       </div>
       `);
 
