@@ -1,15 +1,19 @@
 (function ($) {
-  var cssId = 'myCss'; // you could encode the css path itself to generate id..
-  if (!document.getElementById(cssId)) {
-    var head = document.getElementsByTagName('head')[0];
-    var link = document.createElement('link');
-    link.id = cssId;
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm.css';
-    link.media = 'all';
-    head.appendChild(link);
+  function addCustomCssToSite(cssId, url) {
+    if (!document.getElementById(cssId)) {
+      var head = document.getElementsByTagName('head')[0];
+      var link = document.createElement('link');
+      link.id = cssId;
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = url;
+      link.media = 'all';
+      head.appendChild(link);
+    }
   }
+
+  addCustomCssToSite('custom-elm-css', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm.css');
+  addCustomCssToSite('custom-elm-responsive-css', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm-responsive.css');
 
   $('body').append(`
   <div class="loading-screen-wrapper">
