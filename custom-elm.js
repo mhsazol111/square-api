@@ -79,11 +79,27 @@
       });
     }
 
-    function fixInstagramSliderWidth(sectionId, item) {
+    function fixInstagramSliderWidth(sectionId, item, instagramId, instagramUrl = '#', tiktokUrl = '#') {
+      $(`#${sectionId}`).prepend(`
+      <div class="container">
+        <div class="insta-row">
+          <div class="insta_url">
+            <a href="${instagramUrl}" target="_blank">Instagram</a>
+          </div>
+          <div class="insta_id font-palmdale">${instagramId}</div>
+          <div class="tiktok_url">
+            <a href="${tiktokUrl}" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+      `);
+
       const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
       if (pcWidth) {
         $(`#${sectionId} .fluid-carousel .gallery-carousel__item`).css('width', pcWidth / item);
-        $(window).resize();
+        setTimeout(function () {
+          $(window).trigger('resize');
+        }, 700);
       }
 
       $(window).on('resize', function () {
@@ -430,7 +446,7 @@
       </div>
       `);
 
-      fixInstagramSliderWidth('SyVAwP', 3);
+      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', '#', '#');
 
       // ===================================
       // ==== Inner page (Woldy Kusina) ====
@@ -448,19 +464,19 @@
       </a>
       `);
 
-      $('#qinWeQ').prepend(`
+      $('#mOPZLD').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#pNoduI').prepend(`
+      $('#igDyLN').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#pNoduI').append(`
+      $('#igDyLN').append(`
       <div class="container">
         <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
