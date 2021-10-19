@@ -449,9 +449,8 @@
       fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', '#', '#');
 
       // ===================================
-      // ==== Inner page (Woldy Kusina) ====
+      // ============= Inner page ==========
       // ===================================
-
       $('#VsDiNU p').parent().append(`
       <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
         <span class="button-before-text font-palmdale">order now</span>
@@ -464,19 +463,67 @@
       </a>
       `);
 
-      $('#mOPZLD').prepend(`
+      $('#tihKAM p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">pickup & delivery</span>
+      </a>
+
+      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
+        <span>*Check our delivery zone</span>
+        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+      </a>
+      `);
+
+      $('#PbpxoT p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">pickup & delivery</span>
+      </a>
+
+      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
+        <span>*Check our delivery zone</span>
+        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+      </a>
+      `);
+
+      $('#NAhQMG p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">pickup & delivery</span>
+      </a>
+
+      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
+        <span>*Check our delivery zone</span>
+        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+      </a>
+      `);
+
+      $('#ABFtDp p').parent().append(`
+      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">pickup & delivery</span>
+      </a>
+
+      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
+        <span>*Check our delivery zone</span>
+        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+      </a>
+      `);
+
+      $('#mOPZLD, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#igDyLN').prepend(`
+      $('#igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#igDyLN').append(`
+      $('#igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
         <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -485,13 +532,13 @@
       </div>
       `);
 
-      $('#vrEVGZ').prepend(`
+      $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Woldy’s</span> must-haves</h2>
       </div>
       `);
 
-      $('#vrEVGZ').append(`
+      $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
       <div class="container">
         <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -501,14 +548,18 @@
       `);
 
       fixSliderWidth('vrEVGZ', 3);
+      fixSliderWidth('PamnJu', 3);
+      fixSliderWidth('rXWvKs', 3);
+      fixSliderWidth('GeUDAP', 3);
+      fixSliderWidth('GqYTxR', 3);
 
-      $('#TyGiHO').prepend(`
+      $('#TyGiHO, #BIUCWv, #muqkMH, #wlFgeE, #QtmjFN').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Waldy Kusina</h2>
       </div>
       `);
 
-      $('#TyGiHO').append(`
+      $('#TyGiHO, #BIUCWv, #muqkMH, #wlFgeE, #QtmjFN').append(`
       <div class="container">
         <div class="about-bio-text font-sharp-italic">
           Woldy Kusina is recognized as one of New York’s top caterers, featured in Goop and New York Magazine, with a noteworthy clientele that includes brands like 3.1 Phillip Lim, West Elm, Kosas, and Well+Good.
@@ -520,7 +571,17 @@
       </div>
       `);
 
+      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusine', '#', '#');
+      fixInstagramSliderWidth('BIUCWv', 3, '@woldykusine', '#', '#');
+      fixInstagramSliderWidth('vmeZgk', 3, '@woldykusine', '#', '#');
+      fixInstagramSliderWidth('ckxHBM', 3, '@woldykusine', '#', '#');
+      fixInstagramSliderWidth('DpKsPW', 3, '@woldykusine', '#', '#');
+
       fixNewsletterSection('lJTXrj');
+      fixNewsletterSection('MWwQxT');
+      fixNewsletterSection('yvjDQo');
+      fixNewsletterSection('LNSIjq');
+      fixNewsletterSection('iGjvPT');
 
       // View all page
       $('#qnYtAa').prepend(`
@@ -576,10 +637,12 @@
       $('.card.item-card .image .figure__aspect-ratio').append(`
         <button type="button" class="menu_item_button">
           Order Now
-        </button>
+        </button
       `);
 
       fixNewsletterSection('MZPidF');
+
+      fixInstagramSliderWidth('WgSjcG', 3, '@orderhungryhouse', '#', '#');
 
       // Goodies page
       $('#PHKkOX').prepend(`
@@ -590,6 +653,8 @@
 
       fixNewsletterSection('COwPVL');
 
+      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', '#', '#');
+
       // About Us
       $('#jdkwUD').append(`
       <div class="container">
@@ -598,6 +663,8 @@
         </div>
       </div>
       `);
+
+      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', '#', '#');
 
       $('#dtiazq').prepend(`
       <div class="container">
