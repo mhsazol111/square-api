@@ -178,6 +178,13 @@ button.nav-btn.cart-icon__wrap svg {
   top: -15px;
   border: 2px solid #000;
 }
+.fulfillment__button[data-v-ffaf0e58]:not(.is-disabled) {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 0px 3px 8px rgb(0 0 0 / 30%);
+}
 
 /* Footer */
 #JwucGZ > div[shortid='JwucGZ'] {
@@ -1150,6 +1157,11 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 #LoJjMB {
   padding: 75px 0 0;
 }
+
+/*=============================
+*====== Product Details =======
+*=============================*/
+
 
 /* Goodies */
 #mwTnFg {
