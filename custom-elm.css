@@ -1161,9 +1161,25 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 /*=============================
 *====== Product Details =======
 *=============================*/
+.w-cell.display-desktop.breadcrumb-align.row {
+  display: none;
+}
+button.📚5-4-0vQBWk.📚5-4-0tMshx.📚5-4-0aYEm0.📚5-4-0_N8aS.📚5-4-0u2Q6y {
+  background-color: #fff !important;
+  border: 2px solid #000;
+}
+button.📚5-4-0vQBWk.📚5-4-0tMshx.📚5-4-0aYEm0.📚5-4-0_N8aS.📚5-4-0u2Q6y:disabled {
+  opacity: .3;
+}
+.product-gallery .carousel__container[data-v-d015290e] {
+  border: 3px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+}
 
-
-/* Goodies */
+/*=============================
+*=========== Goodies ==========
+*=============================*/
 #mwTnFg {
   padding: 0;
 }

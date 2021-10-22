@@ -45,7 +45,9 @@
         `);
 
         // window.location.reload();
-        window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
+        // window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
+        window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
+      window.location.lasthash.pop();
 
         return pushState.apply(history, arguments);
       };
@@ -58,7 +60,9 @@
         <div class="loader"></div>
       </div>`);
       // window.location.reload();
-      window.location.href = e.target.location.href;
+      // window.location.href = e.target.location.href;
+      window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
+      window.location.lasthash.pop();
     };
 
     function fixSliderWidth(sectionId, item) {
