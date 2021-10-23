@@ -92,7 +92,7 @@
           </div>
           <div class="insta_id font-palmdale">${instagramId}</div>
           <div class="tiktok_url">
-            <a href="${tiktokUrl}" target="_blank">Instagram</a>
+            <a href="${tiktokUrl}" target="_blank">Tiktok</a>
           </div>
         </div>
       </div>
@@ -188,9 +188,9 @@
             </div>
             <div class="footer-right-menu">
               <div>
-                <a href="/goodies">About Us</a>
-                <a href="#">Our mission</a>
-                <a href="#">FAQs</a>
+                <a href="https://orderhungryhouse.square.site/about-us">About Us</a>
+                <a href="https://orderhungryhouse.square.site/about-us">Our mission</a>
+                <a href="https://orderhungryhouse.square.site/faqs">FAQs</a>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@
               </a>
             </div>
             <div class="">
-              <a href="#">Text Us</a>
+              <a href="https://orderhungryhouse.square.site/text-us">Text Us</a>
             </div>
           </div>
         </div>
@@ -242,7 +242,7 @@
       <nav class="menu">
         <div class="menu__item">
           <div class="container" data-id="woldy-thumb">
-            <a class="menu__item-link" href="/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -269,7 +269,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="apocalypse-thumb">
-            <a class="menu__item-link" href="/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -296,7 +296,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="sermon-thumb">
-            <a class="menu__item-link" href="/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -323,7 +323,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="house-thumb">
-            <a class="menu__item-link" href="/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -350,7 +350,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="good-thumb">
-            <a class="menu__item-link" href="/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -382,7 +382,7 @@
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-green.svg" alt="Live in Brooklyn!">
             <span class="font-palmdale">Live in Brooklyn!</span>
           </div>
-          <a href="/view-all" class="regular-line-button view-full-menu font-sharp">
+          <a href="https://orderhungryhouse.square.site/view-all" class="regular-line-button view-full-menu font-sharp">
             <span>View Full Menu</span>
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu" />
           </a>
@@ -402,7 +402,7 @@
       });
 
       $('#XcvNOf .text-component p').parent().append(`
-      <a href="/" class="button_with_hover">
+      <a href="https://orderhungryhouse.square.site/about-us" class="button_with_hover">
         <span class="button-before-text font-palmdale">pretty sweet right?</span>
         <span class="button-after-text font-sharp">learn more about why we do what we do</span>
       </a>
@@ -425,7 +425,7 @@
 
       $('#Bjopvb').append(`
       <div class="container">
-        <a href="/" class="button_with_hover button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -443,7 +443,7 @@
 
       $('#hSRIav').append(`
       <div class="container">
-        <a href="/" class="button_with_hover button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -529,7 +529,7 @@
 
       $('#igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
-        <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -544,7 +544,7 @@
 
       $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
       <div class="container">
-        <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
+        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
           <span class="button-before-text font-palmdale">can’t decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
