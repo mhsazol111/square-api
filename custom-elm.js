@@ -425,7 +425,7 @@
 
       $('#Bjopvb').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -443,7 +443,7 @@
 
       $('#hSRIav').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -529,7 +529,7 @@
 
       $('#igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -544,7 +544,7 @@
 
       $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/the-lineup" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
+        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
           <span class="button-before-text font-palmdale">can’t decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
