@@ -1,3 +1,14 @@
+// Reload the page if jQuery is not loaded.
+window.onload = function () {
+  if (window.jQuery) {
+    // jQuery is loaded
+    console.log('jQuery Loaded');
+  } else {
+    // jQuery is not loaded
+    window.location.reload();
+  }
+};
+
 (function ($) {
   function addCustomCssToSite(cssId, url) {
     if (!document.getElementById(cssId)) {
@@ -47,7 +58,7 @@
         // window.location.reload();
         // window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
         window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-      window.location.lasthash.pop();
+        window.location.lasthash.pop();
 
         return pushState.apply(history, arguments);
       };
@@ -269,7 +280,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="apocalypse-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean inspired</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean-inspired</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -296,7 +307,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="sermon-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers to die for</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers & spite snacks</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -323,7 +334,7 @@
         </div>
         <div class="menu__item">
           <div class="container" data-id="house-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">your everydays</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">from the kitchen</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -559,14 +570,14 @@
 
       $('#TyGiHO, #BIUCWv, #muqkMH, #wlFgeE, #QtmjFN').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Waldy Kusina</h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Woldy Kusina</h2>
       </div>
       `);
 
       $('#TyGiHO, #BIUCWv, #muqkMH, #wlFgeE, #QtmjFN').append(`
       <div class="container">
         <div class="about-bio-text font-sharp-italic">
-          Woldy Kusina is recognized as one of New York’s top caterers, featured in Goop and New York Magazine, with a noteworthy clientele that includes brands like 3.1 Phillip Lim, West Elm, Kosas, and Well+Good.
+          Woldy Reyes is a Chef and Founder of the boutique catering company, Woldy Kusina, based in Brooklyn, New York. Woldy Kusina’s cuisine is centered around a simple philosophy — to provide good food and good experiences, with sustainability and culture at the heart of it all. As a first-generation Filipino American, Reyes effortlessly infuses contemporary dishes with vibrant flavors and colors that are inspired by his Filipino roots. His menus are best described as fresh, natural and fulfilling.
         </div>
         <a href="/" class="button_with_hover button_with_hover_medium">
           <span class="button-before-text font-palmdale">want to know more?</span>
@@ -575,11 +586,11 @@
       </div>
       `);
 
-      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusine', '#', '#');
-      fixInstagramSliderWidth('BIUCWv', 3, '@woldykusine', '#', '#');
-      fixInstagramSliderWidth('vmeZgk', 3, '@woldykusine', '#', '#');
-      fixInstagramSliderWidth('ckxHBM', 3, '@woldykusine', '#', '#');
-      fixInstagramSliderWidth('DpKsPW', 3, '@woldykusine', '#', '#');
+      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', 'X');
+      fixInstagramSliderWidth('RjsBSE', 3, '@woldykusina', '#', '#');
+      fixInstagramSliderWidth('vmeZgk', 3, '@woldykusina', '#', '#');
+      fixInstagramSliderWidth('ckxHBM', 3, '@woldykusina', '#', '#');
+      fixInstagramSliderWidth('DpKsPW', 3, '@woldykusina', '#', '#');
 
       fixNewsletterSection('lJTXrj');
       fixNewsletterSection('MWwQxT');
@@ -600,7 +611,7 @@
 
       $('#MlUWwE').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">The Food Sermon</span> caribbean inspired</h2>
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">The Food Sermon</span> caribbean-inspired</h2>
         <a href="https://orderhungryhouse.square.site/apocalypse-burger" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
           <span>Learn more</span>
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
@@ -610,7 +621,7 @@
 
       $('#sdRhmA').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">Apocalypse Burger</span> burgers to die for</h2>
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">Apocalypse Burger</span> burgers & spite snacks</h2>
         <a href="https://orderhungryhouse.square.site/the-food-sermon" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
           <span>Learn more</span>
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
@@ -620,7 +631,7 @@
 
       $('#bLdkpf').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">House Specials</span> your everydays</h2>
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">House Specials</span> from the kitchen</h2>
         <a href="https://orderhungryhouse.square.site/house-specials" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
           <span>Learn more</span>
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
@@ -636,12 +647,6 @@
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
         </a>
       </div>
-      `);
-
-      $('.card.item-card .image .figure__aspect-ratio').append(`
-        <button type="button" class="menu_item_button">
-          Order Now
-        </button
       `);
 
       fixNewsletterSection('MZPidF');
@@ -686,26 +691,9 @@
       </div>
       `);
 
-      $('#woPJFK .text-component p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
-        <span class="button-before-text font-palmdale">learn more</span>
-        <span class="button-after-text font-sharp">visit Smallhold</span>
-      </a>
-      `);
-
-      $('#EtPBUy .text-component p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
-        <span class="button-before-text font-palmdale">learn more</span>
-        <span class="button-after-text font-sharp">visit Smallhold</span>
-      </a>
-      `);
-
-      $('#zROXtU .text-component p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
-        <span class="button-before-text font-palmdale">learn more</span>
-        <span class="button-after-text font-sharp">visit Smallhold</span>
-      </a>
-      `);
+      addButtonToImageTextSection('woPJFK', '#', 'visit Smallhold');
+      addButtonToImageTextSection('EtPBUy', '#', 'visit Smallhold');
+      addButtonToImageTextSection('zROXtU', '#', 'visit Smallhold');
 
       $('#kUyoZa form .w-button').html(`
       <div class="button_with_hover button_with_hover_medium">
@@ -728,6 +716,104 @@
         </a>
       </div>
       `);
-    }, 1000);
+
+      // FAQ page
+      $('#LXATQZ').append(`
+      <div class="container">
+        <h1>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-yellow.svg" alt="FAQs" />
+          <span>FAQs</span>
+        </h1>
+      </div>
+      `);
+
+      $('#BNDACL').append(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">orders</span></h2>
+        <div class="faq-section">
+          <div class="faq-row">
+            <h3 class="faq-question">I need to change my order!</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">How do I track my package?</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">My package is missing!</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">What should I do if I received the wrong product or if something is damaged?</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">Can I order without creating an account?</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $('#DkFilf').append(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">delivery</span></h2>
+        <div class="faq-section">
+          <div class="faq-row">
+            <h3 class="faq-question">Where do you guys delivery?</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">Do you offer free delivery?</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">How long will it take for my order to arrive?</h3>
+            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $('body').on('click', '.faq-question', function () {
+        $(this).parent('.faq-row').toggleClass('active');
+        $(this).next('.faq-answer').slideToggle();
+      });
+
+      $('#Dxmztl').append(`
+      <div class="container">
+        <p>If you have more questions send us an email at hello@orderhungryhouse.com and we’ll get back to you ASAP.</p>
+        <a href="/" class="button_with_hover button_with_hover">
+          <span class="button-before-text font-palmdale">ready?</span>
+          <span class="button-after-text font-sharp">Get in touch</span>
+        </a>
+      </div>
+      `);
+    }, 2500);
+
+    setTimeout(function () {
+      $('.card.item-card .image .figure__aspect-ratio').append(`
+        <button type="button" class="menu_item_button">
+          Order Now
+        </button
+      `);
+
+      if ($('.menu_item_button').length < 1) {
+        $('.card.item-card .image .figure__aspect-ratio').append(`
+        <button type="button" class="menu_item_button">
+          Order Now
+        </button
+      `);
+      }
+
+      if ($('.action-button__button .button_with_hover').length) {
+        $('.action-button__button').html(`
+        <div class="button_with_hover button_with_hover_medium">
+          <span class="button-before-text font-palmdale">ready?</span>
+          <span class="button-after-text font-sharp">submit</span>
+        </div>
+        `);
+      }
+    }, 4000);
   });
 })(jQuery);

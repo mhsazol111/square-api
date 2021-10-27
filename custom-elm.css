@@ -115,7 +115,12 @@
   }
 }
 
-/* Header */
+/* ==========================
+========== Header ===========
+========================== */
+#lhxJBG > .w-block-header > .w-block-background {
+  background-color: #ffd589 !important;
+}
 .nav--desktop ul li a[data-v-377bce9f],
 .square__navigation-desktop_desktopNav--ZEnDx .square__navigation-desktop_subnavDropdown--3onPj li a {
   font-size: 24px;
@@ -183,15 +188,17 @@ button.nav-btn.cart-icon__wrap svg {
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 15px;
-  box-shadow: 0px 3px 8px rgb(0 0 0 / 30%);
+  /* box-shadow: 0px 3px 8px rgb(0 0 0 / 30%); */
 }
 
-/* Footer */
+/* ==========================
+=========== Footer ==========
+========================== */
 #JwucGZ > div[shortid='JwucGZ'] {
   display: none;
 }
 .main-footer {
-  background-color: #fecb70;
+  background-color: #fbd589;
 }
 .footer-menu {
   display: flex;
@@ -561,6 +568,9 @@ div[data-block-purpose='newsletter@^1.2.1'] .sq_section_heading {
   font-size: 32px;
   line-height: 48px;
   font-family: 'SharpGroteskMediumItalic', sans-serif !important;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 .recaptcha-terms {
   display: none !important;
@@ -648,7 +658,7 @@ div[data-block-purpose='gallery@^1.1.2'] .insta-row .insta_url a::before {
 ========= Home page =========
 ========================== */
 #dNjJIL {
-  padding: 90px 0 100px;
+  padding: 40px 0 90px;
 }
 div#\31 a177201-2c51-11ec-a533-2114c163d007 {
   display: none;
@@ -920,6 +930,14 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 #ABFtDp .regular-line-button {
   font-size: 14px;
   color: #000;
+}
+#VsDiNU .regular-line-button img,
+#tihKAM .regular-line-button img,
+#PbpxoT .regular-line-button img,
+#NAhQMG .regular-line-button img,
+#ABFtDp .regular-line-button img {
+  width: 17px;
+  top: 7px;
 }
 #mOPZLD,
 #izPJVI,
@@ -1360,4 +1378,72 @@ button.📚5-4-0vQBWk.📚5-4-0tMshx.📚5-4-0aYEm0.📚5-4-0_N8aS.📚5-4-0u2Q6
 }
 #SAVlXv .sq_section_heading {
   margin-bottom: 0;
+}
+
+/*=============================
+*=========== Goodies ==========
+*=============================*/
+#LXATQZ {
+  padding: 180px 0 100px;
+}
+#LXATQZ h1 {
+  position: relative;
+  font-size: 56px;
+  z-index: 1;
+}
+#LXATQZ img {
+  position: absolute;
+  left: -80px;
+  top: -60px;
+  width: 175px;
+  z-index: -1;
+}
+#DkFilf {
+  padding-bottom: 100px;
+}
+#BNDACL .sq_section_heading,
+#DkFilf .sq_section_heading {
+  margin-bottom: 60px;
+}
+div#\36 87723c1-344c-11ec-ac65-331c31b1be70,
+div#\33 e831680-35d4-11ec-b1dd-7d918421ee08 {
+  display: none;
+}
+.faq-row {
+  margin-bottom: 45px;
+}
+.faq-question {
+  font-size: 24px;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.faq-question::before {
+  position: absolute;
+  content: '+';
+  right: 0;
+  top: 20%;
+  transform: rotate(0);
+  transition: all 0.3s ease-in-out;
+}
+.faq-answer {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-top: 40px;
+  display: none;
+}
+.faq-row.active .faq-question::before {
+  transform: rotate(45deg);
+}
+#Dxmztl {
+  background-color: #ffedea;
+  padding: 190px 0 100px;
+}
+div#\39 c9c8040-35ce-11ec-b1dd-7d918421ee08 {
+  display: none;
+}
+#Dxmztl p {
+  font-size: 32px;
+  line-height: 1.5;
+  padding-bottom: 50px;
 }
