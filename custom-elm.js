@@ -143,24 +143,24 @@ window.onload = function () {
 
       $(`#${sectionId}`).prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp">Subscribe now to receive the newsletter and SMS with updates about our lineup, giveaways, recipes, and more.</h2>
+        <h2 class="sq_section_heading font-sharp">Subscribe now to receive updates about our lineup, giveaways, recipes, and more.</h2>
       </div>
       `);
 
       $(`#${sectionId}`).append(`
       <div class="container">
-        <p class="sq_contact_disclaimer">By clicking SUBMIT, you agree to receive marketing text messages from Hungry House at the number provided. Consent is not condition of any purchase. Messages and data rate may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View Terms & Privacy Policy.</p>
+        <p class="sq_contact_disclaimer">By clicking SUBMIT, you agree to receive marketing communications from Hungry House.</p>
       </div>
       `);
     }
 
-    function addButtonToImageTextSection(sectionId, url, buttonText) {
+    function addButtonToImageTextSection(sectionId, url) {
       $(`#${sectionId}`).addClass('image_text_section');
 
       $(`#${sectionId} .text-component p`).parent().append(`
       <a href="${url}" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
-        <span class="button-before-text font-palmdale">learn more</span>
-        <span class="button-after-text font-sharp">${buttonText}</span>
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">and learn more</span>
       </a>
       `);
     }
@@ -207,7 +207,7 @@ window.onload = function () {
           </div>
           <div class="footer-social-wrapper">
             <div>
-              <a href="#" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
+              <a href="https://www.instagram.com/orderhungryhouse/" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
             </div>
             <div class="insta-ticktock">
               <a href="#" class="has-flash-bg">
@@ -428,11 +428,11 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('jpVBdt', 'https://orderhungryhouse.square.site/woldy-kusina', 'about Woldy Kusina');
-      addButtonToImageTextSection('qPvofj', 'https://orderhungryhouse.square.site/apocalypse-burger', 'about The Food Sermon');
-      addButtonToImageTextSection('iYEedf', 'https://orderhungryhouse.square.site/the-food-sermon', 'about Apocalypse Burger');
-      addButtonToImageTextSection('mpRzHZ', 'https://orderhungryhouse.square.site/house-specials', 'about House Specials');
-      addButtonToImageTextSection('Bjopvb', 'https://orderhungryhouse.square.site/the-goods-mart', 'about The Goods Mart');
+      addButtonToImageTextSection('jpVBdt', 'https://orderhungryhouse.square.site/woldy-kusina');
+      addButtonToImageTextSection('qPvofj', 'https://orderhungryhouse.square.site/apocalypse-burger');
+      addButtonToImageTextSection('iYEedf', 'https://orderhungryhouse.square.site/the-food-sermon');
+      addButtonToImageTextSection('mpRzHZ', 'https://orderhungryhouse.square.site/house-specials');
+      addButtonToImageTextSection('Bjopvb', 'https://orderhungryhouse.square.site/the-goods-mart');
 
       $('#Bjopvb').append(`
       <div class="container">
@@ -461,7 +461,7 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', '#', '#');
+      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
       // ===================================
       // ============= Inner page ==========
