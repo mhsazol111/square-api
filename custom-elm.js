@@ -691,6 +691,7 @@ window.onload = function () {
       </div>
       `);
 
+      
       $('#BNDACL').append(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">orders</span></h2>
