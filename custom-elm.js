@@ -143,25 +143,81 @@ window.onload = function () {
 
       $(`#${sectionId}`).prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp">Subscribe now to receive the newsletter and SMS with updates about our lineup, giveaways, recipes, and more.</h2>
+        <h2 class="sq_section_heading font-sharp">Subscribe now to receive updates about our lineup, giveaways, recipes, and more.</h2>
       </div>
       `);
 
       $(`#${sectionId}`).append(`
       <div class="container">
-        <p class="sq_contact_disclaimer">By clicking SUBMIT, you agree to receive marketing text messages from Hungry House at the number provided. Consent is not condition of any purchase. Messages and data rate may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View Terms & Privacy Policy.</p>
+        <p class="sq_contact_disclaimer">By clicking SUBMIT, you agree to receive marketing communications from Hungry House.</p>
       </div>
       `);
     }
 
-    function addButtonToImageTextSection(sectionId, url, buttonText) {
+    function addButtonToImageTextSection(sectionId, url) {
       $(`#${sectionId}`).addClass('image_text_section');
 
       $(`#${sectionId} .text-component p`).parent().append(`
       <a href="${url}" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
-        <span class="button-before-text font-palmdale">learn more</span>
-        <span class="button-after-text font-sharp">${buttonText}</span>
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">and learn more</span>
       </a>
+      `);
+    }
+
+    function primaryBannerContent(sectionId, url = '#') {
+      $(`#${sectionId} p`).parent().append(`
+      <a href="${url}" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+        <span class="button-before-text font-palmdale">order now</span>
+        <span class="button-after-text font-sharp">pickup & delivery</span>
+      </a>
+
+      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
+        <span>*Check our delivery zone</span>
+        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+      </a>
+      `);
+    }
+
+    function addMustHaveTitle(sectionId, name) {
+      $(`#${sectionId}`).prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">${name}</span> must-haves</h2>
+      </div>
+      `);
+    }
+
+    function addAboutSliderTitle(sectionId, name) {
+      $(`#${sectionId}`).prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> ${name}</h2>
+      </div>
+      `);
+    }
+
+    function addAboutSliderDetails(sectionId, details) {
+      $(`#${sectionId}`).append(`
+      <div class="container">
+        <div class="about-bio-text font-sharp-italic">
+          ${details}
+        </div>
+        <a href="/" class="button_with_hover button_with_hover_medium">
+          <span class="button-before-text font-palmdale">want to know more?</span>
+          <span class="button-after-text font-sharp">read the interview</span>
+        </a>
+      </div>
+      `);
+    }
+
+    function viewAllSectionTitle(sectionId, name, tagline, url = '#') {
+      $(`#${sectionId}`).prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">${name}</span> ${tagline}</h2>
+        <a href="${url}" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+          <span>Learn more</span>
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+        </a>
+      </div>
       `);
     }
 
@@ -207,7 +263,7 @@ window.onload = function () {
           </div>
           <div class="footer-social-wrapper">
             <div>
-              <a href="#" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
+              <a href="https://www.instagram.com/orderhungryhouse/" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
             </div>
             <div class="insta-ticktock">
               <a href="#" class="has-flash-bg">
@@ -428,11 +484,11 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('jpVBdt', 'https://orderhungryhouse.square.site/woldy-kusina', 'about Woldy Kusina');
-      addButtonToImageTextSection('qPvofj', 'https://orderhungryhouse.square.site/apocalypse-burger', 'about The Food Sermon');
-      addButtonToImageTextSection('iYEedf', 'https://orderhungryhouse.square.site/the-food-sermon', 'about Apocalypse Burger');
-      addButtonToImageTextSection('mpRzHZ', 'https://orderhungryhouse.square.site/house-specials', 'about House Specials');
-      addButtonToImageTextSection('Bjopvb', 'https://orderhungryhouse.square.site/the-goods-mart', 'about The Goods Mart');
+      addButtonToImageTextSection('jpVBdt', 'https://orderhungryhouse.square.site/woldy-kusina');
+      addButtonToImageTextSection('qPvofj', 'https://orderhungryhouse.square.site/apocalypse-burger');
+      addButtonToImageTextSection('iYEedf', 'https://orderhungryhouse.square.site/the-food-sermon');
+      addButtonToImageTextSection('mpRzHZ', 'https://orderhungryhouse.square.site/house-specials');
+      addButtonToImageTextSection('Bjopvb', 'https://orderhungryhouse.square.site/the-goods-mart');
 
       $('#Bjopvb').append(`
       <div class="container">
@@ -461,70 +517,68 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', '#', '#');
+      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
-      // ===================================
-      // ============= Inner page ==========
-      // ===================================
-      $('#VsDiNU p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
-        <span class="button-before-text font-palmdale">order now</span>
-        <span class="button-after-text font-sharp">pickup & delivery</span>
-      </a>
+      /*===================================
+        ============= Inner pages =========
+        =================================*/
 
-      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
-        <span>*Check our delivery zone</span>
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-      </a>
-      `);
+      // Woldy Kusina
+      primaryBannerContent('VsDiNU');
+      addMustHaveTitle('vrEVGZ', `Woldy’s`);
+      fixSliderWidth('vrEVGZ', 3);
+      addAboutSliderTitle('TyGiHO', `Woldy Kusina`);
+      addAboutSliderDetails(
+        'TyGiHO',
+        `Woldy Reyes is a Chef and Founder of the boutique catering company, Woldy Kusina, based in Brooklyn, New York. Woldy Kusina’s cuisine is centered around a simple philosophy — to provide good food and good experiences, with sustainability and culture at the heart of it all. As a first-generation Filipino American, Reyes effortlessly infuses contemporary dishes with vibrant flavors and colors that are inspired by his Filipino roots. His menus are best described as fresh, natural and fulfilling.`
+      );
+      fixNewsletterSection('lJTXrj');
+      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', '#');
 
-      $('#tihKAM p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
-        <span class="button-before-text font-palmdale">order now</span>
-        <span class="button-after-text font-sharp">pickup & delivery</span>
-      </a>
+      // The Food Sermon
+      primaryBannerContent('PbpxoT');
+      addMustHaveTitle('rXWvKs', `Rawlston’s`);
+      fixSliderWidth('rXWvKs', 3);
+      addAboutSliderTitle('muqkMH', `Rawlston Williams`);
+      addAboutSliderDetails(
+        'muqkMH',
+        `After immigrating to New York at ten years old and living in the East Flatbush neighborhood of Brooklyn, Chef Williams studied theology at Oakwood University in Alabama, a private university operated by the Seventh-day Adventist Church. While faith still plays a large role in his life, he found his true calling in the kitchen. After graduating from New York’s famed French Culinary Institute (now the International Culinary Center) Williams opened the first Food Sermon location in 2015. Originally intended to be a small outpost for his catering business, the pint-sized restaurant quickly attracted loyal neighborhood fans, soon drawing the attention of food critics (The New York Times’ praised Williams’ “extraordinary brightness of flavors.”)`
+      );
+      fixNewsletterSection('yvjDQo');
+      fixInstagramSliderWidth('vmeZgk', 3, '@iamrawlston', 'https://www.instagram.com/iamrawlston/', '#');
 
-      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
-        <span>*Check our delivery zone</span>
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-      </a>
-      `);
+      // Apocalypse Burger
+      primaryBannerContent('tihKAM');
+      addMustHaveTitle('PamnJu', `Martha’s`);
+      fixSliderWidth('PamnJu', 3);
+      addAboutSliderTitle('BIUCWv', `Martha Hoover`);
+      addAboutSliderDetails(
+        'BIUCWv',
+        `Martha Hoover owns a successful collection of restaurants in Indianapolis, Indiana —Cafés Patachou, Petite Chou Bistro & Champagne Bar, Napolese Pizzeria, Public Greens, Apocalypse Burger and Bar One Fourteen. Founded in 1989, Hoover used premium ingredients, prepared from scratch, and partnered with local vendors and farmers — years before the phrase “farm to table” was first uttered.`
+      );
+      fixNewsletterSection('MWwQxT');
+      fixInstagramSliderWidth('RjsBSE', 3, '@apocalypseburger', 'https://www.instagram.com/apocalypseburger/', '#');
 
-      $('#PbpxoT p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
-        <span class="button-before-text font-palmdale">order now</span>
-        <span class="button-after-text font-sharp">pickup & delivery</span>
-      </a>
+      // House Specials
+      primaryBannerContent('NAhQMG');
+      addMustHaveTitle('GeUDAP', `Hungry House`);
+      fixSliderWidth('GeUDAP', 3);
+      addAboutSliderTitle('wlFgeE', `the team`);
+      addAboutSliderDetails('wlFgeE', ``);
+      fixNewsletterSection('LNSIjq');
+      fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
-      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
-        <span>*Check our delivery zone</span>
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-      </a>
-      `);
-
-      $('#NAhQMG p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
-        <span class="button-before-text font-palmdale">order now</span>
-        <span class="button-after-text font-sharp">pickup & delivery</span>
-      </a>
-
-      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
-        <span>*Check our delivery zone</span>
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-      </a>
-      `);
-
-      $('#ABFtDp p').parent().append(`
-      <a href="/" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
-        <span class="button-before-text font-palmdale">order now</span>
-        <span class="button-after-text font-sharp">pickup & delivery</span>
-      </a>
-
-      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
-        <span>*Check our delivery zone</span>
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-      </a>
-      `);
+      // The Goods Mart
+      primaryBannerContent('ABFtDp');
+      addMustHaveTitle('GqYTxR', `Rachel’s`);
+      fixSliderWidth('GqYTxR', 3);
+      addAboutSliderTitle('QtmjFN', `The Goods Mart`);
+      addAboutSliderDetails(
+        'QtmjFN',
+        `The Goods Mart vets products to find those that not only taste great, but also do right by sourcing quality ingredients and upholding ethical standards across the board. The Goods Mart has made the experience of buying healthier, socially conscious, and environmentally friendly products easier, more enjoyable, and more accessible.`
+      );
+      fixNewsletterSection('iGjvPT');
+      fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', '#');
 
       $('#mOPZLD, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
@@ -547,12 +601,6 @@ window.onload = function () {
       </div>
       `);
 
-      $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Woldy’s</span> must-haves</h2>
-      </div>
-      `);
-
       $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
       <div class="container">
         <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
@@ -562,123 +610,39 @@ window.onload = function () {
       </div>
       `);
 
-      fixSliderWidth('vrEVGZ', 3);
-      fixSliderWidth('PamnJu', 3);
-      fixSliderWidth('rXWvKs', 3);
-      fixSliderWidth('GeUDAP', 3);
-      fixSliderWidth('GqYTxR', 3);
-
-      $('#TyGiHO, #BIUCWv, #muqkMH, #wlFgeE, #QtmjFN').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">about</span> Woldy Kusina</h2>
-      </div>
-      `);
-
-      $('#TyGiHO, #BIUCWv, #muqkMH, #wlFgeE, #QtmjFN').append(`
-      <div class="container">
-        <div class="about-bio-text font-sharp-italic">
-          Woldy Reyes is a Chef and Founder of the boutique catering company, Woldy Kusina, based in Brooklyn, New York. Woldy Kusina’s cuisine is centered around a simple philosophy — to provide good food and good experiences, with sustainability and culture at the heart of it all. As a first-generation Filipino American, Reyes effortlessly infuses contemporary dishes with vibrant flavors and colors that are inspired by his Filipino roots. His menus are best described as fresh, natural and fulfilling.
-        </div>
-        <a href="/" class="button_with_hover button_with_hover_medium">
-          <span class="button-before-text font-palmdale">want to know more?</span>
-          <span class="button-after-text font-sharp">read the interview</span>
-        </a>
-      </div>
-      `);
-
-      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', 'X');
-      fixInstagramSliderWidth('RjsBSE', 3, '@woldykusina', '#', '#');
-      fixInstagramSliderWidth('vmeZgk', 3, '@woldykusina', '#', '#');
-      fixInstagramSliderWidth('ckxHBM', 3, '@woldykusina', '#', '#');
-      fixInstagramSliderWidth('DpKsPW', 3, '@woldykusina', '#', '#');
-
-      fixNewsletterSection('lJTXrj');
-      fixNewsletterSection('MWwQxT');
-      fixNewsletterSection('yvjDQo');
-      fixNewsletterSection('LNSIjq');
-      fixNewsletterSection('iGjvPT');
-
       // View all page
-      $('#qnYtAa').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">Woldy Kusina</span> modern filipino</h2>
-        <a href="https://orderhungryhouse.square.site/woldy-kusina" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
-          <span>Learn more</span>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
-        </a>
-      </div>
-      `);
-
-      $('#MlUWwE').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">The Food Sermon</span> caribbean-inspired</h2>
-        <a href="https://orderhungryhouse.square.site/apocalypse-burger" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
-          <span>Learn more</span>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
-        </a>
-      </div>
-      `);
-
-      $('#sdRhmA').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">Apocalypse Burger</span> burgers & spite snacks</h2>
-        <a href="https://orderhungryhouse.square.site/the-food-sermon" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
-          <span>Learn more</span>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
-        </a>
-      </div>
-      `);
-
-      $('#bLdkpf').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">House Specials</span> from the kitchen</h2>
-        <a href="https://orderhungryhouse.square.site/house-specials" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
-          <span>Learn more</span>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
-        </a>
-      </div>
-      `);
-
-      $('#LoJjMB').prepend(`
-      <div class="container">
-        <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">The Goods Mart</span> snacks & drinks</h2>
-        <a href="https://orderhungryhouse.square.site/the-goods-mart" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
-          <span>Learn more</span>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
-        </a>
-      </div>
-      `);
-
+      viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
+      viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
+      viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'burgers & spite snacks', 'https://orderhungryhouse.square.site/apocalypse-burger');
+      viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.square.site/house-specials');
+      viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.square.site/the-goods-mart');
       fixNewsletterSection('MZPidF');
-
-      fixInstagramSliderWidth('WgSjcG', 3, '@orderhungryhouse', '#', '#');
+      fixInstagramSliderWidth('WgSjcG', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
       // Goodies page
       $('#PHKkOX').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">daily</span> must-haves</h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">our</span> must-haves</h2>
       </div>
       `);
-
       fixNewsletterSection('COwPVL');
-
-      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', '#', '#');
+      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
       // About Us
       $('#jdkwUD').append(`
       <div class="container">
         <div class="about-header">
-          <h2 class="sq_about_heading font-sharp">Welcome to Hungry House, a place for those <span class="font-palmdale">always hungry, always fresh.</span></h2>
+          <h2 class="sq_about_heading font-sharp">We’re Hungry House, where those who are <span class="font-palmdale">hungry</span> find what’s <span class="font-palmdale">fresh</span></h2>
         </div>
       </div>
       `);
 
-      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', '#', '#');
+      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
       $('#dtiazq').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">our</span> locations</h2>
-        <p class="font-sharp-italic sq_section_sub_heading">Hungry House is currently operating from the Navy Yard, delivering within a 2 mile radios in Brooklyn, NYC.</p>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">where</span> to find us</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">You can find Hungry House at Building 77 in the Navy Yard, or order for delivery within a 2 mile radius in Brooklyn.</p>
       </div>
       `);
 
@@ -691,9 +655,9 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('woPJFK', '#', 'visit Smallhold');
-      addButtonToImageTextSection('EtPBUy', '#', 'visit Smallhold');
-      addButtonToImageTextSection('zROXtU', '#', 'visit Smallhold');
+      addButtonToImageTextSection('woPJFK', 'https://orderhungryhouse.square.site/view-all');
+      addButtonToImageTextSection('EtPBUy', 'https://orderhungryhouse.square.site/view-all');
+      addButtonToImageTextSection('zROXtU', 'https://orderhungryhouse.square.site/view-all');
 
       $('#kUyoZa form .w-button').html(`
       <div class="button_with_hover button_with_hover_medium">
