@@ -56,9 +56,9 @@ window.onload = function () {
         `);
 
         // window.location.reload();
-        // window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
-        window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-        window.location.lasthash.pop();
+        window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
+        // window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
+        // window.location.lasthash.pop();
 
         return pushState.apply(history, arguments);
       };
@@ -71,9 +71,9 @@ window.onload = function () {
         <div class="loader"></div>
       </div>`);
       // window.location.reload();
-      // window.location.href = e.target.location.href;
-      window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-      window.location.lasthash.pop();
+      window.location.href = e.target.location.href;
+      // window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
+      // window.location.lasthash.pop();
     };
 
     function fixSliderWidth(sectionId, item) {
@@ -240,10 +240,10 @@ window.onload = function () {
               <div>
                 <a href="/woldy-kusina">Woldy Kusina</a>
                 <a href="/apocalypse-burger">The Food Sermon</a>
-                <a href="/the-food-sermon">Apocalypse Burger</a>
+                <a href="/house-specials">House Specials</a>
               </div>
               <div>
-                <a href="/house-specials">House Specials</a>
+                <a href="/the-food-sermon">Apocalypse Burger</a>
                 <a href="/the-goods-mart">The Goods Mart</a>
                 <a href="/view-all">Full Menu</a>
               </div>
@@ -256,7 +256,6 @@ window.onload = function () {
             <div class="footer-right-menu">
               <div>
                 <a href="https://orderhungryhouse.square.site/about-us">About Us</a>
-                <a href="https://orderhungryhouse.square.site/about-us">Our mission</a>
                 <a href="https://orderhungryhouse.square.site/faqs">FAQs</a>
               </div>
             </div>
@@ -274,10 +273,7 @@ window.onload = function () {
                 <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
                 <span>Tiktok</span>
               </a>
-            </div>
-            <div class="">
-              <a href="https://orderhungryhouse.square.site/text-us">Text Us</a>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
@@ -293,11 +289,11 @@ window.onload = function () {
         <div class="hover-thumb-wrapper" id="woldy-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
         </div>
-        <div class="hover-thumb-wrapper" id="apocalypse-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
-        </div>
         <div class="hover-thumb-wrapper" id="sermon-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/sermon-thumb.png" alt="sermon" />
+        </div>
+        <div class="hover-thumb-wrapper" id="apocalypse-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
         </div>
         <div class="hover-thumb-wrapper" id="house-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
@@ -335,8 +331,8 @@ window.onload = function () {
           </div>
         </div>
         <div class="menu__item">
-          <div class="container" data-id="apocalypse-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/apocalypse-burger"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean-inspired</span></a>
+          <div class="container" data-id="sermon-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-food-sermon"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean-inspired</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -362,8 +358,8 @@ window.onload = function () {
           </div>
         </div>
         <div class="menu__item">
-          <div class="container" data-id="sermon-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-food-sermon"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">burgers & spite snacks</span></a>
+          <div class="container" data-id="apocalypse-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/apocalypse-burger"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">spite snacks</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -564,7 +560,14 @@ window.onload = function () {
       addMustHaveTitle('GeUDAP', `Hungry House`);
       fixSliderWidth('GeUDAP', 3);
       addAboutSliderTitle('wlFgeE', `the team`);
-      addAboutSliderDetails('wlFgeE', ``);
+      $('#wlFgeE').append(`
+      <div class="container">
+        <a href="/" class="button_with_hover button_with_hover_medium">
+          <span class="button-before-text font-palmdale">sounds fun?</span>
+          <span class="button-after-text font-sharp">check out role openings</span>
+        </a>
+      </div>
+      `);
       fixNewsletterSection('LNSIjq');
       fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
 
@@ -613,7 +616,7 @@ window.onload = function () {
       // View all page
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
-      viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'burgers & spite snacks', 'https://orderhungryhouse.square.site/apocalypse-burger');
+      viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.square.site/apocalypse-burger');
       viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.square.site/house-specials');
       viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.square.site/the-goods-mart');
       fixNewsletterSection('MZPidF');
