@@ -39,42 +39,42 @@ window.onload = function () {
   $(document).ready(function () {
     // console.log('on ready script');
 
-    (function (history) {
-      var pushState = history.pushState;
-      history.pushState = function (state) {
-        if (typeof history.onpushstate == 'function') {
-          history.onpushstate({ state: state });
-        }
-        // whatever else you want to do
-        // maybe call onhashchange e.handler
-        // console.log('on function call', arguments);
+    // (function (history) {
+    //   var pushState = history.pushState;
+    //   history.pushState = function (state) {
+    //     if (typeof history.onpushstate == 'function') {
+    //       history.onpushstate({ state: state });
+    //     }
+    //     // whatever else you want to do
+    //     // maybe call onhashchange e.handler
+    //     // console.log('on function call', arguments);
 
-        $('body').append(`
-        <div class="loading-screen-wrapper">
-          <div class="loader"></div>
-        </div>
-        `);
+    //     $('body').append(`
+    //     <div class="loading-screen-wrapper">
+    //       <div class="loader"></div>
+    //     </div>
+    //     `);
 
-        // window.location.reload();
-        window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
-        // window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-        // window.location.lasthash.pop();
+    //     // window.location.reload();
+    //     // window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
+    //     window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
+    //     window.location.lasthash.pop();
 
-        return pushState.apply(history, arguments);
-      };
-    })(window.history);
+    //     return pushState.apply(history, arguments);
+    //   };
+    // })(window.history);
 
-    window.onpopstate = history.onpushstate = function (e) {
-      console.log('onpopstate', e);
-      $('body').append(`
-      <div class="loading-screen-wrapper">
-        <div class="loader"></div>
-      </div>`);
-      // window.location.reload();
-      window.location.href = e.target.location.href;
-      // window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-      // window.location.lasthash.pop();
-    };
+    // window.onpopstate = history.onpushstate = function (e) {
+    //   console.log('onpopstate', e);
+    //   $('body').append(`
+    //   <div class="loading-screen-wrapper">
+    //     <div class="loader"></div>
+    //   </div>`);
+    //   // window.location.reload();
+    //   // window.location.href = e.target.location.href;
+    //   window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
+    //   window.location.lasthash.pop();
+    // };
 
     function fixSliderWidth(sectionId, item) {
       const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
@@ -154,12 +154,12 @@ window.onload = function () {
       `);
     }
 
-    function addButtonToImageTextSection(sectionId, url) {
+    function addButtonToImageTextSection(sectionId, label = 'order now', url, target = '_self') {
       $(`#${sectionId}`).addClass('image_text_section');
 
       $(`#${sectionId} .text-component p`).parent().append(`
-      <a href="${url}" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
-        <span class="button-before-text font-palmdale">order now</span>
+      <a href="${url}" target="${target}" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+        <span class="button-before-text font-palmdale">${label}</span>
         <span class="button-after-text font-sharp">and learn more</span>
       </a>
       `);
@@ -172,7 +172,7 @@ window.onload = function () {
         <span class="button-after-text font-sharp">pickup & delivery</span>
       </a>
 
-      <a href="/view-all" class="regular-line-button border-on-hover font-sharp">
+      <a href="https://orderhungryhouse.square.site/about-us" class="regular-line-button border-on-hover font-sharp">
         <span>*Check our delivery zone</span>
         <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
       </a>
@@ -222,6 +222,20 @@ window.onload = function () {
     }
 
     setTimeout(() => {
+      $('body').on('click', 'a', function (e) {
+        e.preventDefault();
+        const url = $(this).attr('href');
+        const target = $(this).attr('target');
+        if (!url) {
+          return;
+        }
+        if (target === '_blank') {
+          window.open(url);
+        } else {
+          window.location.href = url;
+        }
+      });
+
       const headerCart = $('button.nav-btn.cart-icon__wrap');
       headerCart.prepend(`
         <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/bag.svg" alt="cart" class="sq-cart-icon" />
@@ -232,48 +246,39 @@ window.onload = function () {
       const newFooterSection = $(`
       <div class="sq-section main-footer">
         <div class="container">
+          <div class="footer-top">
+            <div class="season-one has-flash-bg">
+              <span class="font-palmdale">Season One</span>
+            </div>
+          </div>
           <div class="footer-menu">
-            <div class="footer-surprize">
-              <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/surprize.svg" alt="Surprize" />
-            </div>
             <div class="footer-left-menu">
-              <div>
-                <a href="/woldy-kusina">Woldy Kusina</a>
-                <a href="/apocalypse-burger">The Food Sermon</a>
-                <a href="/house-specials">House Specials</a>
-              </div>
-              <div>
-                <a href="/the-food-sermon">Apocalypse Burger</a>
-                <a href="/the-goods-mart">The Goods Mart</a>
-                <a href="/view-all">Full Menu</a>
-              </div>
-            </div>
-            <div class="footer-middle-menu">
-              <div>
-                <a href="/goodies">Goodies</a>
-              </div>
+              <a href="/woldy-kusina">Woldy Kusina</a>
+              <a href="/apocalypse-burger">The Food Sermon</a>
+              <a href="/the-food-sermon">Apocalypse Burger</a>
+              <a href="/house-specials">House Specials</a>
+              <a href="/the-goods-mart">The Goods Mart</a>
             </div>
             <div class="footer-right-menu">
-              <div>
+              <div class="footer-right-menu-items">
+                <a href="https://orderhungryhouse.square.site/view-all">Full Menu</a>
+                <a href="https://orderhungryhouse.square.site/goodies">Goodies</a>
                 <a href="https://orderhungryhouse.square.site/about-us">About Us</a>
                 <a href="https://orderhungryhouse.square.site/faqs">FAQs</a>
+                <a href="https://orderhungryhouse.square.site/careers">Careers</a>
+              </div>
+              <div class="footer-social-wrapper">
+                <a href="https://www.instagram.com/orderhungryhouse/" target="_blank" class="has-flash-bg">Instagram</a>
+                <a href="#" class="has-flash-bg">Tiktok</a>
               </div>
             </div>
           </div>
-          <div class="footer-social-wrapper">
-            <div>
-              <a href="https://www.instagram.com/orderhungryhouse/" target="_blank" class="insta-username font-palmdale">@hungryhouse</a>
+          <div class="footer-bottom">
+            <div class="footer-bottom-menu">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
             </div>
-            <div class="insta-ticktock">
-              <a href="#" class="has-flash-bg">
-                <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
-                <span>Instagram</span>
-              </a>
-              <a href="#" class="has-flash-bg">
-                <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-white.svg" alt="star" />
-                <span>Tiktok</span>
-              </a>
-            </div>            
+            <div class="footer-copyright">© HungryHouse 2021</div>
           </div>
         </div>
       </div>
@@ -475,16 +480,16 @@ window.onload = function () {
 
       $('#jpVBdt').prepend(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">meet</span> the lineup</h2>
-        <p class="font-sharp-italic sq_section_sub_heading">In our inaugural season of Hungry House, we’re are humbled and excited to introduce these incredible concepts to the world.</p>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">meet</span> our lineup</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">Our inaugural season of Hungry House brings plant-based filipino food, caribbean-inspired cuisine, smashburger nostalgia and hearty salads. Each season we’ll drop new flavors, so stay tuned.</p>
       </div>
       `);
 
-      addButtonToImageTextSection('jpVBdt', 'https://orderhungryhouse.square.site/woldy-kusina');
-      addButtonToImageTextSection('qPvofj', 'https://orderhungryhouse.square.site/apocalypse-burger');
-      addButtonToImageTextSection('iYEedf', 'https://orderhungryhouse.square.site/the-food-sermon');
-      addButtonToImageTextSection('mpRzHZ', 'https://orderhungryhouse.square.site/house-specials');
-      addButtonToImageTextSection('Bjopvb', 'https://orderhungryhouse.square.site/the-goods-mart');
+      addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.square.site/woldy-kusina');
+      addButtonToImageTextSection('qPvofj', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
+      addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/the-food-sermon');
+      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.square.site/house-specials');
+      addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.square.site/the-goods-mart');
 
       $('#Bjopvb').append(`
       <div class="container">
@@ -658,9 +663,9 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('woPJFK', 'https://orderhungryhouse.square.site/view-all');
-      addButtonToImageTextSection('EtPBUy', 'https://orderhungryhouse.square.site/view-all');
-      addButtonToImageTextSection('zROXtU', 'https://orderhungryhouse.square.site/view-all');
+      addButtonToImageTextSection('woPJFK', 'check them out', 'https://www.smallhold.com/', '_blank');
+      addButtonToImageTextSection('EtPBUy', 'check them out', 'https://shop.happyvalleymeat.com/', '_blank');
+      addButtonToImageTextSection('zROXtU', 'check them out', 'https://www.burlapandbarrel.com/', '_blank');
 
       $('#kUyoZa form .w-button').html(`
       <div class="button_with_hover button_with_hover_medium">
@@ -677,7 +682,7 @@ window.onload = function () {
 
       $('#SAVlXv').append(`
       <div class="container">
-        <a href="/" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+        <a href="https://orderhungryhouse.square.site/careers" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">interested?</span>
           <span class="button-after-text font-sharp">view our openings</span>
         </a>
@@ -694,7 +699,6 @@ window.onload = function () {
       </div>
       `);
 
-      
       $('#BNDACL').append(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">orders</span></h2>
