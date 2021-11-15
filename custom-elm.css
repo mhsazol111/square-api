@@ -200,6 +200,9 @@ button.nav-btn.cart-icon__wrap svg {
   border-radius: 15px;
   /* box-shadow: 0px 3px 8px rgb(0 0 0 / 30%); */
 }
+.fulfillment-text[data-v-ffaf0e58] {
+  line-height: 1.7;
+}
 @media only screen and (max-width: 839px) {
   .w-sitelogo[data-v-29e8f4e1] img {
     width: 200px !important;
@@ -787,7 +790,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 .menu__item-link::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   left: 0;
@@ -1512,15 +1515,20 @@ button.📚5-4-0vQBWk.📚5-4-0tMshx.📚5-4-0aYEm0.📚5-4-0_N8aS.📚5-4-0u2Q6
   width: 175px;
   z-index: -1;
 }
-#DkFilf {
+#BNDACL, #DkFilf, #TOavZI, #YaUvxS, #sAfTbX {
   padding-bottom: 100px;
 }
 #BNDACL .sq_section_heading,
 #DkFilf .sq_section_heading {
   margin-bottom: 60px;
 }
+
 div#\36 87723c1-344c-11ec-ac65-331c31b1be70,
-div#\33 e831680-35d4-11ec-b1dd-7d918421ee08 {
+div#\33 e831680-35d4-11ec-b1dd-7d918421ee08,
+div#e9c9cdc0-35cc-11ec-b1dd-7d918421ee08,
+div#\38 5a6e740-4244-11ec-9cc9-45e27d658742,
+div#\34 93bea10-4246-11ec-9cc9-45e27d658742,
+div#\38 3ae2480-4244-11ec-9cc9-45e27d658742 {
   display: none;
 }
 .faq-row {
@@ -1528,6 +1536,7 @@ div#\33 e831680-35d4-11ec-b1dd-7d918421ee08 {
 }
 .faq-question {
   font-size: 24px;
+  line-height: 1.6;
   position: relative;
   cursor: pointer;
   padding: 10px 0;
@@ -1536,7 +1545,7 @@ div#\33 e831680-35d4-11ec-b1dd-7d918421ee08 {
   position: absolute;
   content: '+';
   right: 0;
-  top: 20%;
+  top: 10%;
   transform: rotate(0);
   transition: all 0.3s ease-in-out;
 }

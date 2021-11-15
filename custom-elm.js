@@ -201,9 +201,9 @@ window.onload = function () {
         <div class="about-bio-text font-sharp-italic">
           ${details}
         </div>
-        <a href="/" class="button_with_hover button_with_hover_medium">
-          <span class="button-before-text font-palmdale">want to know more?</span>
-          <span class="button-after-text font-sharp">read the interview</span>
+        <a href="#" class="button_with_hover button_with_hover_medium button_scroll_top">
+          <span class="button-before-text font-palmdale">order now?</span>
+          <span class="button-after-text font-sharp">pickup & delivery</span>
         </a>
       </div>
       `);
@@ -254,8 +254,8 @@ window.onload = function () {
           <div class="footer-menu">
             <div class="footer-left-menu">
               <a href="/woldy-kusina">Woldy Kusina</a>
-              <a href="/apocalypse-burger">The Food Sermon</a>
-              <a href="/the-food-sermon">Apocalypse Burger</a>
+              <a href="/the-food-sermon">The Food Sermon</a>
+              <a href="/apocalypse-burger">Apocalypse Burger</a>
               <a href="/house-specials">House Specials</a>
               <a href="/the-goods-mart">The Goods Mart</a>
             </div>
@@ -618,6 +618,11 @@ window.onload = function () {
       </div>
       `);
 
+      $('.button_scroll_top').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+      });
+
       // View all page
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
@@ -701,27 +706,19 @@ window.onload = function () {
 
       $('#BNDACL').append(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">orders</span></h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">General</span></h2>
         <div class="faq-section">
           <div class="faq-row">
-            <h3 class="faq-question">I need to change my order!</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+            <h3 class="faq-question">How does this work?</h3>
+            <div class="faq-answer">
+              Hungry House partners with great culinary talent to launch new menus and concepts on our website. Our team cooks their signature dishes, selling the food for pick-up and delivery on our website, while our partner chef is able to spread the word.
+            </div>
           </div>
           <div class="faq-row">
-            <h3 class="faq-question">How do I track my package?</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
-          </div>
-          <div class="faq-row">
-            <h3 class="faq-question">My package is missing!</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
-          </div>
-          <div class="faq-row">
-            <h3 class="faq-question">What should I do if I received the wrong product or if something is damaged?</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
-          </div>
-          <div class="faq-row">
-            <h3 class="faq-question">Can I order without creating an account?</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+            <h3 class="faq-question">Who does the sourcing & cooking?</h3>
+            <div class="faq-answer">
+              Hungry House takes care of all the cooking and sourcing ingredients, providing an easy way for our partner chefs to grow their business and brand. As their trusted operating partner, we work to source the highest quality ingredients. Specifically, we work with Happy Valley Meat Co. to source local ground beef, Smallhold for all our specialty mushrooms, Burlap & Barrel for select spices, and produce from Baldor. Our team cooks all menu items in our kitchen in brooklyn, taking the utmost care to execute perfectly.
+            </div>
           </div>
         </div>
       </div>
@@ -729,19 +726,103 @@ window.onload = function () {
 
       $('#DkFilf').append(`
       <div class="container">
-        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">delivery</span></h2>
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Location + Hours</span></h2>
         <div class="faq-section">
           <div class="faq-row">
-            <h3 class="faq-question">Where do you guys delivery?</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+            <h3 class="faq-question">How do I order from Hungry House?</h3>
+            <div class="faq-answer">
+              You can order on this website for pickup & delivery or in-person at our kitchen located in Building 77 of The Navy Yard.
+            </div>
           </div>
           <div class="faq-row">
-            <h3 class="faq-question">Do you offer free delivery?</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+            <h3 class="faq-question">Where are you located?</h3>
+            <div class="faq-answer">
+              We’re located at 141 Flushing Ave in Building 77 of the Brooklyn Navy Yard. Walk inside the building (don’t worry, it’s publicly accessible right off the street!) and you’ll see our Hungry House sign on the right.
+            </div>
           </div>
           <div class="faq-row">
-            <h3 class="faq-question">How long will it take for my order to arrive?</h3>
-            <div class="faq-answer">Send us an email at hi@orderhungryhouse.com with your order confirmation # ASAP! We’ll try our very best to catch your order before it ships out.</div>
+            <h3 class="faq-question">What are your hours?</h3>
+            <div class="faq-answer">
+              Right now, we’re open Monday through Friday 12PM - 8PM. However, if you’re finding yourself in the mood for more Hungry House, shoot us a note to let us know you’re interested in extended hours, we’d love to serve you!
+            </div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $('#TOavZI').append(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Orders</span></h2>
+        <div class="faq-section">
+          <div class="faq-row">
+            <h3 class="faq-question">I need to cancel my order, help!</h3>
+            <div class="faq-answer">
+              If you need to cancel your order and are having trouble doing that, please feel free to reach out to us at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> and we’ll get right on it.
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">Something was wrong with my order</h3>
+            <div class="faq-answer">
+              We all know things can go wrong sometimes, and please accept our apologies for anything that was not right with your order -- we’d love the opportunity to make it right. Shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> and we’ll get it sorted.
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">I have lots of dietary restrictions, how can I get more information?</h3>
+            <div class="faq-answer">
+              Our founder is a former raw vegan, so we’re familiar with this challenge. Check out our dietary restrictions page and you’ll be able to link to a full document detailing all ingredients in all of our dishes. If you have any other further questions, we’re happy to answer directly, just shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> and we’ll get you an answer ASAP.
+            </div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $('#YaUvxS').append(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Events + Office Partnerships</span></h2>
+        <div class="faq-section">
+          <div class="faq-row">
+            <h3 class="faq-question">Do you cater events?</h3>
+            <div class="faq-answer">
+              Yes! We’d love to work with you on an event. Just shoot us details at our inquiries page with the date, time, amount of people and vision for the event menu and we’ll get back to you immediately. We generally need at least 72 hours, but if it’s an urgent request, we’ll do our best to fulfill!
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">Do you work with offices to create lunch delivery programs?</h3>
+            <div class="faq-answer">
+              Yes, we do, in fact our menu was built with the office lunch in mind! We have a limited program where we’re actually able to offer an “outpost” and deliver to your office daily. Let us know if you’re interested in that and shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> or vai our inquiries page.
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">What is the lead time for a catering order?</h3>
+            <div class="faq-answer">
+              We generally need at least 48 hours for a catering order, but can make something happen faster if it’s smaller. Let us know!
+            </div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $('#sAfTbX').append(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Partnerships</span></h2>
+        <div class="faq-section">
+          <div class="faq-row">
+            <h3 class="faq-question">I want to showcase my brand product on Hungry House, what do I do next?</h3>
+            <div class="faq-answer">
+              Amazing, we’d love to chat. Shoot us a note at <a href="mailto:partnerships@orderhungryhouse.com">partnerships@orderhungryhouse.com</a> with details like your website, instagram and product and we’ll get back to you.
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">I know someone great who could be on Hungry House</h3>
+            <div class="faq-answer">
+              Amazing, we love to find new chefs. Shoot us a note at <a href="mailto:partnerships@orderhungryhouse.com">partnerships@orderhungryhouse.com</a> and let’s chat!
+            </div>
+          </div>
+          <div class="faq-row">
+            <h3 class="faq-question">I’m interested in working together in another capacity</h3>
+            <div class="faq-answer">
+              Send us a note via our inquiries page. We love ideas!
+            </div>
           </div>
         </div>
       </div>
