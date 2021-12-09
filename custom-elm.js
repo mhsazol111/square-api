@@ -655,7 +655,7 @@ window.onload = function () {
       $('#dtiazq').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">where</span> to find us</h2>
-        <p class="font-sharp-italic sq_section_sub_heading">You can find Hungry House at Building 77 in the Navy Yard, or order for delivery within a 2 mile radius in Brooklyn.</p>
+        <p class="font-sharp-italic sq_section_sub_heading">You can find Hungry House at Building 77 in the Navy Yard, or order for delivery within a 4 mile radius in Brooklyn.</p>
       </div>
       `);
 
