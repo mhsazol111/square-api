@@ -262,14 +262,14 @@ window.onload = function () {
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
                 <a href="https://orderhungryhouse.square.site/view-all">Full Menu</a>
-                <a href="https://orderhungryhouse.square.site/goodies">Goodies</a>
+                <a href="mailto:press@orderhungryhouse.com">Press</a>
                 <a href="https://orderhungryhouse.square.site/about-us">About Us</a>
                 <a href="https://orderhungryhouse.square.site/faqs">FAQs</a>
                 <a href="https://orderhungryhouse.square.site/careers">Careers</a>
               </div>
               <div class="footer-social-wrapper">
                 <a href="https://www.instagram.com/orderhungryhouse/" target="_blank" class="has-flash-bg">Instagram</a>
-                <a href="#" class="has-flash-bg">Tiktok</a>
+                <a href="https://www.tiktok.com/@orderhungryhouse/" target="_blank" class="has-flash-bg">Tiktok</a>
               </div>
             </div>
           </div>
@@ -486,8 +486,8 @@ window.onload = function () {
       `);
 
       addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.square.site/woldy-kusina');
-      addButtonToImageTextSection('qPvofj', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
-      addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/the-food-sermon');
+      addButtonToImageTextSection('qPvofj', 'order now', 'https://orderhungryhouse.square.site/the-food-sermon');
+      addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
       addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.square.site/house-specials');
       addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.square.site/the-goods-mart');
 
@@ -518,7 +518,7 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
+      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       /*===================================
         ============= Inner pages =========
@@ -534,7 +534,7 @@ window.onload = function () {
         `Woldy Reyes is a Chef and Founder of the boutique catering company, Woldy Kusina, based in Brooklyn, New York. Woldy Kusina’s cuisine is centered around a simple philosophy — to provide good food and good experiences, with sustainability and culture at the heart of it all. As a first-generation Filipino American, Reyes effortlessly infuses contemporary dishes with vibrant flavors and colors that are inspired by his Filipino roots. His menus are best described as fresh, natural and fulfilling.`
       );
       fixNewsletterSection('lJTXrj');
-      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', '#');
+      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // The Food Sermon
       primaryBannerContent('PbpxoT');
@@ -546,7 +546,7 @@ window.onload = function () {
         `After immigrating to New York at ten years old and living in the East Flatbush neighborhood of Brooklyn, Chef Williams studied theology at Oakwood University in Alabama, a private university operated by the Seventh-day Adventist Church. While faith still plays a large role in his life, he found his true calling in the kitchen. After graduating from New York’s famed French Culinary Institute (now the International Culinary Center) Williams opened the first Food Sermon location in 2015. Originally intended to be a small outpost for his catering business, the pint-sized restaurant quickly attracted loyal neighborhood fans, soon drawing the attention of food critics (The New York Times’ praised Williams’ “extraordinary brightness of flavors.”)`
       );
       fixNewsletterSection('yvjDQo');
-      fixInstagramSliderWidth('vmeZgk', 3, '@iamrawlston', 'https://www.instagram.com/iamrawlston/', '#');
+      fixInstagramSliderWidth('vmeZgk', 3, '@iamrawlston', 'https://www.instagram.com/iamrawlston/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // Apocalypse Burger
       primaryBannerContent('tihKAM');
@@ -558,7 +558,7 @@ window.onload = function () {
         `Martha Hoover owns a successful collection of restaurants in Indianapolis, Indiana —Cafés Patachou, Petite Chou Bistro & Champagne Bar, Napolese Pizzeria, Public Greens, Apocalypse Burger and Bar One Fourteen. Founded in 1989, Hoover used premium ingredients, prepared from scratch, and partnered with local vendors and farmers — years before the phrase “farm to table” was first uttered.`
       );
       fixNewsletterSection('MWwQxT');
-      fixInstagramSliderWidth('RjsBSE', 3, '@apocalypseburger', 'https://www.instagram.com/apocalypseburger/', '#');
+      fixInstagramSliderWidth('RjsBSE', 3, '@apocalypseburger', 'https://www.instagram.com/apocalypseburger/', 'https://www.tiktok.com/@apocalypseburger/');
 
       // House Specials
       primaryBannerContent('NAhQMG');
@@ -574,7 +574,7 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('LNSIjq');
-      fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
+      fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // The Goods Mart
       primaryBannerContent('ABFtDp');
@@ -586,7 +586,7 @@ window.onload = function () {
         `The Goods Mart vets products to find those that not only taste great, but also do right by sourcing quality ingredients and upholding ethical standards across the board. The Goods Mart has made the experience of buying healthier, socially conscious, and environmentally friendly products easier, more enjoyable, and more accessible.`
       );
       fixNewsletterSection('iGjvPT');
-      fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', '#');
+      fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       $('#mOPZLD, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
@@ -630,7 +630,7 @@ window.onload = function () {
       viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.square.site/house-specials');
       viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.square.site/the-goods-mart');
       fixNewsletterSection('MZPidF');
-      fixInstagramSliderWidth('WgSjcG', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
+      fixInstagramSliderWidth('WgSjcG', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // Goodies page
       $('#PHKkOX').prepend(`
@@ -639,7 +639,7 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('COwPVL');
-      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
+      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // About Us
       $('#jdkwUD').append(`
@@ -650,7 +650,7 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', '#');
+      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       $('#dtiazq').prepend(`
       <div class="container">
