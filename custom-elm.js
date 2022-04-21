@@ -783,19 +783,19 @@ window.onload = function () {
           <div class="faq-row">
             <h3 class="faq-question">Do you cater events?</h3>
             <div class="faq-answer">
-              Yes! We’d love to work with you on an event. Just shoot us details at our inquiries page with the date, time, amount of people and vision for the event menu and we’ll get back to you immediately. We generally need at least 72 hours, but if it’s an urgent request, we’ll do our best to fulfill!
+              Yes! We’d love to work with you on an event. Just give us a shout 24 hours in advance at <a href="mailto:catering@orderhungryhouse.com">catering@orderhungryhouse.com</a> with your name, phone number, the date, time, number of people, budget, and your menu vision (if you have one!). We'll work with you to create a custom menu that's perfect for your event!
             </div>
           </div>
           <div class="faq-row">
             <h3 class="faq-question">Do you work with offices to create lunch delivery programs?</h3>
             <div class="faq-answer">
-              Yes, we do, in fact our menu was built with the office lunch in mind! We have a limited program where we’re actually able to offer an “outpost” and deliver to your office daily. Let us know if you’re interested in that and shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> or vai our inquiries page.
+              Yes, we do! In fact, our menu was built with the office lunch in mind. We have a special program where we set you up with a custom ordering page and deliver to your office daily. If you're interested, shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a>
             </div>
           </div>
           <div class="faq-row">
             <h3 class="faq-question">What is the lead time for a catering order?</h3>
             <div class="faq-answer">
-              We generally need at least 48 hours for a catering order, but can make something happen faster if it’s smaller. Let us know!
+              We generally need at least 24 hours for a catering order, but can make something happen faster if it’s smaller. Let us know! <a href="mailto:catering@orderhungryhouse.com">catering@orderhungryhouse.com</a>
             </div>
           </div>
         </div>
