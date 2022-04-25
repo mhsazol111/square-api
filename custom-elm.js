@@ -23,6 +23,7 @@ window.onload = function () {
     }
   }
 
+  addCustomCssToSite('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
   addCustomCssToSite('custom-elm-css', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm.css');
   addCustomCssToSite('custom-elm-responsive-css', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm-responsive.css');
 
@@ -37,44 +38,7 @@ window.onload = function () {
   });
 
   $(document).ready(function () {
-    // console.log('on ready script');
-
-    // (function (history) {
-    //   var pushState = history.pushState;
-    //   history.pushState = function (state) {
-    //     if (typeof history.onpushstate == 'function') {
-    //       history.onpushstate({ state: state });
-    //     }
-    //     // whatever else you want to do
-    //     // maybe call onhashchange e.handler
-    //     // console.log('on function call', arguments);
-
-    //     $('body').append(`
-    //     <div class="loading-screen-wrapper">
-    //       <div class="loader"></div>
-    //     </div>
-    //     `);
-
-    //     // window.location.reload();
-    //     // window.location.href = `https://orderhungryhouse.square.site${arguments[2]}`;
-    //     window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-    //     window.location.lasthash.pop();
-
-    //     return pushState.apply(history, arguments);
-    //   };
-    // })(window.history);
-
-    // window.onpopstate = history.onpushstate = function (e) {
-    //   console.log('onpopstate', e);
-    //   $('body').append(`
-    //   <div class="loading-screen-wrapper">
-    //     <div class="loader"></div>
-    //   </div>`);
-    //   // window.location.reload();
-    //   // window.location.href = e.target.location.href;
-    //   window.location.hash = window.location.lasthash[window.location.lasthash.length - 1];
-    //   window.location.lasthash.pop();
-    // };
+    // const queryString = window.location.search;
 
     function fixSliderWidth(sectionId, item) {
       const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
@@ -127,6 +91,73 @@ window.onload = function () {
           }
         }
       });
+    }
+
+    function fixPressSliderWidth(sectionId) {
+      $(`#${sectionId}`).prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">what</span> people are saying</h2>
+      </div>
+      <div class="container press_slider_container">
+        <div class="press_slider_wrapper">
+          <div class="owl-carousel" id="press_slider">
+            <div class="item">
+              <a href="https://ny.eater.com/2021/11/18/22787538/hungry-house-anti-ghost-kitchen-opens-brooklyn-navy-yard" target="_blank">
+                <img src="https://www.orderhungryhouse.com/uploads/b/d98c4fa81b85317716ed43158bdeab7cc0596c70b354087689a3248c6a57873c/Eater_1650772641.png?width=400" alt="Eater" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://www.nrn.com/people/anti-ghost-kitchen-s-connecting-people-virtual-restaurants" target="_blank">
+                <img src="https://www.orderhungryhouse.com/uploads/b/d98c4fa81b85317716ed43158bdeab7cc0596c70b354087689a3248c6a57873c/NRN_1650772622.png?width=400" alt="NRN" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://thespoon.tech/kristen-barnett-launches-hungry-house-an-anti-ghost-kitchen-ghost-kitchen/" target="_blank">
+                <img src="https://www.orderhungryhouse.com/uploads/b/d98c4fa81b85317716ed43158bdeab7cc0596c70b354087689a3248c6a57873c/The%20Spoon_1650772622.png?width=400" alt="The Spoon" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://backofhouse.io/stories/podcast-kristen-barnett-ghost-kitchen-hungry-house-interview-virtual-restaurant" target="_blank">
+                <img src="https://www.orderhungryhouse.com/uploads/b/d98c4fa81b85317716ed43158bdeab7cc0596c70b354087689a3248c6a57873c/Back%20of%20House_1650772618.png?width=400" alt="Back of house" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://specialsauce.substack.com/p/kristen-barnett-on-the-anti-ghost?s=r" target="_blank">
+                <img src="https://www.orderhungryhouse.com/uploads/b/d98c4fa81b85317716ed43158bdeab7cc0596c70b354087689a3248c6a57873c/Special%20Sauce_1650772626.png?width=400" alt="Special sauce" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://podcasts.apple.com/mx/podcast/melding-tech-and-storytelling-power-with-kristen-barnett/id1499889344?i=1000552416319" target="_blank">
+                <img src="https://www.orderhungryhouse.com/uploads/b/d98c4fa81b85317716ed43158bdeab7cc0596c70b354087689a3248c6a57873c/Ovation_1650772620.png?width=400" alt="Ovation" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      `);
+
+      setTimeout(function () {
+        $('#press_slider').owlCarousel({
+          lazyLoad: true,
+          autoPlay: true,
+          loop: false,
+          margin: 30,
+          dots: false,
+          nav: true,
+          navText: [
+            '<img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/left-arrow.svg">',
+            '<img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/right-arrow.svg">',
+          ],
+          responsive: {
+            0: {
+              items: 2,
+            },
+            769: {
+              items: 3,
+            },
+          },
+        });
+      }, 1000);
     }
 
     function fixNewsletterSection(sectionId) {
@@ -248,13 +279,15 @@ window.onload = function () {
         <div class="container">
           <div class="footer-top">
             <div class="season-one has-flash-bg">
-              <span class="font-palmdale">Season One</span>
+              <span class="font-palmdale">Season Two</span>
             </div>
           </div>
           <div class="footer-menu">
             <div class="footer-left-menu">
+              <a href="/chile-con-miel">Chile Con Miel</a>
+              <a href="/pierce-abernathy">Pierce Abernathy</a>
+              <a href="/caffe-panna">Caffe Panna</a>
               <a href="/woldy-kusina">Woldy Kusina</a>
-              <a href="/the-food-sermon">The Food Sermon</a>
               <a href="/apocalypse-burger">Apocalypse Burger</a>
               <a href="/house-specials">House Specials</a>
               <a href="/the-goods-mart">The Goods Mart</a>
@@ -278,7 +311,7 @@ window.onload = function () {
               <a href="#">Privacy Policy</a>
               <a href="#">Terms & Conditions</a>
             </div>
-            <div class="footer-copyright">© HungryHouse 2021</div>
+            <div class="footer-copyright">© HungryHouse 2022</div>
           </div>
         </div>
       </div>
@@ -291,11 +324,17 @@ window.onload = function () {
       // ==============================
       const animateBanner = $(`
       <div class="container">
+        <div class="hover-thumb-wrapper" id="chile-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
+        </div>
+        <div class="hover-thumb-wrapper" id="pierce-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pierce-thumb.png" alt="pierce" />
+        </div>
+        <div class="hover-thumb-wrapper" id="caffe-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/caffe-thumb.png" alt="caffe-thumb" />
+        </div>
         <div class="hover-thumb-wrapper" id="woldy-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
-        </div>
-        <div class="hover-thumb-wrapper" id="sermon-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/sermon-thumb.png" alt="sermon" />
         </div>
         <div class="hover-thumb-wrapper" id="apocalypse-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
@@ -308,6 +347,87 @@ window.onload = function () {
         </div>
       </div>
       <nav class="menu">
+        <div class="menu__item">
+          <div class="container" data-id="chile-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale">super tortas</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="pierce-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/pierce-abernathy"><span class="font-sharp">Pierce Abernathy</span> <span class="font-palmdale">hearty salads</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="caffe-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/caffe-panna"><span class="font-sharp">Caffe Panna</span> <span class="font-palmdale">ice cream</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="menu__item">
           <div class="container" data-id="woldy-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.square.site/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
@@ -329,33 +449,6 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="container" data-id="sermon-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-food-sermon"><span class="font-sharp">The Food Sermon</span> <span class="font-palmdale">caribbean-inspired</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">The Food Sermon</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -447,8 +540,8 @@ window.onload = function () {
       <div class="container">
         <div class="home-banner-bottom">
           <div class="home-live-banner">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-green.svg" alt="Live in Brooklyn!">
-            <span class="font-palmdale">Live in Brooklyn!</span>
+            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-green.svg" alt="Live in NYC!">
+            <span class="font-palmdale">Live in NYC!</span>
           </div>
           <a href="https://orderhungryhouse.square.site/view-all" class="regular-line-button view-full-menu font-sharp">
             <span>View Full Menu</span>
@@ -481,14 +574,16 @@ window.onload = function () {
       $('#jpVBdt').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">meet</span> our lineup</h2>
-        <p class="font-sharp-italic sq_section_sub_heading">Our inaugural season of Hungry House brings plant-based filipino food, caribbean-inspired cuisine, smashburger nostalgia and hearty salads. Each season we’ll drop new flavors, so stay tuned.</p>
+        <p class="font-sharp-italic sq_section_sub_heading">Our second season debuts hearty salads, super tortas, iconic ice cream and a fresh lineup or grain bowls. Throughout the season, we'll drop new menu items, collabs and special events with this amazing lineup, so stay tuned.</p>
       </div>
       `);
 
-      addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.square.site/woldy-kusina');
-      addButtonToImageTextSection('qPvofj', 'order now', 'https://orderhungryhouse.square.site/the-food-sermon');
+      addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
+      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/pierce-abernathy');
+      addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/caffe-panna');
+      addButtonToImageTextSection('TZnPGw', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
       addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
-      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.square.site/house-specials');
+      addButtonToImageTextSection('ZUndDB', 'order now', 'https://orderhungryhouse.com/house-specials');
       addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.square.site/the-goods-mart');
 
       $('#Bjopvb').append(`
@@ -518,11 +613,55 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('SyVAwP', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'SyVAwP',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
-      /*===================================
-        ============= Inner pages =========
-        =================================*/
+      fixPressSliderWidth('bCPkJs');
+
+      /*==================================
+      ============= Inner pages =========
+      ==================================*/
+
+      // Chile Con Miel
+      primaryBannerContent('TkHGsd');
+      addMustHaveTitle('KRrYPo', `Tony’s`);
+      fixSliderWidth('KRrYPo', 3);
+      addAboutSliderTitle('cmLnfK', `Chile Con Miel`);
+      addAboutSliderDetails(
+        'cmLnfK',
+        `Tony Ortiz is a rising Brooklyn-based chef and artist from Oakland, California. Tony runs Chile Con Miel, an online platform and brand that explores ancestral Mexican food practices through a queer lens. With a background in sociology, Tony plays with the ways in which food can trigger memories and evoke emotion. They have worked under well recognized chefs such as Chez Panisse alum Dominica Rice, and have recently completed an externship at the three Michelin starred Le Bernardin. Tony leans into their Mexican roots and creates dishes that reflect their personal culinary journey in California and New York. They work with members of the creative community to curate events that are as intentional as they are stunning — they have held residencies and pop ups at Art Basel, Winona’s, Ursula and Piaule. Tony has made appearances in The New York Times, Latina and The Infatuation.`
+      );
+      fixNewsletterSection('azmEjf');
+      fixInstagramSliderWidth('lmSrHC', 3, '@chileconmiel', 'https://www.instagram.com/chileconmiel/', 'https://www.tiktok.com/@orderhungryhouse');
+
+      // Pierce Abernathy
+      primaryBannerContent('eXHEyW');
+      addMustHaveTitle('GQbMoc', `Pierce’s`);
+      fixSliderWidth('GQbMoc', 3);
+      addAboutSliderTitle('kbHKcR', `Pierce Abernathy`);
+      addAboutSliderDetails(
+        'kbHKcR',
+        `Pierce Abernathy is a recipe developer, content creator, and model. He has built a community of over half a million across Instagram and TikTok. His passion is rooted in sharing food stories and experiences with others. This shines through in his immersive, plant-forward recipe videos that get people excited to cook for themselves. He has cultivated a diverse career in front of and behind the camera, from walking the Love Parade Runway for Gucci, to producing and editing videos for Traeger Grills, BuzzFeed, The New York Times, Freshly, and Misen. He has partnered with brands like Food52, Ikea, and Harry’s, and has been featured in publications like Yahoo and the Financial Times.`
+      );
+      fixNewsletterSection('WfUixP');
+      fixInstagramSliderWidth('zrlCvD', 3, '@pierceabernathy', 'https://www.instagram.com/pierceabernathy/', 'https://www.tiktok.com/@pierzza');
+
+      // Caffe Panna
+      primaryBannerContent('ACabie');
+      addMustHaveTitle('zEgUth', `Hallie’s`);
+      fixSliderWidth('zEgUth', 3);
+      addAboutSliderTitle('TCsjbL', `Caffe Panna`);
+      addAboutSliderDetails(
+        'TCsjbL',
+        `Raised in the Gramercy neighborhood that Caffe Panna calls home, Hallie is a lifelong ice cream fanatic who has cooked in Southern Italy, at the Rome Sustainable Food Project, and in the beloved Roman gelateria, Otaleg. While living in Rome, Meyer was inspired by the cafes and gelaterias which are a ubiquitous part of daily life in the eternal city. Upon her return to New York, Hallie first started selling her ice cream at a popup in the South Bronx called Tripla Panna before turning her sights to opening Caffè Panna. After quickly establishing Caffè Panna as some of the country’s best ice cream, she also hosts regular pasta pop-ups called <a href="https://www.caffepanna.com/trattoria-panna/" target="_blank">Trattoria Panna</a>.`
+      );
+      fixNewsletterSection('nHSRpU');
+      fixInstagramSliderWidth('BLDwtf', 3, '@caffepanna', 'https://www.instagram.com/caffepanna/', 'https://www.tiktok.com/@orderhungryhouse');
 
       // Woldy Kusina
       primaryBannerContent('VsDiNU');
@@ -558,7 +697,13 @@ window.onload = function () {
         `Martha Hoover owns a successful collection of restaurants in Indianapolis, Indiana —Cafés Patachou, Petite Chou Bistro & Champagne Bar, Napolese Pizzeria, Public Greens, Apocalypse Burger and Bar One Fourteen. Founded in 1989, Hoover used premium ingredients, prepared from scratch, and partnered with local vendors and farmers — years before the phrase “farm to table” was first uttered.`
       );
       fixNewsletterSection('MWwQxT');
-      fixInstagramSliderWidth('RjsBSE', 3, '@apocalypseburger', 'https://www.instagram.com/apocalypseburger/', 'https://www.tiktok.com/@apocalypseburger/');
+      fixInstagramSliderWidth(
+        'RjsBSE',
+        3,
+        '@apocalypseburger',
+        'https://www.instagram.com/apocalypseburger/',
+        'https://www.tiktok.com/@apocalypseburger/'
+      );
 
       // House Specials
       primaryBannerContent('NAhQMG');
@@ -574,7 +719,13 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('LNSIjq');
-      fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'ckxHBM',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // The Goods Mart
       primaryBannerContent('ABFtDp');
@@ -588,19 +739,19 @@ window.onload = function () {
       fixNewsletterSection('iGjvPT');
       fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', 'https://www.tiktok.com/@orderhungryhouse/');
 
-      $('#mOPZLD, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
+      $('#SNjQUh, #pEYBxw, #IxlmJO, #mOPZLD, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').prepend(`
+      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
+      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
         <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -609,7 +760,7 @@ window.onload = function () {
       </div>
       `);
 
-      $('#vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
+      $('#KRrYPo, #GQbMoc, #zEgUth, #vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
       <div class="container">
         <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -624,13 +775,22 @@ window.onload = function () {
       });
 
       // View all page
+      viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
+      viewAllSectionTitle('MjdBFv', 'Pierce Abernathy', 'hearty salads', 'https://orderhungryhouse.com/pierce-abernathy');
+      viewAllSectionTitle('BcJLoX', 'Caffe Panna', 'ice cream', 'https://orderhungryhouse.com/caffe-panna');
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
       viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.square.site/apocalypse-burger');
       viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.square.site/house-specials');
       viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.square.site/the-goods-mart');
       fixNewsletterSection('MZPidF');
-      fixInstagramSliderWidth('WgSjcG', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'WgSjcG',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // Goodies page
       $('#PHKkOX').prepend(`
@@ -639,7 +799,13 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('COwPVL');
-      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'acXdie',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // About Us
       $('#jdkwUD').append(`
@@ -650,7 +816,13 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'meGlnx',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       $('#dtiazq').prepend(`
       <div class="container">
