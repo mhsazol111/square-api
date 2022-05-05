@@ -1705,6 +1705,7 @@ div#\39 c9c8040-35ce-11ec-b1dd-7d918421ee08 {
 /*============ Some Pages =================*/
 div#\31 8-section .w-grid.order-grid.order-grid.visible,
 div#\31 7-section .w-grid.order-grid.order-grid.visible,
+div#\31 9-section .w-grid.order-grid.order-grid.visible,
 div#items-section .w-grid.order-grid.order-grid.visible,
 div#\31 0-section .w-grid.order-grid.order-grid.visible,
 div#\38 -section .w-grid.order-grid.order-grid.visible,
@@ -1719,6 +1720,7 @@ div#\31 6-section .w-grid.order-grid.order-grid.visible {
 
 div#\31 8-section .w-grid.order-grid.order-grid.visible .card,
 div#\31 7-section .w-grid.order-grid.order-grid.visible .card,
+div#\31 9-section .w-grid.order-grid.order-grid.visible .card,
 div#items-section .w-grid.order-grid.order-grid.visible .card,
 div#\31 0-section .w-grid.order-grid.order-grid.visible .card,
 div#\38 -section .w-grid.order-grid.order-grid.visible .card,
@@ -1731,6 +1733,7 @@ div#\31 6-section .w-grid.order-grid.order-grid.visible .card {
 
 div#\31 8-section .w-grid.order-grid.order-grid.visible .card.item-card .product-title,
 div#\31 7-section .w-grid.order-grid.order-grid.visible .card.item-card .product-title,
+div#\31 9-section .w-grid.order-grid.order-grid.visible .card.item-card .product-title,
 div#items-section .w-grid.order-grid.order-grid.visible .card.item-card .product-title,
 div#\31 0-section .w-grid.order-grid.order-grid.visible .card.item-card .product-title,
 div#\38 -section .w-grid.order-grid.order-grid.visible .card.item-card .product-title,
@@ -1743,6 +1746,7 @@ div#\31 6-section .w-grid.order-grid.order-grid.visible .card.item-card .product
 
 div#\31 8-section .w-grid.order-grid.order-grid.visible .card.item-card .product__price,
 div#\31 7-section .w-grid.order-grid.order-grid.visible .card.item-card .product__price,
+div#\31 9-section .w-grid.order-grid.order-grid.visible .card.item-card .product__price,
 div#items-section .w-grid.order-grid.order-grid.visible .card.item-card .product__price,
 div#\31 0-section .w-grid.order-grid.order-grid.visible .card.item-card .product__price,
 div#\38 -section .w-grid.order-grid.order-grid.visible .card.item-card .product__price,
@@ -1757,6 +1761,7 @@ div#\31 6-section .w-grid.order-grid.order-grid.visible .card.item-card .product
 @media screen and (max-width: 1024px) {
   div#\31 8-section .w-grid.order-grid.order-grid.visible,
   div#\31 7-section .w-grid.order-grid.order-grid.visible,
+  div#\31 9-section .w-grid.order-grid.order-grid.visible,
   div#items-section .w-grid.order-grid.order-grid.visible,
   div#\31 0-section .w-grid.order-grid.order-grid.visible,
   div#\38 -section .w-grid.order-grid.order-grid.visible,
@@ -1771,6 +1776,7 @@ div#\31 6-section .w-grid.order-grid.order-grid.visible .card.item-card .product
 @media screen and (max-width: 767px) {
   div#\31 8-section .w-grid.order-grid.order-grid.visible,
   div#\31 7-section .w-grid.order-grid.order-grid.visible,
+  div#\31 9-section .w-grid.order-grid.order-grid.visible,
   div#items-section .w-grid.order-grid.order-grid.visible,
   div#\31 0-section .w-grid.order-grid.order-grid.visible,
   div#\38 -section .w-grid.order-grid.order-grid.visible,
