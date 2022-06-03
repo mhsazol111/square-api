@@ -161,7 +161,7 @@ window.onload = function () {
     }
 
     function fixNewsletterSection(sectionId) {
-      const newsletterInput = $(`#${sectionId} .w-cell .action-button .input-group__input`);
+      const newsletterInput = $(`#${sectionId} .w-cell .action-button input[type="email"]`);
       const newsletterBtn = $(`#${sectionId} .action-button__button`);
 
       newsletterInput.attr('placeholder', 'Enter your email here');
@@ -1017,14 +1017,14 @@ window.onload = function () {
     }, 2500);
 
     setTimeout(function () {
-      $('.card.item-card .image .figure__aspect-ratio').append(`
+      $('.item-container__wrapper .item__order-and-image .figure__aspect-ratio').append(`
         <button type="button" class="menu_item_button">
           Order Now
         </button
       `);
 
       if ($('.menu_item_button').length < 1) {
-        $('.card.item-card .image .figure__aspect-ratio').append(`
+        $('.item-container__wrapper .item__order-and-image .figure__aspect-ratio').append(`
         <button type="button" class="menu_item_button">
           Order Now
         </button
