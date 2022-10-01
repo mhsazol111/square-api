@@ -1272,7 +1272,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
   grid-row-gap: 30px;
 }
 .item-container__wrapper .item-container__background {
-  border: none;
+  border: none !important;
   padding: 0;
   background-color: transparent !important;
 }

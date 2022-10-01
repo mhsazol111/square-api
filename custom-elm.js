@@ -279,17 +279,16 @@ window.onload = function () {
         <div class="container">
           <div class="footer-top">
             <div class="season-one has-flash-bg">
-              <span class="font-palmdale">Season Two</span>
+              <span class="font-palmdale">Season 03</span>
             </div>
           </div>
           <div class="footer-menu">
             <div class="footer-left-menu">
-              <a href="/chile-con-miel">Chile Con Miel</a>
-              <a href="/pierce-abernathy">Pierce Abernathy</a>
-              <a href="/caffe-panna">Caffe Panna</a>
+              <a href="/baked-by-melissa">Baked by Melissa feat. Bowery</a>
               <a href="/woldy-kusina">Woldy Kusina</a>
+              <a href="/chile-con-miel">Chile Con Miel</a>
               <a href="/apocalypse-burger">Apocalypse Burger</a>
-              <a href="/house-specials">House Specials</a>
+              <a href="/caffe-panna">Caffe Panna</a>
               <a href="/the-goods-mart">The Goods Mart</a>
             </div>
             <div class="footer-right-menu">
@@ -327,8 +326,8 @@ window.onload = function () {
         <div class="hover-thumb-wrapper" id="chile-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
         </div>
-        <div class="hover-thumb-wrapper" id="pierce-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pierce-thumb.png" alt="pierce" />
+        <div class="hover-thumb-wrapper" id="melissa-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/melissa-thumb.png" alt="melissa-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="caffe-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/caffe-thumb.png" alt="caffe-thumb" />
@@ -375,26 +374,26 @@ window.onload = function () {
           </div>
         </div>
         <div class="menu__item">
-          <div class="container" data-id="pierce-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/pierce-abernathy"><span class="font-sharp">Pierce Abernathy</span> <span class="font-palmdale">hearty salads</span></a>
+          <div class="container" data-id="melissa-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/baked-by-melissa"><span class="font-sharp">Baked by Melissa feat. Bowery</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Pierce Abernathy</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -574,12 +573,12 @@ window.onload = function () {
       $('#jpVBdt').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">meet</span> our lineup</h2>
-        <p class="font-sharp-italic sq_section_sub_heading">Our second season debuts hearty salads, super tortas, iconic ice cream and a fresh lineup or grain bowls. Throughout the season, we'll drop new menu items, collabs and special events with this amazing lineup, so stay tuned.</p>
+        <p class="font-sharp-italic sq_section_sub_heading">Our third season brings to life TikTok’s most famous salad and other signature recipes from @bakedbymelissa, in partnership with Bowery Farming, the leader in vertical farming.</p>
       </div>
       `);
 
       addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
-      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/pierce-abernathy');
+      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/baked-by-melissa');
       addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/caffe-panna');
       addButtonToImageTextSection('TZnPGw', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
       addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
@@ -639,17 +638,17 @@ window.onload = function () {
       fixNewsletterSection('azmEjf');
       fixInstagramSliderWidth('lmSrHC', 3, '@chileconmiel', 'https://www.instagram.com/chileconmiel/', 'https://www.tiktok.com/@orderhungryhouse');
 
-      // Pierce Abernathy
+      // Baked by Melissa
       primaryBannerContent('eXHEyW');
       addMustHaveTitle('GQbMoc', `Pierce’s`);
       fixSliderWidth('GQbMoc', 3);
-      addAboutSliderTitle('kbHKcR', `Pierce Abernathy`);
+      addAboutSliderTitle('kbHKcR', `Baked by Melissa`);
       addAboutSliderDetails(
         'kbHKcR',
-        `Pierce Abernathy is a recipe developer, content creator, and model. He has built a community of over half a million across Instagram and TikTok. His passion is rooted in sharing food stories and experiences with others. This shines through in his immersive, plant-forward recipe videos that get people excited to cook for themselves. He has cultivated a diverse career in front of and behind the camera, from walking the Love Parade Runway for Gucci, to producing and editing videos for Traeger Grills, BuzzFeed, The New York Times, Freshly, and Misen. He has partnered with brands like Food52, Ikea, and Harry’s, and has been featured in publications like Yahoo and the Financial Times.`
+        `Melissa Ben-Ishay is the co-founder and CEO of Baked by Melissa, a New York-based dessert company. Her food philosophy is simple: If you get your fulfillment from mealtime, you can absolutely enjoy dessert every day. Through TikTok, social media, and the Baked by Melissa blog, Melissa has inspired her community of more than 2 million followers to create delicious, nourishing meals. Each and every one of her recipes is designed to make people happy, one little bite at a time.`
       );
       fixNewsletterSection('WfUixP');
-      fixInstagramSliderWidth('zrlCvD', 3, '@pierceabernathy', 'https://www.instagram.com/pierceabernathy/', 'https://www.tiktok.com/@pierzza');
+      fixInstagramSliderWidth('zrlCvD', 3, '@bakedbymelissa', 'https://www.instagram.com/bakedbymelissa', 'https://www.tiktok.com/@orderhungryhouse');
 
       // Caffe Panna
       primaryBannerContent('ACabie');
@@ -776,7 +775,7 @@ window.onload = function () {
 
       // View all page
       viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
-      viewAllSectionTitle('MjdBFv', 'Pierce Abernathy', 'hearty salads', 'https://orderhungryhouse.com/pierce-abernathy');
+      viewAllSectionTitle('MjdBFv', 'Baked by Melissa', 'viral bowls & salads', 'https://orderhungryhouse.com/baked-by-melissa');
       viewAllSectionTitle('BcJLoX', 'Caffe Panna', 'ice cream', 'https://orderhungryhouse.com/caffe-panna');
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
