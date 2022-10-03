@@ -577,8 +577,8 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
-      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/baked-by-melissa');
+      addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/baked-by-melissa');
+      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
       addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/caffe-panna');
       addButtonToImageTextSection('TZnPGw', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
       addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
