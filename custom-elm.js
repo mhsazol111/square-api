@@ -375,25 +375,25 @@ window.onload = function () {
         </div>
         <div class="menu__item">
           <div class="container" data-id="melissa-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/baked-by-melissa"><span class="font-sharp">Baked by Melissa feat. Bowery</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/baked-by-melissa"><span class="font-sharp">Baked by Melissa <span class="font-palmdale">feat. Bowery</span></span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Baked by Melissa feat. Bowery</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Baked by Melissa</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
