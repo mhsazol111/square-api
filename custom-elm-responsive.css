@@ -1,3 +1,4 @@
+#ZqsAGX .sq_section_heading span,
 #wjMzdC .sq_section_heading span,
 #MjdBFv .sq_section_heading span,
 #BcJLoX .sq_section_heading span,
@@ -88,6 +89,7 @@
   div[data-block-purpose='featured-products@^1.0.0'] .fluid-carousel--item.carousel-item--large:hover > a > .w-wrapper[data-v-ab1ca44a]:last-child {
     transform: translateY(-25px);
   }
+  #ZqsAGX .sq_section_heading span,
   #wjMzdC .sq_section_heading span,
   #MjdBFv .sq_section_heading span,
   #BcJLoX .sq_section_heading span,
@@ -98,6 +100,7 @@
     margin-right: 30px;
     font-size: 40px;
   }
+  #ZqsAGX .sq_section_heading,
   #wjMzdC .sq_section_heading,
   #MjdBFv .sq_section_heading,
   #BcJLoX .sq_section_heading,
@@ -109,6 +112,7 @@
     padding-bottom: 20px;
     margin-bottom: 5px;
   }
+  #ZqsAGX .menu_item_button,
   #wjMzdC .menu_item_button,
   #MjdBFv .menu_item_button,
   #BcJLoX .menu_item_button,
@@ -492,6 +496,7 @@
   #cmLnfK,
   #kbHKcR,
   #TCsjbL,
+  #OfenuE,
   #TyGiHO,
   #BIUCWv,
   #muqkMH,
@@ -507,6 +512,7 @@
   #cmLnfK .slideshow__slide .slideshow__image,
   #kbHKcR .slideshow__slide .slideshow__image,
   #TCsjbL .slideshow__slide .slideshow__image,
+  #OfenuE .slideshow__slide .slideshow__image,
   #TyGiHO .slideshow__slide .slideshow__image,
   #BIUCWv .slideshow__slide .slideshow__image,
   #muqkMH .slideshow__slide .slideshow__image,
@@ -532,6 +538,7 @@
   #KFQWjC .button_with_hover_medium,
   #iaFLfd .button_with_hover_medium,
   #eIRSEZ .button_with_hover_medium,
+  #mYEWip .button_with_hover_medium,
   #igDyLN .button_with_hover_medium,
   #degirR .button_with_hover_medium,
   #BiqnRo .button_with_hover_medium,
@@ -540,6 +547,7 @@
     margin-top: 30px;
   }
   #yeCMuv,
+  #lYHdZU,
   #lJTXrj,
   #MWwQxT,
   #yvjDQo,
@@ -549,6 +557,7 @@
     padding: 64px 0;
   }
   /* Pickup Line */
+  #ZqsAGX .sq_section_heading span,
   #wjMzdC .sq_section_heading span,
   #MjdBFv .sq_section_heading span,
   #BcJLoX .sq_section_heading span,
@@ -559,6 +568,7 @@
     margin-right: 0;
     font-size: 24px;
   }
+  #ZqsAGX .sq_section_heading,
   #wjMzdC .sq_section_heading,
   #MjdBFv .sq_section_heading,
   #BcJLoX .sq_section_heading,
@@ -569,6 +579,7 @@
     margin-bottom: 5px;
     font-size: 22px;
   }
+  #ZqsAGX,
   #wjMzdC,
   #MjdBFv,
   #BcJLoX,
@@ -578,6 +589,7 @@
   #LoJjMB {
     padding: 50px 0 0;
   }
+  #ZqsAGX .sq_section_learn_more,
   #wjMzdC .sq_section_learn_more,
   #MjdBFv .sq_section_learn_more,
   #BcJLoX .sq_section_learn_more,
@@ -587,6 +599,7 @@
   #LoJjMB .sq_section_learn_more {
     padding-right: 20px;
   }
+  #ZqsAGX .menu_item_button,
   #wjMzdC .menu_item_button,
   #MjdBFv .menu_item_button,
   #BcJLoX .menu_item_button,

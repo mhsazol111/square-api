@@ -279,17 +279,17 @@ window.onload = function () {
         <div class="container">
           <div class="footer-top">
             <div class="season-one has-flash-bg">
-              <span class="font-palmdale">Season 03</span>
+              <span class="font-palmdale">Season 04</span>
             </div>
           </div>
           <div class="footer-menu">
             <div class="footer-left-menu">
+              <a href="/will-coleman">Chef Will Coleman</a>
               <a href="/woldy-kusina">Woldy Kusina</a>
               <a href="/chile-con-miel">Chile Con Miel</a>
               <a href="/apocalypse-burger">Apocalypse Burger</a>
               <a href="/caffe-panna">Caffe Panna</a>
               <a href="/the-goods-mart">The Goods Mart</a>
-              <a href="/house-specials">House Specials</a>
             </div>
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
@@ -323,6 +323,9 @@ window.onload = function () {
       // ==============================
       const animateBanner = $(`
       <div class="container">
+        <div class="hover-thumb-wrapper" id="will-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/will-thumb.png" alt="will-thumb" />
+        </div>
         <div class="hover-thumb-wrapper" id="chile-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
         </div>
@@ -346,6 +349,33 @@ window.onload = function () {
         </div>
       </div>
       <nav class="menu">
+        <div class="menu__item">
+          <div class="container" data-id="will-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.square.site/will-coleman"><span class="font-sharp">Will Coleman</span> <span class="font-palmdale">bold bowls</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="menu__item">
           <div class="container" data-id="chile-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.square.site/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale">super tortas</span></a>
@@ -550,9 +580,10 @@ window.onload = function () {
       </div>
       `);
 
+      addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/will-coleman');
       addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/baked-by-melissa');
       addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
-      addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/caffe-panna');
+      addButtonToImageTextSection('ivhQaT', 'order now', 'https://orderhungryhouse.com/caffe-panna');
       addButtonToImageTextSection('TZnPGw', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
       addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
       addButtonToImageTextSection('ZUndDB', 'order now', 'https://orderhungryhouse.com/house-specials');
@@ -599,6 +630,19 @@ window.onload = function () {
       ============= Inner pages =========
       ==================================*/
 
+      // Will Coleman
+      primaryBannerContent('aedvPO');
+      addMustHaveTitle('KRrYPo', `Will’s`);
+      fixSliderWidth('KRrYPo', 3);
+      addAboutSliderTitle('OfenuE', `Chef Will Coleman`);
+      addAboutSliderDetails(
+        'OfenuE',
+        `Will Coleman is a Brooklyn-based chef, TV personality, and founder of BOLD Spices. His work focuses on the intersections of American cuisines with global flavors. Will aims to create moments of adventure and joy on the screen and kitchen. He believes that food is meant to be vibrant and shared with those you love. They share their passion for community and cooking through platforms such as the TODAY Show, Good Morning America, Food52, The Washington Post, Better Homes and Gardens, and Bon Appetit. Their desire to excite and unite palates is translated into his new BOLD Bowls at Hungry House.`
+      );
+      fixNewsletterSection('lYHdZU');
+      fixInstagramSliderWidth('WsxSQa', 3, '@chefwillcoleman', 'https://www.instagram.com/chefwillcoleman/', 'https://www.tiktok.com/@chefwillco');
+
+
       // Chile Con Miel
       primaryBannerContent('TkHGsd');
       addMustHaveTitle('KRrYPo', `Tony’s`);
@@ -610,18 +654,6 @@ window.onload = function () {
       );
       fixNewsletterSection('azmEjf');
       fixInstagramSliderWidth('lmSrHC', 3, '@chileconmiel', 'https://www.instagram.com/chileconmiel/', 'https://www.tiktok.com/@orderhungryhouse');
-
-      // Baked by Melissa
-      // primaryBannerContent('eXHEyW');
-      // addMustHaveTitle('GQbMoc', `Pierce’s`);
-      // fixSliderWidth('GQbMoc', 3);
-      // addAboutSliderTitle('kbHKcR', `Baked by Melissa`);
-      // addAboutSliderDetails(
-      //   'kbHKcR',
-      //   `Melissa Ben-Ishay is the co-founder and CEO of Baked by Melissa, a New York-based dessert company. Her food philosophy is simple: If you get your fulfillment from mealtime, you can absolutely enjoy dessert every day. Through TikTok, social media, and the Baked by Melissa blog, Melissa has inspired her community of more than 2 million followers to create delicious, nourishing meals. Each and every one of her recipes is designed to make people happy, one little bite at a time.`
-      // );
-      // fixNewsletterSection('WfUixP');
-      // fixInstagramSliderWidth('zrlCvD', 3, '@bakedbymelissa', 'https://www.instagram.com/bakedbymelissa', 'https://www.tiktok.com/@orderhungryhouse');
 
       // Caffe Panna
       primaryBannerContent('ACabie');
@@ -711,19 +743,19 @@ window.onload = function () {
       fixNewsletterSection('iGjvPT');
       fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', 'https://www.tiktok.com/@orderhungryhouse/');
 
-      $('#SNjQUh, #pEYBxw, #IxlmJO, #mOPZLD, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
+      $('#SNjQUh, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').prepend(`
+      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
+      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
         <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -747,8 +779,8 @@ window.onload = function () {
       });
 
       // View all page
+      viewAllSectionTitle('ZqsAGX', 'Chef Will Coleman', 'bold bowls', 'https://orderhungryhouse.com/will-coleman');
       viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
-      // viewAllSectionTitle('MjdBFv', 'Baked by Melissa', 'viral bowls & salads', 'https://orderhungryhouse.com/baked-by-melissa');
       viewAllSectionTitle('BcJLoX', 'Caffe Panna', 'ice cream', 'https://orderhungryhouse.com/caffe-panna');
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
