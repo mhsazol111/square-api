@@ -1,3 +1,4 @@
+#BDXpUK .sq_section_heading span,
 #ZqsAGX .sq_section_heading span,
 #wjMzdC .sq_section_heading span,
 #MjdBFv .sq_section_heading span,
@@ -394,7 +395,7 @@
   #hSRIav .sq_section_heading {
     margin-bottom: 30px;
   }
-  div#yeCMuv {
+  div#yeCMuv, div#GTvsBR {
     padding: 60px 0;
   }
   div[data-block-purpose='gallery@^1.1.2'] {
@@ -496,6 +497,7 @@
   #cmLnfK,
   #kbHKcR,
   #TCsjbL,
+  #vMGVOw,
   #OfenuE,
   #TyGiHO,
   #BIUCWv,
@@ -512,6 +514,7 @@
   #cmLnfK .slideshow__slide .slideshow__image,
   #kbHKcR .slideshow__slide .slideshow__image,
   #TCsjbL .slideshow__slide .slideshow__image,
+  #vMGVOw .slideshow__slide .slideshow__image,
   #OfenuE .slideshow__slide .slideshow__image,
   #TyGiHO .slideshow__slide .slideshow__image,
   #BIUCWv .slideshow__slide .slideshow__image,
@@ -547,6 +550,8 @@
     margin-top: 30px;
   }
   #yeCMuv,
+  #GTvsBR,
+  #kCGbLr,
   #lYHdZU,
   #lJTXrj,
   #MWwQxT,
@@ -557,6 +562,7 @@
     padding: 64px 0;
   }
   /* Pickup Line */
+  #BDXpUK .sq_section_heading span,
   #ZqsAGX .sq_section_heading span,
   #wjMzdC .sq_section_heading span,
   #MjdBFv .sq_section_heading span,
@@ -568,6 +574,7 @@
     margin-right: 0;
     font-size: 24px;
   }
+  #BDXpUK .sq_section_heading,
   #ZqsAGX .sq_section_heading,
   #wjMzdC .sq_section_heading,
   #MjdBFv .sq_section_heading,
@@ -579,6 +586,7 @@
     margin-bottom: 5px;
     font-size: 22px;
   }
+  #BDXpUK,
   #ZqsAGX,
   #wjMzdC,
   #MjdBFv,
@@ -589,6 +597,7 @@
   #LoJjMB {
     padding: 50px 0 0;
   }
+  #BDXpUK .sq_section_learn_more,
   #ZqsAGX .sq_section_learn_more,
   #wjMzdC .sq_section_learn_more,
   #MjdBFv .sq_section_learn_more,
@@ -599,6 +608,7 @@
   #LoJjMB .sq_section_learn_more {
     padding-right: 20px;
   }
+  #BDXpUK .menu_item_button,
   #ZqsAGX .menu_item_button,
   #wjMzdC .menu_item_button,
   #MjdBFv .menu_item_button,

@@ -78,7 +78,9 @@ window.onload = function () {
         $(`#${sectionId} .fluid-carousel .gallery-carousel__item`).css('width', pcWidth / item);
         setTimeout(function () {
           $(window).trigger('resize');
-        }, 700);
+          console.log('trigger resize');
+          window.dispatchEvent(new Event('resize'));
+        }, 1000);
       }
 
       $(window).on('resize', function () {
@@ -196,19 +198,14 @@ window.onload = function () {
       `);
     }
 
-    function primaryBannerContent(sectionId, url = '#') {
-      $(`#${sectionId} p`).parent().append(`
-      <a href="${url}" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
-        <span class="button-before-text font-palmdale">order now</span>
-        <span class="button-after-text font-sharp">pickup & delivery</span>
-      </a>
-
-      <a href="https://orderhungryhouse.square.site/about-us" class="regular-line-button border-on-hover font-sharp">
-        <span>*Check our delivery zone</span>
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-      </a>
-      `);
-    }
+    // function primaryBannerContent(sectionId, url = '#') {
+    //   $(`#${sectionId} p`).parent().append(`
+    //   <a href="https://orderhungryhouse.com/about-us" class="regular-line-button border-on-hover font-sharp">
+    //     <span>*Check our delivery zone</span>
+    //     <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
+    //   </a>
+    //   `);
+    // }
 
     function addMustHaveTitle(sectionId, name) {
       $(`#${sectionId}`).prepend(`
@@ -279,25 +276,25 @@ window.onload = function () {
         <div class="container">
           <div class="footer-top">
             <div class="season-one has-flash-bg">
-              <span class="font-palmdale">Season 04</span>
+              <span class="font-palmdale">Always Hungry</span>
             </div>
           </div>
           <div class="footer-menu">
             <div class="footer-left-menu">
+              <a href="/the-burger-show-x-hungry-house-by-alvin-cailan">The Burger Show</a>
               <a href="/will-coleman">Chef Will Coleman</a>
-              <a href="/woldy-kusina">Woldy Kusina</a>
               <a href="/chile-con-miel">Chile Con Miel</a>
-              <a href="/apocalypse-burger">Apocalypse Burger</a>
-              <a href="/caffe-panna">Caffe Panna</a>
+              <a href="/woldy-kusina">Woldy Kusina</a>
+              <a href="/house-specials">House Specials</a>
               <a href="/the-goods-mart">The Goods Mart</a>
             </div>
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
-                <a href="https://orderhungryhouse.square.site/view-all">Full Menu</a>
+                <a href="https://orderhungryhouse.com/view-all">Full Menu</a>
                 <a href="mailto:press@orderhungryhouse.com">Press</a>
-                <a href="https://orderhungryhouse.square.site/about-us">About Us</a>
-                <a href="https://orderhungryhouse.square.site/faqs">FAQs</a>
-                <a href="https://orderhungryhouse.square.site/careers">Careers</a>
+                <a href="https://orderhungryhouse.com/about-us">About Us</a>
+                <a href="https://orderhungryhouse.com/faqs">FAQs</a>
+                <a href="https://orderhungryhouse.com/careers">Careers</a>
               </div>
               <div class="footer-social-wrapper">
                 <a href="https://www.instagram.com/orderhungryhouse/" target="_blank" class="has-flash-bg">Instagram</a>
@@ -323,6 +320,9 @@ window.onload = function () {
       // ==============================
       const animateBanner = $(`
       <div class="container">
+        <div class="hover-thumb-wrapper" id="burger-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/burger-thumb.png" alt="burger-thumb" />
+        </div>
         <div class="hover-thumb-wrapper" id="will-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/will-thumb.png" alt="will-thumb" />
         </div>
@@ -332,14 +332,8 @@ window.onload = function () {
         <div class="hover-thumb-wrapper" id="melissa-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/melissa-thumb.png" alt="melissa-thumb" />
         </div>
-        <div class="hover-thumb-wrapper" id="caffe-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/caffe-thumb.png" alt="caffe-thumb" />
-        </div>
         <div class="hover-thumb-wrapper" id="woldy-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
-        </div>
-        <div class="hover-thumb-wrapper" id="apocalypse-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/apocalypse-thumb.png" alt="apocalypse" />
         </div>
         <div class="hover-thumb-wrapper" id="house-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
@@ -350,8 +344,35 @@ window.onload = function () {
       </div>
       <nav class="menu">
         <div class="menu__item">
+          <div class="container" data-id="burger-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">The Burger Show</span> <span class="font-palmdale">with Alvin Cailan</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
           <div class="container" data-id="will-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/will-coleman"><span class="font-sharp">Will Coleman</span> <span class="font-palmdale">bold bowls</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/will-coleman"><span class="font-sharp">Will Coleman</span> <span class="font-palmdale">bold bowls</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -378,7 +399,7 @@ window.onload = function () {
         </div>
         <div class="menu__item">
           <div class="container" data-id="chile-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale">super tortas</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale">super tortas</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -397,33 +418,6 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="container" data-id="caffe-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/caffe-panna"><span class="font-sharp">Caffe Panna</span> <span class="font-palmdale">ice cream</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Caffe Panna</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -432,7 +426,7 @@ window.onload = function () {
         </div>
         <div class="menu__item">
           <div class="container" data-id="woldy-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -451,33 +445,6 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="container" data-id="apocalypse-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/apocalypse-burger"><span class="font-sharp">Apocalypse Burger</span> <span class="font-palmdale">spite snacks</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Apocalypse Burger</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -486,7 +453,7 @@ window.onload = function () {
         </div>
         <div class="menu__item">
           <div class="container" data-id="house-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">from the kitchen</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/house-specials"><span class="font-sharp">House Specials</span> <span class="font-palmdale">from the kitchen</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -513,7 +480,7 @@ window.onload = function () {
         </div>
         <div class="menu__item">
           <div class="container" data-id="good-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.square.site/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -545,7 +512,7 @@ window.onload = function () {
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-green.svg" alt="Live in NYC!">
             <span class="font-palmdale">Live in NYC!</span>
           </div>
-          <a href="https://orderhungryhouse.square.site/view-all" class="regular-line-button view-full-menu font-sharp">
+          <a href="https://orderhungryhouse.com/view-all" class="regular-line-button view-full-menu font-sharp">
             <span>View Full Menu</span>
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu" />
           </a>
@@ -565,7 +532,7 @@ window.onload = function () {
       });
 
       $('#XcvNOf .text-component p').parent().append(`
-      <a href="https://orderhungryhouse.square.site/about-us" class="button_with_hover">
+      <a href="https://orderhungryhouse.com/about-us" class="button_with_hover">
         <span class="button-before-text font-palmdale">pretty sweet right?</span>
         <span class="button-after-text font-sharp">learn more about why we do what we do</span>
       </a>
@@ -580,18 +547,20 @@ window.onload = function () {
       </div>
       `);
 
+      addButtonToImageTextSection('fGYgKo', 'order now', 'https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
       addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/will-coleman');
       addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/baked-by-melissa');
       addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
       addButtonToImageTextSection('ivhQaT', 'order now', 'https://orderhungryhouse.com/caffe-panna');
-      addButtonToImageTextSection('TZnPGw', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
-      addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.square.site/apocalypse-burger');
+      addButtonToImageTextSection('Tkuzio', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
+      addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.com/apocalypse-burger');
       addButtonToImageTextSection('ZUndDB', 'order now', 'https://orderhungryhouse.com/house-specials');
-      addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.square.site/the-goods-mart');
+      addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.com/the-goods-mart');
+      addButtonToImageTextSection('IDmBbs', 'order now', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
 
-      $('#Bjopvb').append(`
+      $('#IDmBbs').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_yellow">
+        <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -609,7 +578,7 @@ window.onload = function () {
 
       $('#hSRIav').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_yellow">
+        <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -629,9 +598,54 @@ window.onload = function () {
       /*==================================
       ============= Inner pages =========
       ==================================*/
+      function sectionWithHeadingButton(sectionId, url = '#', target = '_blank') {
+        $(`#${sectionId} .container`).append(`
+        <div class="container">
+          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">not in</span> New York City?</h2>
+          <div class="about-bio-text font-sharp-italic">Check out Alvin’s spot in Los Angeles, Amboy Quality Meats, ranked one of the best burger destinations in the country.</div>
+          <a href="${url}" target="${target}" class="button_with_hover button_with_hover_transparent button_with_hover_smaller">
+            <span class="button-before-text font-palmdale">Check it out</span>
+            <span class="button-after-text font-sharp">here</span>
+          </a>
+        </div>
+        `);
+      }
+
+      // Alvin Cailan
+      // primaryBannerContent('AZGPTF');
+      addMustHaveTitle('KRrYPo', `Will’s`);
+      fixSliderWidth('KRrYPo', 3);
+      addAboutSliderTitle('vMGVOw', `The Burger Show`);
+      addAboutSliderDetails(
+        'vMGVOw',
+        `Enjoy this mouth watering collaboration on a limited-time-only burger menu inspired by First We Feast’s hit series “The Burger Show.” In celebration of National Burger Month, the 4-part YouTube series features Alvin Cailan, George Motz and “Hot Ones" host, Sean Evans, sets the stage for the new menu debuting at Hungry House this summer. Created by chef Alvin Cailan of famed Los Angeles burger destination, Amboy, the menu is directly inspired by the show’s TV episodes and features a special creative collaboration with SPAM® brand.`
+      );
+      fixNewsletterSection('GTvsBR');
+      fixInstagramSliderWidth('kCGbLr', 3, '@theburgershow', 'https://www.instagram.com/theburgershow/', 'https://www.tiktok.com/@firstwefeast');
+      sectionWithHeadingButton('GMHyPX', 'https://amboyqualitymeatsanddeliciousburgers.com/');
+      
+      $(`#XMiCIT .container`).append(`
+        <div class="container">
+          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">brought to you by</span> Square</h2>
+          <div class="sq_section_image">
+            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/new-section-2.png" alt="Brought to you by Square" />
+          </div>
+          <div class="about-bio-text font-sharp-italic">We've teamed up with Square to offer NYC food enthusiasts an exclusive menu that showcases our dedication to exceptional dining and next-level technology. Take a bite out of Alvin Cailan's burgers from The Burger Show through Hungry House thanks to Square's effortless online ordering and payment system</div>
+        </div>
+      `);
+
+      $(`#QVZLWs .container`).append(`
+        <div class="container">
+          <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">In collaboration with</span> SPAM® Brand</h2>
+          <div class="sq_section_image">
+            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/new-section-1.png" alt="In collaboration with SPAM® Brand" />
+          </div>
+          <div class="about-bio-text font-sharp-italic">As one of the most iconic brands with devoted fans worldwide, the SPAM® brand is excited to bring a new menu item to NYC. Chef Alvin Cailan tapped into his love for the brand and sizzled up some inspiration with the one-of-a-kind SPAM® Melt - available for a limited time only. This exclusive creation is a testament to the SPAM® brand's versatility and Alvin's culinary prowess. And thanks to the SPAM® brand, you get a free can of SPAM® when you order a SPAM® Melt for delivery while supplies last!</div>
+        </div>
+      `);
 
       // Will Coleman
-      primaryBannerContent('aedvPO');
+      // primaryBannerContent('aedvPO');
       addMustHaveTitle('KRrYPo', `Will’s`);
       fixSliderWidth('KRrYPo', 3);
       addAboutSliderTitle('OfenuE', `Chef Will Coleman`);
@@ -644,7 +658,7 @@ window.onload = function () {
 
 
       // Chile Con Miel
-      primaryBannerContent('TkHGsd');
+      // primaryBannerContent('TkHGsd');
       addMustHaveTitle('KRrYPo', `Tony’s`);
       fixSliderWidth('KRrYPo', 3);
       addAboutSliderTitle('cmLnfK', `Chile Con Miel`);
@@ -656,7 +670,7 @@ window.onload = function () {
       fixInstagramSliderWidth('lmSrHC', 3, '@chileconmiel', 'https://www.instagram.com/chileconmiel/', 'https://www.tiktok.com/@orderhungryhouse');
 
       // Caffe Panna
-      primaryBannerContent('ACabie');
+      // primaryBannerContent('ACabie');
       addMustHaveTitle('zEgUth', `Hallie’s`);
       fixSliderWidth('zEgUth', 3);
       addAboutSliderTitle('TCsjbL', `Caffe Panna`);
@@ -668,7 +682,7 @@ window.onload = function () {
       fixInstagramSliderWidth('BLDwtf', 3, '@caffepanna', 'https://www.instagram.com/caffepanna/', 'https://www.tiktok.com/@orderhungryhouse');
 
       // Woldy Kusina
-      primaryBannerContent('VsDiNU');
+      // primaryBannerContent('VsDiNU');
       addMustHaveTitle('vrEVGZ', `Woldy’s`);
       fixSliderWidth('vrEVGZ', 3);
       addAboutSliderTitle('TyGiHO', `Woldy Kusina`);
@@ -680,7 +694,7 @@ window.onload = function () {
       fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // The Food Sermon
-      primaryBannerContent('PbpxoT');
+      // primaryBannerContent('PbpxoT');
       addMustHaveTitle('rXWvKs', `Rawlston’s`);
       fixSliderWidth('rXWvKs', 3);
       addAboutSliderTitle('muqkMH', `Rawlston Williams`);
@@ -692,7 +706,7 @@ window.onload = function () {
       fixInstagramSliderWidth('vmeZgk', 3, '@iamrawlston', 'https://www.instagram.com/iamrawlston/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // Apocalypse Burger
-      primaryBannerContent('tihKAM');
+      // primaryBannerContent('tihKAM');
       addMustHaveTitle('PamnJu', `Martha’s`);
       fixSliderWidth('PamnJu', 3);
       addAboutSliderTitle('BIUCWv', `Martha Hoover`);
@@ -710,7 +724,7 @@ window.onload = function () {
       );
 
       // House Specials
-      primaryBannerContent('NAhQMG');
+      // primaryBannerContent('NAhQMG');
       addMustHaveTitle('GeUDAP', `Hungry House`);
       fixSliderWidth('GeUDAP', 3);
       addAboutSliderTitle('wlFgeE', `the team`);
@@ -723,16 +737,10 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('LNSIjq');
-      fixInstagramSliderWidth(
-        'ckxHBM',
-        3,
-        '@orderhungryhouse',
-        'https://www.instagram.com/orderhungryhouse/',
-        'https://www.tiktok.com/@orderhungryhouse/'
-      );
+      fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // The Goods Mart
-      primaryBannerContent('ABFtDp');
+      // primaryBannerContent('ABFtDp');
       addMustHaveTitle('GqYTxR', `Rachel’s`);
       fixSliderWidth('GqYTxR', 3);
       addAboutSliderTitle('QtmjFN', `The Goods Mart`);
@@ -749,7 +757,7 @@ window.onload = function () {
       </div>
       `);
 
-      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').prepend(`
+      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
@@ -757,7 +765,7 @@ window.onload = function () {
 
       $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+        <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -766,7 +774,7 @@ window.onload = function () {
 
       $('#KRrYPo, #GQbMoc, #zEgUth, #vrEVGZ, #PamnJu, #rXWvKs, #GeUDAP, #GqYTxR').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/view-all" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
+        <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_transparent">
           <span class="button-before-text font-palmdale">can’t decide?</span>
           <span class="button-after-text font-sharp">see the full menu</span>
         </a>
@@ -779,15 +787,16 @@ window.onload = function () {
       });
 
       // View all page
+      viewAllSectionTitle('BDXpUK', 'The Burger Show', 'with Alvin Cailan', 'https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
       viewAllSectionTitle('ZqsAGX', 'Chef Will Coleman', 'bold bowls', 'https://orderhungryhouse.com/will-coleman');
       viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
-      viewAllSectionTitle('BcJLoX', 'Caffe Panna', 'ice cream', 'https://orderhungryhouse.com/caffe-panna');
-      viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.square.site/woldy-kusina');
-      viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.square.site/the-food-sermon');
-      viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.square.site/apocalypse-burger');
-      viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.square.site/house-specials');
-      viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.square.site/the-goods-mart');
+      viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.com/woldy-kusina');
+      viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.com/the-food-sermon');
+      viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.com/apocalypse-burger');
+      viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.com/house-specials');
+      viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.com/the-goods-mart');
       fixNewsletterSection('MZPidF');
+
       fixInstagramSliderWidth(
         'WgSjcG',
         3,
@@ -803,13 +812,7 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('COwPVL');
-      fixInstagramSliderWidth(
-        'acXdie',
-        3,
-        '@orderhungryhouse',
-        'https://www.instagram.com/orderhungryhouse/',
-        'https://www.tiktok.com/@orderhungryhouse/'
-      );
+      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       // About Us
       $('#jdkwUD').append(`
@@ -820,13 +823,7 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth(
-        'meGlnx',
-        3,
-        '@orderhungryhouse',
-        'https://www.instagram.com/orderhungryhouse/',
-        'https://www.tiktok.com/@orderhungryhouse/'
-      );
+      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
 
       $('#dtiazq').prepend(`
       <div class="container">
@@ -863,7 +860,7 @@ window.onload = function () {
 
       $('#SAVlXv').append(`
       <div class="container">
-        <a href="https://orderhungryhouse.square.site/careers" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
+        <a href="https://orderhungryhouse.com/careers" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">interested?</span>
           <span class="button-after-text font-sharp">view our openings</span>
         </a>
