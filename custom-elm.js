@@ -326,6 +326,9 @@ window.onload = function () {
         <div class="hover-thumb-wrapper" id="will-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/will-thumb.png" alt="will-thumb" />
         </div>
+        <div class="hover-thumb-wrapper" id="pure-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pure-thumb.png" alt="burger-thumb" />
+        </div>
         <div class="hover-thumb-wrapper" id="chile-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
         </div>
@@ -337,6 +340,9 @@ window.onload = function () {
         </div>
         <div class="hover-thumb-wrapper" id="house-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
+        </div>
+        <div class="hover-thumb-wrapper" id="breakfast-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/breakfast-thumb.png" alt="breakfast" />
         </div>
         <div class="hover-thumb-wrapper" id="good-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/good-thumb.png" alt="good" />
@@ -391,6 +397,33 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="pure-thumb">
+            <a class="menu__item-link" href="https://www.orderhungryhouse.com/pure-grit-vegan-bbq"><span class="font-sharp">Pure Grit BBQ</span> <span class="font-palmdale">Bbq for all</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -472,6 +505,33 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="breakfast-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.com/breakfast-by-hungry-house"><span class="font-sharp">Breakfast by HH</span> <span class="font-palmdale">start your day right</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -654,7 +714,7 @@ window.onload = function () {
         `Will Coleman is a Brooklyn-based chef, TV personality, and founder of BOLD Spices. His work focuses on the intersections of American cuisines with global flavors. Will aims to create moments of adventure and joy on the screen and kitchen. He believes that food is meant to be vibrant and shared with those you love. They share their passion for community and cooking through platforms such as the TODAY Show, Good Morning America, Food52, The Washington Post, Better Homes and Gardens, and Bon Appetit. Their desire to excite and unite palates is translated into his new BOLD Bowls at Hungry House.`
       );
       fixNewsletterSection('lYHdZU');
-      fixInstagramSliderWidth('WsxSQa', 3, '@chefwillcoleman', 'https://www.instagram.com/chefwillcoleman/', 'https://www.tiktok.com/@chefwillco');
+      fixInstagramSliderWidth('jUCasi', 3, '@chefwillcoleman', 'https://www.instagram.com/chefwillcoleman/', 'https://www.tiktok.com/@chefwillco');
 
 
       // Chile Con Miel
@@ -668,6 +728,18 @@ window.onload = function () {
       );
       fixNewsletterSection('azmEjf');
       fixInstagramSliderWidth('lmSrHC', 3, '@chileconmiel', 'https://www.instagram.com/chileconmiel/', 'https://www.tiktok.com/@orderhungryhouse');
+
+      // Pure Grit Vegan BBQ
+      // primaryBannerContent('QUzTDP');
+      addMustHaveTitle('KRrYPo', `Pure Grit’s`);
+      fixSliderWidth('KRrYPo', 3);
+      addAboutSliderTitle('vJKxDz', `Pure Grit BBQ`);
+      // addAboutSliderDetails(
+      //   'vJKxDz',
+      //   `Tony Ortiz is a rising Brooklyn-based chef and artist from Oakland, California. Tony runs Chile Con Miel, an online platform and brand that explores ancestral Mexican food practices through a queer lens. With a background in sociology, Tony plays with the ways in which food can trigger memories and evoke emotion. They have worked under well recognized chefs such as Chez Panisse alum Dominica Rice, and have recently completed an externship at the three Michelin starred Le Bernardin. Tony leans into their Mexican roots and creates dishes that reflect their personal culinary journey in California and New York. They work with members of the creative community to curate events that are as intentional as they are stunning — they have held residencies and pop ups at Art Basel, Winona’s, Ursula and Piaule. Tony has made appearances in The New York Times, Latina and The Infatuation.`
+      // );
+      fixNewsletterSection('JpnQrj');
+      fixInstagramSliderWidth('zGehHS', 3, '@puregritbbq', 'https://www.instagram.com/puregritbbq/', 'https://www.tiktok.com/@puregritbbq');
 
       // Caffe Panna
       // primaryBannerContent('ACabie');
@@ -751,19 +823,19 @@ window.onload = function () {
       fixNewsletterSection('iGjvPT');
       fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', 'https://www.tiktok.com/@orderhungryhouse/');
 
-      $('#SNjQUh, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
+      $('#SNjQUh, #wYqgUO, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo').prepend(`
+      $('#KFQWjC, #fzkNuE, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#KFQWjC, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
+      $('#KFQWjC, #fzkNuE, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -787,14 +859,30 @@ window.onload = function () {
       });
 
       // View all page
-      viewAllSectionTitle('BDXpUK', 'The Burger Show', 'with Alvin Cailan', 'https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
+      viewAllSectionTitle('BDXpUK', 'The Burger Show', 'with Alvin Cailan', 'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
       viewAllSectionTitle('ZqsAGX', 'Chef Will Coleman', 'bold bowls', 'https://orderhungryhouse.com/will-coleman');
       viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
+      viewAllSectionTitle('snZrEw', 'Pure Grit BBQ', 'bbq for all', 'https://orderhungryhouse.com/pure-grit-vegan-bbq');
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.com/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.com/the-food-sermon');
       viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.com/apocalypse-burger');
       viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.com/house-specials');
       viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.com/the-goods-mart');
+
+      function viewAllSectionTitleWithTime(sectionId, name, tagline, url = '#') {
+        $(`#${sectionId}`).prepend(`
+        <div class="container">
+          <h2 class="sq_section_heading with-time sq_section_heading_reverse font-palmdale"><span class="font-sharp">${name}</span> ${tagline}</h2>
+          <p class="sq_section_heading-time">Now available Mon-Fri 8:00AM - 11:00AM, Sat 12PM - 8:00PM</p>
+          <a href="${url}" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
+            <span>Learn more</span>
+            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+          </a>
+        </div>
+        `);
+      }
+      viewAllSectionTitleWithTime('OGbqyl', 'Breakfast by HH', 'start your day right', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
+
       fixNewsletterSection('MZPidF');
 
       fixInstagramSliderWidth(
