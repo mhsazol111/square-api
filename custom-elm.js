@@ -617,8 +617,9 @@ window.onload = function () {
       addButtonToImageTextSection('ZUndDB', 'order now', 'https://orderhungryhouse.com/house-specials');
       addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.com/the-goods-mart');
       addButtonToImageTextSection('IDmBbs', 'order now', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
+      addButtonToImageTextSection('kfZInd', 'order now', 'https://orderhungryhouse.com/pure-grit-vegan-bbq');
 
-      $('#IDmBbs').append(`
+      $('#kfZInd').append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can't decide?</span>
@@ -734,10 +735,10 @@ window.onload = function () {
       addMustHaveTitle('KRrYPo', `Pure Grit’s`);
       fixSliderWidth('KRrYPo', 3);
       addAboutSliderTitle('vJKxDz', `Pure Grit BBQ`);
-      // addAboutSliderDetails(
-      //   'vJKxDz',
-      //   `Tony Ortiz is a rising Brooklyn-based chef and artist from Oakland, California. Tony runs Chile Con Miel, an online platform and brand that explores ancestral Mexican food practices through a queer lens. With a background in sociology, Tony plays with the ways in which food can trigger memories and evoke emotion. They have worked under well recognized chefs such as Chez Panisse alum Dominica Rice, and have recently completed an externship at the three Michelin starred Le Bernardin. Tony leans into their Mexican roots and creates dishes that reflect their personal culinary journey in California and New York. They work with members of the creative community to curate events that are as intentional as they are stunning — they have held residencies and pop ups at Art Basel, Winona’s, Ursula and Piaule. Tony has made appearances in The New York Times, Latina and The Infatuation.`
-      // );
+      addAboutSliderDetails(
+        'vJKxDz',
+        `Kerry Fitzmaurice dreamed up Pure Grit BBQ during a company dinner at Austin’s famous Franklin Barbecue. A vegan since childhood, Kerry imagined a barbecue spot that would fight the assumption that excellent barbecue had to include meat. Committed to honesty, authenticity, and sustainability, The Pure Grit BBQ table is an inclusive space for all BBQ lovers to gather and enjoy delicious BBQ that just happens to be vegan and gluten-free. Pure Grit BBQ’s recipes are loved by all, and have been featured in The New York Times and Goop.`
+      );
       fixNewsletterSection('JpnQrj');
       fixInstagramSliderWidth('zGehHS', 3, '@puregritbbq', 'https://www.instagram.com/puregritbbq/', 'https://www.tiktok.com/@puregritbbq');
 
@@ -862,18 +863,17 @@ window.onload = function () {
       viewAllSectionTitle('BDXpUK', 'The Burger Show', 'with Alvin Cailan', 'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
       viewAllSectionTitle('ZqsAGX', 'Chef Will Coleman', 'bold bowls', 'https://orderhungryhouse.com/will-coleman');
       viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
-      viewAllSectionTitle('snZrEw', 'Pure Grit BBQ', 'bbq for all', 'https://orderhungryhouse.com/pure-grit-vegan-bbq');
       viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.com/woldy-kusina');
       viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.com/the-food-sermon');
       viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.com/apocalypse-burger');
       viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.com/house-specials');
       viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.com/the-goods-mart');
 
-      function viewAllSectionTitleWithTime(sectionId, name, tagline, url = '#') {
+      function viewAllSectionTitleWithTime(sectionId, name, tagline, sub, url = '#') {
         $(`#${sectionId}`).prepend(`
         <div class="container">
           <h2 class="sq_section_heading with-time sq_section_heading_reverse font-palmdale"><span class="font-sharp">${name}</span> ${tagline}</h2>
-          <p class="sq_section_heading-time">Now available Mon-Fri 8:00AM - 11:00AM, Sat 12PM - 8:00PM</p>
+          <p class="sq_section_heading-time">${sub}</p>
           <a href="${url}" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
             <span>Learn more</span>
             <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
@@ -881,7 +881,8 @@ window.onload = function () {
         </div>
         `);
       }
-      viewAllSectionTitleWithTime('OGbqyl', 'Breakfast by HH', 'start your day right', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
+      viewAllSectionTitleWithTime('OGbqyl', 'Breakfast by HH', 'start your day right', 'Now available Mon-Fri 8:00AM - 11:00AM, Sat 12PM - 8:00PM', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
+      viewAllSectionTitleWithTime('snZrEw', 'Pure Grit BBQ', 'bbq for all', 'Exclusively at Our Manhattan Location', 'https://orderhungryhouse.com/pure-grit-vegan-bbq');
 
       fixNewsletterSection('MZPidF');
 

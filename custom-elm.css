@@ -1118,7 +1118,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
   font-size: 56px;
   padding-bottom: 35px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 #TkHGsd h2::before,
 #QUzTDP h2::before,
@@ -1139,6 +1139,10 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
   width: 178px;
   height: 178px;
   z-index: -1;
+}
+#QUzTDP .text-component.📚19-0-1uGevg.📚19-0-1W7uVy.w-text--rendered {
+  z-index: 2;
+  position: relative;
 }
 #TkHGsd p,
 #QUzTDP p,
