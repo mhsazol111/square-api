@@ -1106,6 +1106,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 
 #TkHGsd h2,
 #QUzTDP h2,
+#lHJmVt h2,
 #eXHEyW h2,
 #AZGPTF h2,
 #aedvPO h2,
@@ -1122,6 +1123,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #TkHGsd h2::before,
 #QUzTDP h2::before,
+#lHJmVt h2::before,
 #eXHEyW h2::before,
 #AZGPTF h2::before,
 #aedvPO h2::before,
@@ -1140,12 +1142,14 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
   height: 178px;
   z-index: -1;
 }
-#QUzTDP .text-component.📚19-0-1uGevg.📚19-0-1W7uVy.w-text--rendered {
+#QUzTDP .text-component.📚19-0-1uGevg.📚19-0-1W7uVy.w-text--rendered,
+#lHJmVt .text-component.📚19-0-1uGevg.📚19-0-1W7uVy.w-text--rendered {
   z-index: 2;
   position: relative;
 }
 #TkHGsd p,
 #QUzTDP p,
+#lHJmVt p,
 #eXHEyW p,
 #AZGPTF p,
 #aedvPO p,
@@ -1160,6 +1164,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #TkHGsd .button_with_hover,
 #QUzTDP .button_with_hover,
+#lHJmVt .button_with_hover,
 #eXHEyW .button_with_hover,
 #AZGPTF .button_with_hover,
 #aedvPO .button_with_hover,
@@ -1173,6 +1178,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #TkHGsd .regular-line-button,
 #QUzTDP .regular-line-button,
+#lHJmVt .regular-line-button,
 #eXHEyW .regular-line-button,
 #AZGPTF .regular-line-button,
 #aedvPO .regular-line-button,
@@ -1188,6 +1194,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #TkHGsd .regular-line-button img,
 #QUzTDP .regular-line-button img,
+#lHJmVt .regular-line-button img,
 #eXHEyW .regular-line-button img,
 #AZGPTF .regular-line-button img,
 #aedvPO .regular-line-button img,
@@ -1202,6 +1209,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #SNjQUh,
 #wYqgUO,
+#SrbeZX,
 #pEYBxw,
 #IxlmJO,
 #ATDLtO,
@@ -1214,6 +1222,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #KFQWjC,
 #fzkNuE,
+#TaxJdq,
 #iaFLfd,
 #eIRSEZ,
 #mYEWip,
@@ -1229,6 +1238,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #KFQWjC .button_with_hover_medium,
 #fzkNuE .button_with_hover_medium,
+#TaxJdq .button_with_hover_medium,
 #iaFLfd .button_with_hover_medium,
 #eIRSEZ .button_with_hover_medium,
 #mYEWip .button_with_hover_medium,
@@ -1363,6 +1373,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 }
 #azmEjf,
 #JpnQrj,
+#rgPmNe,
 #WfUixP,
 #nHSRpU,
 #yeCMuv,

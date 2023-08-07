@@ -287,6 +287,9 @@ window.onload = function () {
               <a href="/woldy-kusina">Woldy Kusina</a>
               <a href="/house-specials">House Specials</a>
               <a href="/the-goods-mart">The Goods Mart</a>
+              <a href="/breakfast-by-hungry-house">Breakfast by HH</a>
+              <a href="/pure-grit-vegan-bbq">Pure Grit BBQ</a>
+              <a href="/bad-habit-ice-cream">Bad Habit Ice cream</a>
             </div>
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
@@ -742,6 +745,18 @@ window.onload = function () {
       fixNewsletterSection('JpnQrj');
       fixInstagramSliderWidth('zGehHS', 3, '@puregritbbq', 'https://www.instagram.com/puregritbbq/', 'https://www.tiktok.com/@puregritbbq');
 
+      // Bad habit Ice Cream
+      // primaryBannerContent('lHJmVt');
+      addMustHaveTitle('KRrYPo', `Bad Habit’s`);
+      fixSliderWidth('KRrYPo', 3);
+      addAboutSliderTitle('kglWSJ', `Bad habit Ice Cream`);
+      addAboutSliderDetails(
+        'kglWSJ',
+        `Bad Habit was founded in March 2021 by husband and wife duo Javier & Jesse Zuniga. Specializing in French Ice Cream and Sorbet with a punk-attitude, Bad Habit is incredibly rich with chef-driven flavors and a seasonal menu, all made small-batch in the East Village. As seen in The New York Times, The New Yorker, Bon Appétit and more.`
+      );
+      fixNewsletterSection('rgPmNe');
+      fixInstagramSliderWidth('hfFzuU', 3, '@badhabiticecream', 'https://www.instagram.com/badhabiticecream/', 'https://www.tiktok.com/@orderhungryhouse');
+
       // Caffe Panna
       // primaryBannerContent('ACabie');
       addMustHaveTitle('zEgUth', `Hallie’s`);
@@ -824,19 +839,19 @@ window.onload = function () {
       fixNewsletterSection('iGjvPT');
       fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', 'https://www.tiktok.com/@orderhungryhouse/');
 
-      $('#SNjQUh, #wYqgUO, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
+      $('#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#KFQWjC, #fzkNuE, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo').prepend(`
+      $('#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo').prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#KFQWjC, #fzkNuE, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
+      $('#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
