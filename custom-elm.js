@@ -332,6 +332,9 @@ window.onload = function () {
         <div class="hover-thumb-wrapper" id="pure-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pure-thumb.png" alt="burger-thumb" />
         </div>
+        <div class="hover-thumb-wrapper" id="bad-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/bad-thumb.png" alt="bad-thumb" />
+        </div>
         <div class="hover-thumb-wrapper" id="chile-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
         </div>
@@ -427,6 +430,33 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="container" data-id="bad-thumb">
+            <a class="menu__item-link" href="https://www.orderhungryhouse.com/bad-habit-ice-cream"><span class="font-sharp">Bad Habit</span> <span class="font-palmdale">Ice cream</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -755,7 +785,7 @@ window.onload = function () {
         `Bad Habit was founded in March 2021 by husband and wife duo Javier & Jesse Zuniga. Specializing in French Ice Cream and Sorbet with a punk-attitude, Bad Habit is incredibly rich with chef-driven flavors and a seasonal menu, all made small-batch in the East Village. As seen in The New York Times, The New Yorker, Bon Appétit and more.`
       );
       fixNewsletterSection('rgPmNe');
-      fixInstagramSliderWidth('hfFzuU', 3, '@badhabiticecream', 'https://www.instagram.com/badhabiticecream/', 'https://www.tiktok.com/@orderhungryhouse');
+      fixInstagramSliderWidth('hfFzuU', 3, '@badhabit.icecreams', 'https://www.instagram.com/badhabit.icecreams/', 'https://www.tiktok.com/@orderhungryhouse');
 
       // Caffe Panna
       // primaryBannerContent('ACabie');
