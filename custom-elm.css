@@ -1377,6 +1377,7 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
 #WfUixP,
 #nHSRpU,
 #yeCMuv,
+#RfhzJc,
 #GTvsBR,
 #lYHdZU,
 #lJTXrj,
@@ -1582,6 +1583,9 @@ button.📚5-4-0vQBWk.📚5-4-0tMshx.📚5-4-0aYEm0.📚5-4-0_N8aS.📚5-4-0u2Q6
 #jdkwUD {
   background-color: #ffedea;
 }
+#jdkwUD > div:first-child {
+  display: none;
+}
 #jdkwUD > div#\33 ddb1ad1-082e-11ec-891d-adf924fbe50d {
   display: none;
 }
@@ -1610,6 +1614,33 @@ button.📚5-4-0vQBWk.📚5-4-0tMshx.📚5-4-0aYEm0.📚5-4-0_N8aS.📚5-4-0u2Q6
   z-index: 2;
   position: relative;
 }
+#pxYLal h4 {
+  font-size: 92px;
+  line-height: 1.3;
+  z-index: 2;
+  position: relative;
+}
+#pxYLal p {
+  font-family: 'Palmdale-Regular', sans-serif !important;
+  font-size: 100px;
+}
+#pxYLal > div > div {
+  padding: 80px 0;
+}
+#pxYLal .star-container img {
+  max-width: 70px;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
 #jdkwUD .sq_about_heading .font-palmdale {
   font-size: 72px;
 }
@@ -1875,6 +1906,75 @@ div#\39 c9c8040-35ce-11ec-b1dd-7d918421ee08 {
   grid-row-gap: 30px;
 }
 
+/* ============ Loylty Program ============ */
+#NujRqT {
+  padding-top: 140px;
+}
+#NujRqT .container[data-v-20b0e156] {
+  display: none;
+}
+#ciLRCH .container[data-v-20b0e156] {
+  display: none;
+}
+#ciLRCH .container {
+  padding-bottom: 200px;
+}
+#ciLRCH .flex {
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+}
+#ciLRCH .flex .half-col {
+  width: 50%;
+}
+#ciLRCH .flex .half-col h2 {
+  font-size: 100px;
+  transform: rotate(-20deg);
+  position: relative;
+}
+#ciLRCH .flex .half-col h2::before {
+  position: absolute;
+  content: '';
+  background-image: url(https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-yellow.svg);
+  width: 90px;
+  height: 90px;
+  left: -50px;
+  top: -17px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ciLRCH .flex .half-col h4 {
+  line-height: 1.8;
+}
+#ciLRCH .flex .half-col p,
+#QGHiPj p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+#QGHiPj h6 {
+  font-size: 20px;
+}
+#QGHiPj h2 {
+  font-size: 40px;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+#QGHiPj p .flex {
+  margin-top: 20px;
+  border-top: 2px solid #000;
+  padding-top: 15px;
+}
+#JwucGZ .📚19-4-0rI2oH {
+  display: none;
+}
+#VrhzWn .figure__aspect-ratio {
+  height: auto !important;
+}
+#VrhzWn img {
+  height: auto;
+}
+/* ============ Loylty Program ============ */
 @media screen and (max-width: 1024px) {
   .w-grid.order-grid.order-grid__with-mcards {
     grid-template-columns: repeat(3, minmax(0, 1fr));

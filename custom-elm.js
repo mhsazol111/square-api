@@ -23,9 +23,18 @@ window.onload = function () {
     }
   }
 
-  addCustomCssToSite('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
-  addCustomCssToSite('custom-elm-css', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm.css');
-  addCustomCssToSite('custom-elm-responsive-css', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm-responsive.css');
+  addCustomCssToSite(
+    'owl-carousel-css',
+    'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'
+  );
+  addCustomCssToSite(
+    'custom-elm-css',
+    'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm.css'
+  );
+  addCustomCssToSite(
+    'custom-elm-responsive-css',
+    'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm-responsive.css'
+  );
 
   $('body').append(`
   <div class="loading-screen-wrapper">
@@ -52,13 +61,21 @@ window.onload = function () {
           if ($(window).width() < 840) {
             document.documentElement.style.cssText = `--carousel-item-width-md: ${pcWidth / 2}px`;
           } else {
-            document.documentElement.style.cssText = `--carousel-item-width-lg: ${pcWidth / item}px`;
+            document.documentElement.style.cssText = `--carousel-item-width-lg: ${
+              pcWidth / item
+            }px`;
           }
         }
       });
     }
 
-    function fixInstagramSliderWidth(sectionId, item, instagramId, instagramUrl = '#', tiktokUrl = '#') {
+    function fixInstagramSliderWidth(
+      sectionId,
+      item,
+      instagramId,
+      instagramUrl = '#',
+      tiktokUrl = '#'
+    ) {
       $(`#${sectionId}`).prepend(`
       <div class="container">
         <div class="insta-row">
@@ -640,17 +657,61 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('fGYgKo', 'order now', 'https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
-      addButtonToImageTextSection('CkPrdO', 'order now', 'https://orderhungryhouse.com/will-coleman');
-      addButtonToImageTextSection('jpVBdt', 'order now', 'https://orderhungryhouse.com/baked-by-melissa');
-      addButtonToImageTextSection('mpRzHZ', 'order now', 'https://orderhungryhouse.com/chile-con-miel');
-      addButtonToImageTextSection('ivhQaT', 'order now', 'https://orderhungryhouse.com/caffe-panna');
-      addButtonToImageTextSection('Tkuzio', 'order now', 'https://orderhungryhouse.com/woldy-kusina');
-      addButtonToImageTextSection('iYEedf', 'order now', 'https://orderhungryhouse.com/apocalypse-burger');
-      addButtonToImageTextSection('ZUndDB', 'order now', 'https://orderhungryhouse.com/house-specials');
-      addButtonToImageTextSection('Bjopvb', 'order now', 'https://orderhungryhouse.com/the-goods-mart');
-      addButtonToImageTextSection('IDmBbs', 'order now', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
-      addButtonToImageTextSection('kfZInd', 'order now', 'https://orderhungryhouse.com/pure-grit-vegan-bbq');
+      addButtonToImageTextSection(
+        'fGYgKo',
+        'order now',
+        'https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan'
+      );
+      addButtonToImageTextSection(
+        'CkPrdO',
+        'order now',
+        'https://orderhungryhouse.com/will-coleman'
+      );
+      addButtonToImageTextSection(
+        'jpVBdt',
+        'order now',
+        'https://orderhungryhouse.com/baked-by-melissa'
+      );
+      addButtonToImageTextSection(
+        'mpRzHZ',
+        'order now',
+        'https://orderhungryhouse.com/chile-con-miel'
+      );
+      addButtonToImageTextSection(
+        'ivhQaT',
+        'order now',
+        'https://orderhungryhouse.com/caffe-panna'
+      );
+      addButtonToImageTextSection(
+        'Tkuzio',
+        'order now',
+        'https://orderhungryhouse.com/woldy-kusina'
+      );
+      addButtonToImageTextSection(
+        'iYEedf',
+        'order now',
+        'https://orderhungryhouse.com/apocalypse-burger'
+      );
+      addButtonToImageTextSection(
+        'ZUndDB',
+        'order now',
+        'https://orderhungryhouse.com/house-specials'
+      );
+      addButtonToImageTextSection(
+        'Bjopvb',
+        'order now',
+        'https://orderhungryhouse.com/the-goods-mart'
+      );
+      addButtonToImageTextSection(
+        'IDmBbs',
+        'order now',
+        'https://orderhungryhouse.com/breakfast-by-hungry-house'
+      );
+      addButtonToImageTextSection(
+        'kfZInd',
+        'order now',
+        'https://orderhungryhouse.com/pure-grit-vegan-bbq'
+      );
 
       $('#kfZInd').append(`
       <div class="container">
@@ -715,9 +776,15 @@ window.onload = function () {
         `Enjoy this mouth watering collaboration on a limited-time-only burger menu inspired by First We Feast’s hit series “The Burger Show.” In celebration of National Burger Month, the 4-part YouTube series features Alvin Cailan, George Motz and “Hot Ones" host, Sean Evans, sets the stage for the new menu debuting at Hungry House this summer. Created by chef Alvin Cailan of famed Los Angeles burger destination, Amboy, the menu is directly inspired by the show’s TV episodes and features a special creative collaboration with SPAM® brand.`
       );
       fixNewsletterSection('GTvsBR');
-      fixInstagramSliderWidth('kCGbLr', 3, '@theburgershow', 'https://www.instagram.com/theburgershow/', 'https://www.tiktok.com/@firstwefeast');
+      fixInstagramSliderWidth(
+        'kCGbLr',
+        3,
+        '@theburgershow',
+        'https://www.instagram.com/theburgershow/',
+        'https://www.tiktok.com/@firstwefeast'
+      );
       sectionWithHeadingButton('GMHyPX', 'https://amboyqualitymeatsanddeliciousburgers.com/');
-      
+
       $(`#XMiCIT .container`).append(`
         <div class="container">
           <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">brought to you by</span> Square</h2>
@@ -748,8 +815,13 @@ window.onload = function () {
         `Will Coleman is a Brooklyn-based chef, TV personality, and founder of BOLD Spices. His work focuses on the intersections of American cuisines with global flavors. Will aims to create moments of adventure and joy on the screen and kitchen. He believes that food is meant to be vibrant and shared with those you love. They share their passion for community and cooking through platforms such as the TODAY Show, Good Morning America, Food52, The Washington Post, Better Homes and Gardens, and Bon Appetit. Their desire to excite and unite palates is translated into his new BOLD Bowls at Hungry House.`
       );
       fixNewsletterSection('lYHdZU');
-      fixInstagramSliderWidth('jUCasi', 3, '@chefwillcoleman', 'https://www.instagram.com/chefwillcoleman/', 'https://www.tiktok.com/@chefwillco');
-
+      fixInstagramSliderWidth(
+        'jUCasi',
+        3,
+        '@chefwillcoleman',
+        'https://www.instagram.com/chefwillcoleman/',
+        'https://www.tiktok.com/@chefwillco'
+      );
 
       // Chile Con Miel
       // primaryBannerContent('TkHGsd');
@@ -761,7 +833,13 @@ window.onload = function () {
         `Tony Ortiz is a rising Brooklyn-based chef and artist from Oakland, California. Tony runs Chile Con Miel, an online platform and brand that explores ancestral Mexican food practices through a queer lens. With a background in sociology, Tony plays with the ways in which food can trigger memories and evoke emotion. They have worked under well recognized chefs such as Chez Panisse alum Dominica Rice, and have recently completed an externship at the three Michelin starred Le Bernardin. Tony leans into their Mexican roots and creates dishes that reflect their personal culinary journey in California and New York. They work with members of the creative community to curate events that are as intentional as they are stunning — they have held residencies and pop ups at Art Basel, Winona’s, Ursula and Piaule. Tony has made appearances in The New York Times, Latina and The Infatuation.`
       );
       fixNewsletterSection('azmEjf');
-      fixInstagramSliderWidth('lmSrHC', 3, '@chileconmiel', 'https://www.instagram.com/chileconmiel/', 'https://www.tiktok.com/@orderhungryhouse');
+      fixInstagramSliderWidth(
+        'lmSrHC',
+        3,
+        '@chileconmiel',
+        'https://www.instagram.com/chileconmiel/',
+        'https://www.tiktok.com/@orderhungryhouse'
+      );
 
       // Pure Grit Vegan BBQ
       // primaryBannerContent('QUzTDP');
@@ -773,7 +851,13 @@ window.onload = function () {
         `Kerry Fitzmaurice dreamed up Pure Grit BBQ during a company dinner at Austin’s famous Franklin Barbecue. A vegan since childhood, Kerry imagined a barbecue spot that would fight the assumption that excellent barbecue had to include meat. Committed to honesty, authenticity, and sustainability, The Pure Grit BBQ table is an inclusive space for all BBQ lovers to gather and enjoy delicious BBQ that just happens to be vegan and gluten-free. Pure Grit BBQ’s recipes are loved by all, and have been featured in The New York Times and Goop.`
       );
       fixNewsletterSection('JpnQrj');
-      fixInstagramSliderWidth('zGehHS', 3, '@puregritbbq', 'https://www.instagram.com/puregritbbq/', 'https://www.tiktok.com/@puregritbbq');
+      fixInstagramSliderWidth(
+        'zGehHS',
+        3,
+        '@puregritbbq',
+        'https://www.instagram.com/puregritbbq/',
+        'https://www.tiktok.com/@puregritbbq'
+      );
 
       // Bad habit Ice Cream
       // primaryBannerContent('lHJmVt');
@@ -785,7 +869,13 @@ window.onload = function () {
         `Bad Habit was founded in March 2021 by husband and wife duo Javier & Jesse Zuniga. Specializing in French Ice Cream and Sorbet with a punk-attitude, Bad Habit is incredibly rich with chef-driven flavors and a seasonal menu, all made small-batch in the East Village. As seen in The New York Times, The New Yorker, Bon Appétit and more.`
       );
       fixNewsletterSection('rgPmNe');
-      fixInstagramSliderWidth('hfFzuU', 3, '@badhabit.icecreams', 'https://www.instagram.com/badhabit.icecreams/', 'https://www.tiktok.com/@orderhungryhouse');
+      fixInstagramSliderWidth(
+        'hfFzuU',
+        3,
+        '@badhabit.icecreams',
+        'https://www.instagram.com/badhabit.icecreams/',
+        'https://www.tiktok.com/@orderhungryhouse'
+      );
 
       // Caffe Panna
       // primaryBannerContent('ACabie');
@@ -797,7 +887,13 @@ window.onload = function () {
         `Raised in the Gramercy neighborhood that Caffe Panna calls home, Hallie is a lifelong ice cream fanatic who has cooked in Southern Italy, at the Rome Sustainable Food Project, and in the beloved Roman gelateria, Otaleg. While living in Rome, Meyer was inspired by the cafes and gelaterias which are a ubiquitous part of daily life in the eternal city. Upon her return to New York, Hallie first started selling her ice cream at a popup in the South Bronx called Tripla Panna before turning her sights to opening Caffè Panna. After quickly establishing Caffè Panna as some of the country’s best ice cream, she also hosts regular pasta pop-ups called <a href="https://www.caffepanna.com/trattoria-panna/" target="_blank">Trattoria Panna</a>.`
       );
       fixNewsletterSection('nHSRpU');
-      fixInstagramSliderWidth('BLDwtf', 3, '@caffepanna', 'https://www.instagram.com/caffepanna/', 'https://www.tiktok.com/@orderhungryhouse');
+      fixInstagramSliderWidth(
+        'BLDwtf',
+        3,
+        '@caffepanna',
+        'https://www.instagram.com/caffepanna/',
+        'https://www.tiktok.com/@orderhungryhouse'
+      );
 
       // Woldy Kusina
       // primaryBannerContent('VsDiNU');
@@ -809,7 +905,13 @@ window.onload = function () {
         `Woldy Reyes is a Chef and Founder of the boutique catering company, Woldy Kusina, based in Brooklyn, New York. Woldy Kusina’s cuisine is centered around a simple philosophy — to provide good food and good experiences, with sustainability and culture at the heart of it all. As a first-generation Filipino American, Reyes effortlessly infuses contemporary dishes with vibrant flavors and colors that are inspired by his Filipino roots. His menus are best described as fresh, natural and fulfilling.`
       );
       fixNewsletterSection('lJTXrj');
-      fixInstagramSliderWidth('xQpjfA', 3, '@woldykusina', 'https://www.instagram.com/woldykusina/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'xQpjfA',
+        3,
+        '@woldykusina',
+        'https://www.instagram.com/woldykusina/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // The Food Sermon
       // primaryBannerContent('PbpxoT');
@@ -821,7 +923,13 @@ window.onload = function () {
         `After immigrating to New York at ten years old and living in the East Flatbush neighborhood of Brooklyn, Chef Williams studied theology at Oakwood University in Alabama, a private university operated by the Seventh-day Adventist Church. While faith still plays a large role in his life, he found his true calling in the kitchen. After graduating from New York’s famed French Culinary Institute (now the International Culinary Center) Williams opened the first Food Sermon location in 2015. Originally intended to be a small outpost for his catering business, the pint-sized restaurant quickly attracted loyal neighborhood fans, soon drawing the attention of food critics (The New York Times’ praised Williams’ “extraordinary brightness of flavors.”)`
       );
       fixNewsletterSection('yvjDQo');
-      fixInstagramSliderWidth('vmeZgk', 3, '@iamrawlston', 'https://www.instagram.com/iamrawlston/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'vmeZgk',
+        3,
+        '@iamrawlston',
+        'https://www.instagram.com/iamrawlston/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // Apocalypse Burger
       // primaryBannerContent('tihKAM');
@@ -855,7 +963,13 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('LNSIjq');
-      fixInstagramSliderWidth('ckxHBM', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'ckxHBM',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // The Goods Mart
       // primaryBannerContent('ABFtDp');
@@ -867,21 +981,33 @@ window.onload = function () {
         `The Goods Mart vets products to find those that not only taste great, but also do right by sourcing quality ingredients and upholding ethical standards across the board. The Goods Mart has made the experience of buying healthier, socially conscious, and environmentally friendly products easier, more enjoyable, and more accessible.`
       );
       fixNewsletterSection('iGjvPT');
-      fixInstagramSliderWidth('DpKsPW', 3, '@thegoodsmart', 'https://www.instagram.com/thegoodsmart/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'DpKsPW',
+        3,
+        '@thegoodsmart',
+        'https://www.instagram.com/thegoodsmart/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
-      $('#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA').prepend(`
+      $(
+        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA'
+      ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
       </div>
       `);
 
-      $('#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo').prepend(`
+      $(
+        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo'
+      ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
       </div>
       `);
 
-      $('#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY').append(`
+      $(
+        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY'
+      ).append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
           <span class="button-before-text font-palmdale">can’t decide?</span>
@@ -905,14 +1031,54 @@ window.onload = function () {
       });
 
       // View all page
-      viewAllSectionTitle('BDXpUK', 'The Burger Show', 'with Alvin Cailan', 'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan');
-      viewAllSectionTitle('ZqsAGX', 'Chef Will Coleman', 'bold bowls', 'https://orderhungryhouse.com/will-coleman');
-      viewAllSectionTitle('wjMzdC', 'Chile Con Miel', 'super tortas', 'https://orderhungryhouse.com/chile-con-miel');
-      viewAllSectionTitle('qnYtAa', 'Woldy Kusina', 'modern filipino', 'https://orderhungryhouse.com/woldy-kusina');
-      viewAllSectionTitle('MlUWwE', 'The Food Sermon', 'caribbean-inspired', 'https://orderhungryhouse.com/the-food-sermon');
-      viewAllSectionTitle('sdRhmA', 'Apocalypse Burger', 'spite snacks', 'https://orderhungryhouse.com/apocalypse-burger');
-      viewAllSectionTitle('bLdkpf', 'House Specials', 'from the kitchen', 'https://orderhungryhouse.com/house-specials');
-      viewAllSectionTitle('LoJjMB', 'The Goods Mart', 'snacks & drinks', 'https://orderhungryhouse.com/the-goods-mart');
+      viewAllSectionTitle(
+        'BDXpUK',
+        'The Burger Show',
+        'with Alvin Cailan',
+        'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan'
+      );
+      viewAllSectionTitle(
+        'ZqsAGX',
+        'Chef Will Coleman',
+        'bold bowls',
+        'https://orderhungryhouse.com/will-coleman'
+      );
+      viewAllSectionTitle(
+        'wjMzdC',
+        'Chile Con Miel',
+        'super tortas',
+        'https://orderhungryhouse.com/chile-con-miel'
+      );
+      viewAllSectionTitle(
+        'qnYtAa',
+        'Woldy Kusina',
+        'modern filipino',
+        'https://orderhungryhouse.com/woldy-kusina'
+      );
+      viewAllSectionTitle(
+        'MlUWwE',
+        'The Food Sermon',
+        'caribbean-inspired',
+        'https://orderhungryhouse.com/the-food-sermon'
+      );
+      viewAllSectionTitle(
+        'sdRhmA',
+        'Apocalypse Burger',
+        'spite snacks',
+        'https://orderhungryhouse.com/apocalypse-burger'
+      );
+      viewAllSectionTitle(
+        'bLdkpf',
+        'House Specials',
+        'from the kitchen',
+        'https://orderhungryhouse.com/house-specials'
+      );
+      viewAllSectionTitle(
+        'LoJjMB',
+        'The Goods Mart',
+        'snacks & drinks',
+        'https://orderhungryhouse.com/the-goods-mart'
+      );
 
       function viewAllSectionTitleWithTime(sectionId, name, tagline, sub, url = '#') {
         $(`#${sectionId}`).prepend(`
@@ -926,8 +1092,20 @@ window.onload = function () {
         </div>
         `);
       }
-      viewAllSectionTitleWithTime('OGbqyl', 'Breakfast by HH', 'start your day right', 'Now available Mon-Fri 8:00AM - 11:00AM, Sat 12PM - 8:00PM', 'https://orderhungryhouse.com/breakfast-by-hungry-house');
-      viewAllSectionTitleWithTime('snZrEw', 'Pure Grit BBQ', 'bbq for all', 'Exclusively at Our Manhattan Location', 'https://orderhungryhouse.com/pure-grit-vegan-bbq');
+      viewAllSectionTitleWithTime(
+        'OGbqyl',
+        'Breakfast by HH',
+        'start your day right',
+        'Now available Mon-Fri 8:00AM - 11:00AM, Sat 12PM - 8:00PM',
+        'https://orderhungryhouse.com/breakfast-by-hungry-house'
+      );
+      viewAllSectionTitleWithTime(
+        'snZrEw',
+        'Pure Grit BBQ',
+        'bbq for all',
+        'Exclusively at Our Manhattan Location',
+        'https://orderhungryhouse.com/pure-grit-vegan-bbq'
+      );
 
       fixNewsletterSection('MZPidF');
 
@@ -946,7 +1124,13 @@ window.onload = function () {
       </div>
       `);
       fixNewsletterSection('COwPVL');
-      fixInstagramSliderWidth('acXdie', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'acXdie',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       // About Us
       $('#jdkwUD').append(`
@@ -957,7 +1141,13 @@ window.onload = function () {
       </div>
       `);
 
-      fixInstagramSliderWidth('meGlnx', 3, '@orderhungryhouse', 'https://www.instagram.com/orderhungryhouse/', 'https://www.tiktok.com/@orderhungryhouse/');
+      fixInstagramSliderWidth(
+        'meGlnx',
+        3,
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
+      );
 
       $('#dtiazq').prepend(`
       <div class="container">
@@ -975,9 +1165,24 @@ window.onload = function () {
       </div>
       `);
 
-      addButtonToImageTextSection('woPJFK', 'check them out', 'https://www.smallhold.com/', '_blank');
-      addButtonToImageTextSection('EtPBUy', 'check them out', 'https://shop.happyvalleymeat.com/', '_blank');
-      addButtonToImageTextSection('zROXtU', 'check them out', 'https://www.burlapandbarrel.com/', '_blank');
+      addButtonToImageTextSection(
+        'woPJFK',
+        'check them out',
+        'https://www.smallhold.com/',
+        '_blank'
+      );
+      addButtonToImageTextSection(
+        'EtPBUy',
+        'check them out',
+        'https://shop.happyvalleymeat.com/',
+        '_blank'
+      );
+      addButtonToImageTextSection(
+        'zROXtU',
+        'check them out',
+        'https://www.burlapandbarrel.com/',
+        '_blank'
+      );
 
       $('#kUyoZa form .w-button').html(`
       <div class="button_with_hover button_with_hover_medium">
@@ -1134,6 +1339,64 @@ window.onload = function () {
         </div>
       </div>
       `);
+
+      $('#pxYLal h4').parent().prepend(`
+        <div class="star-container">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
+        </div>
+      `);
+
+      $('#NujRqT').prepend(`
+      <div class="container">
+        <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">Tell</span> us more...</h2>
+        <p class="font-sharp-italic sq_section_sub_heading">Join the Hungry House (HH) Loyalty Program NOW! You can earn stars toward free Hungry House meals just by joining.<br/>Start earning stars with us with 3 easy steps:</p>
+      </div>
+      `);
+
+      $('#ciLRCH').append(`
+      <div class="container">
+        <div class="flex step-1">
+          <div class="half-col">
+            <h2>Step 1</h2>
+          </div>
+          <div class="half-col">
+            <a href="https://www.smallhold.com/" target="_blank" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+              <span class="button-before-text font-palmdale">Sign Up here</span>
+              <span class="button-after-text font-sharp">Sign Up here</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex step-2">
+          <div class="half-col">
+            <p>Now it is time to SPEND! The more you spend, the more you earn! Earn 1 star for every $1 dollar you spend <small>(pre-tax*)</small></p>
+          </div>
+          <div class="half-col">
+            <h2>Step 2</h2>
+          </div>
+        </div>
+        <div class="flex step-3">
+          <div class="half-col">
+            <h2>Step 3</h2>
+          </div>
+          <div class="half-col">
+            <h4>Now… ENJOY! <br/>HAVE FUN DISCOVERING ALL OF THE FLAVORS OF HUNGRY HOUSE! </h4>
+          </div>
+        </div>
+      </div>
+      `);
+
+      $('#QGHiPj p').append(`
+      <div class="flex">
+          <div>*50 Stars →	$10 off</div>
+          <div>100 Stars →	$30 off</div>
+      </div>
+      `);
+
+      fixNewsletterSection('RfhzJc');
 
       $('body').on('click', '.faq-question', function () {
         $(this).parent('.faq-row').toggleClass('active');
