@@ -824,17 +824,19 @@ window.onload = function () {
       );
 
       // Chile Con Miel
-      // primaryBannerContent('TkHGsd');
+      // primaryBannerContent('JmsyKO');
       addMustHaveTitle('KRrYPo', `Tony’s`);
       fixSliderWidth('KRrYPo', 3);
-      addAboutSliderTitle('cmLnfK', `Chile Con Miel`);
+      addAboutSliderTitle('raoUnC', `Chile Con Miel`);
       addAboutSliderDetails(
-        'cmLnfK',
-        `Tony Ortiz is a rising Brooklyn-based chef and artist from Oakland, California. Tony runs Chile Con Miel, an online platform and brand that explores ancestral Mexican food practices through a queer lens. With a background in sociology, Tony plays with the ways in which food can trigger memories and evoke emotion. They have worked under well recognized chefs such as Chez Panisse alum Dominica Rice, and have recently completed an externship at the three Michelin starred Le Bernardin. Tony leans into their Mexican roots and creates dishes that reflect their personal culinary journey in California and New York. They work with members of the creative community to curate events that are as intentional as they are stunning — they have held residencies and pop ups at Art Basel, Winona’s, Ursula and Piaule. Tony has made appearances in The New York Times, Latina and The Infatuation.`
+        'raoUnC',
+        `Tony Ortiz is a New York City based chef who specializes in California inspired Mexican cuisine with European sensibility. The dishes Tony creates showcase food that is sensual, timeless and visually intriguing. They believe that food is an essential part of uncovering one's identity. Classically trained at the Institute of Culinary Education, Tony has worked in the kitchens of well known chefs - from Dominica Rice of Bombera and formerly Chez Panisse, Nite Yun of Nyum Bai, to New York City’s Le Bernardin. <br/>
+        They have been a chef at The James Beard House and have done residencies across the east coast. You can find features about Tony and Chile Con Miel in The New Yorker and Latina magazine.  <br/>
+        Tony's current focus includes dinners, events, and projects that highlight their unique perspective and creative expression as a queer, second generation Mexican American.`
       );
-      fixNewsletterSection('azmEjf');
+      fixNewsletterSection('AaixJs');
       fixInstagramSliderWidth(
-        'lmSrHC',
+        'sMOUal',
         3,
         '@chileconmiel',
         'https://www.instagram.com/chileconmiel/',
@@ -990,7 +992,7 @@ window.onload = function () {
       );
 
       $(
-        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA'
+        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA, #SxRzkq'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
