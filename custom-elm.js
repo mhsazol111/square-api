@@ -306,7 +306,6 @@ window.onload = function () {
               <a href="/the-goods-mart">The Goods Mart</a>
               <a href="/breakfast-by-hungry-house">Breakfast by HH</a>
               <a href="/pure-grit-vegan-bbq">Pure Grit BBQ</a>
-              <a href="/bad-habit-ice-cream">Bad Habit Ice cream</a>
             </div>
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
@@ -348,9 +347,6 @@ window.onload = function () {
         </div>
         <div class="hover-thumb-wrapper" id="pure-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pure-thumb.png" alt="burger-thumb" />
-        </div>
-        <div class="hover-thumb-wrapper" id="bad-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/bad-thumb.png" alt="bad-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="chile-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
@@ -454,35 +450,8 @@ window.onload = function () {
           </div>
         </div>
         <div class="menu__item">
-          <div class="container" data-id="bad-thumb">
-            <a class="menu__item-link" href="https://www.orderhungryhouse.com/bad-habit-ice-cream"><span class="font-sharp">Bad Habit</span> <span class="font-palmdale">Ice cream</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Bad Habit</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menu__item">
           <div class="container" data-id="chile-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.com/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale">super tortas</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale"></span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -702,11 +671,11 @@ window.onload = function () {
         'order now',
         'https://orderhungryhouse.com/the-goods-mart'
       );
-      addButtonToImageTextSection(
-        'IDmBbs',
-        'order now',
-        'https://orderhungryhouse.com/breakfast-by-hungry-house'
-      );
+      // addButtonToImageTextSection(
+      //   'IDmBbs',
+      //   'order now',
+      //   'https://orderhungryhouse.com/breakfast-by-hungry-house'
+      // );
       addButtonToImageTextSection(
         'kfZInd',
         'order now',
@@ -992,7 +961,7 @@ window.onload = function () {
       );
 
       $(
-        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA, #SxRzkq'
+        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA, #rfMOAv, #aUVrwp'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
@@ -1000,7 +969,7 @@ window.onload = function () {
       `);
 
       $(
-        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo'
+        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo, #SxRzkq, #bjSpQC'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
@@ -1008,7 +977,7 @@ window.onload = function () {
       `);
 
       $(
-        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY'
+        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #SxRzkq, #bjSpQC, #meqnSo'
       ).append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
@@ -1048,7 +1017,7 @@ window.onload = function () {
       viewAllSectionTitle(
         'wjMzdC',
         'Chile Con Miel',
-        'super tortas',
+        '',
         'https://orderhungryhouse.com/chile-con-miel'
       );
       viewAllSectionTitle(
@@ -1251,13 +1220,16 @@ window.onload = function () {
           <div class="faq-row">
             <h3 class="faq-question">Where are you located?</h3>
             <div class="faq-answer">
-              We’re located at 141 Flushing Ave in Building 77 of the Brooklyn Navy Yard. Walk inside the building (don’t worry, it’s publicly accessible right off the street!) and you’ll see our Hungry House sign on the right.
+              We have 2 locations. In Brooklyn, you can find us at 141 Flushing Ave in Building 77 of the Brooklyn Navy Yard. Walk inside the building (don’t worry, it’s publicly accessible right off the street!) and you’ll see our Hungry House sign on the right. <br/>
+              Our newest location in Manhattan is located at 36 Lexington Ave.
             </div>
           </div>
           <div class="faq-row">
             <h3 class="faq-question">What are your hours?</h3>
             <div class="faq-answer">
-              Right now, we’re open Monday through Friday 12PM - 8PM. However, if you’re finding yourself in the mood for more Hungry House, shoot us a note to let us know you’re interested in extended hours, we’d love to serve you!
+              Hungry House - Brooklyn is open Monday through Friday 11:30PM - 8PM and Saturdays 12PM - 8PM. <br/>
+              Hungry House - Manhattan is open Monday through Saturday 11:30AM-8PM and Sundays 12PM - 8PM. <br/>
+              However, if you’re finding yourself in the mood for more Hungry House, shoot us a note to let us know you’re interested in extended hours, we’d love to serve you!
             </div>
           </div>
         </div>
@@ -1283,7 +1255,7 @@ window.onload = function () {
           <div class="faq-row">
             <h3 class="faq-question">I have lots of dietary restrictions, how can I get more information?</h3>
             <div class="faq-answer">
-              Our founder is a former raw vegan, so we’re familiar with this challenge. Check out our dietary restrictions page and you’ll be able to link to a full document detailing all ingredients in all of our dishes. If you have any other further questions, we’re happy to answer directly, just shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> and we’ll get you an answer ASAP.
+              You can find information regarding allergens and dietary preferences on the page for each menu item.  We list information for the 9 major allergens (milk, eggs, soy, sesame, crustaceans, wheat, fish, peanuts, and tree nuts) designated by the Centers for Disease Control.  If you have further questions, we’re happy to answer directly, just shoot us a note at <a href="mailto:hello@orderhungryhouse.com">hello@orderhungryhouse.com</a> and we’ll get you an answer ASAP.
             </div>
           </div>
         </div>
@@ -1366,7 +1338,7 @@ window.onload = function () {
             <h2>Step 1</h2>
           </div>
           <div class="half-col">
-            <a href="https://www.smallhold.com/" target="_blank" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
+            <a href="https://squareup.com/loyalty/MLAF7ZVX7SFHY" target="_blank" class="button_with_hover button_with_hover_smaller button_with_hover_transparent">
               <span class="button-before-text font-palmdale">Sign Up here</span>
               <span class="button-after-text font-sharp">Sign Up here</span>
             </a>
@@ -1393,8 +1365,8 @@ window.onload = function () {
 
       $('#QGHiPj p').append(`
       <div class="flex">
-          <div>*50 Stars →	$10 off</div>
-          <div>100 Stars →	$30 off</div>
+      <div>*50 Stars →	$10 off</div>
+      <div>100 Stars →	$30 off</div>
       </div>
       `);
 
@@ -1412,6 +1384,29 @@ window.onload = function () {
           <span class="button-before-text font-palmdale">ready?</span>
           <span class="button-after-text font-sharp">Get in touch</span>
         </a>
+      </div>
+      `);
+
+      $('#vOkhdM').append(`
+      <div class="container">
+        <div class="flex">
+          <div class="col">
+            <a href="https://www.catercow.com/catering/8524-hungryhouse/referral" class="neon-button">
+              <span>Order Now</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.orderhungryhouse.com/catering-group-order" class="neon-button">
+              <span>Group Order Now</span>
+            </a>
+            <div class="description">Great for ordering individual meals - 1 link for everyone to submit their order</div>
+          </div>
+          <div class="col">
+            <a href="https://www.orderhungryhouse.com/catering#Gfkpab" class="neon-button">
+              <span>Event / Inquiry see below</span>
+            </a>
+          </div>
+        </div>
       </div>
       `);
     }, 2500);
