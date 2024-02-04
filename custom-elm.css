@@ -2030,7 +2030,7 @@ display: none;
   background-color: #ffedea;
 }
 #vOkhdM .container {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 #vOkhdM .flex {
   display: flex;
@@ -2049,11 +2049,11 @@ display: none;
 #rbDtmO .figure__aspect-ratio img {
   height: auto !important;
 }
-#Gfkpab {
+/* #Gfkpab {
   padding-top: 100px;
-}
+} */
 :root {
-  --clr-neon: #29f93a;
+  --clr-neon: #2bf939;
   --clr-bg: #fff;
 }
 .neon-button {
@@ -2065,12 +2065,13 @@ display: none;
   min-height: 70px;
   line-height: 1.3;
   text-decoration: none;
-  color: var(--clr-neon);
-  border: var(--clr-neon) 0.125em solid;
+  background-color: var(--clr-neon);
+  color: #000;
+  border: var(--clr-neon) 4px solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
   /* text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em currentColor; */
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  /* box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon); */
   position: relative;
   text-align: center;
 }
@@ -2089,11 +2090,11 @@ display: none;
   background-color: var(--clr-neon);
   transition: opacity 100ms linear;
 }
-.neon-button:hover,
+/* .neon-button:hover,
 .neon-button:focus {
   color: var(--clr-bg);
   text-shadow: none;
-}
+} */
 .neon-button:focus::before {
   opacity: 1;
 }
