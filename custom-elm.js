@@ -288,6 +288,8 @@ window.onload = function () {
 
       const oldFooterSection = $('#JwucGZ');
 
+      // <a href="/will-coleman">Chef Will Coleman</a>
+
       const newFooterSection = $(`
       <div class="sq-section main-footer">
         <div class="container">
@@ -298,8 +300,8 @@ window.onload = function () {
           </div>
           <div class="footer-menu">
             <div class="footer-left-menu">
+              <a href="/babushka-by-emily-fedner">Babushka by Emily Fedner</a>
               <a href="/the-burger-show-x-hungry-house-by-alvin-cailan">The Burger Show</a>
-              <a href="/will-coleman">Chef Will Coleman</a>
               <a href="/chile-con-miel">Chile Con Miel</a>
               <a href="/woldy-kusina">Woldy Kusina</a>
               <a href="/house-specials">House Specials</a>
@@ -337,13 +339,45 @@ window.onload = function () {
       // ==============================
       // ========= Home page ==========
       // ==============================
+      // <div class="hover-thumb-wrapper" id="will-thumb">
+      //   <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/will-thumb.png" alt="will-thumb" />
+      // </div>
+      // <div class="menu__item">
+      //   <div class="container" data-id="burger-thumb">
+      //     <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">The Burger Show</span> <span class="font-palmdale">with Alvin Cailan</span></a>
+      //   </div>
+      //   <div class="marquee">
+      //     <div class="marquee__inner-wrap">
+      //       <div class="marquee__inner" aria-hidden="true">
+      //         <div>
+      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //         </div>
+      //         <div>
+      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //         </div>
+      //         <div>
+      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //         </div>
+      //         <div>
+      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+      //         </div>
+      //       </div>
+      //     </div>
+      //   </div>
+      // </div>
+
+
       const animateBanner = $(`
       <div class="container">
+        <div class="hover-thumb-wrapper" id="babushka-thumb">
+          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/babushka-thumb.png" alt="babushka" />
+        </div>
         <div class="hover-thumb-wrapper" id="burger-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/burger-thumb.png" alt="burger-thumb" />
-        </div>
-        <div class="hover-thumb-wrapper" id="will-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/will-thumb.png" alt="will-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="pure-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pure-thumb.png" alt="burger-thumb" />
@@ -369,6 +403,33 @@ window.onload = function () {
       </div>
       <nav class="menu">
         <div class="menu__item">
+          <div class="container" data-id="babushka-thumb">
+            <a class="menu__item-link" href="https://orderhungryhouse.com/babushka-by-emily-fedner"><span class="font-sharp">Babushka</span> <span class="font-palmdale">by Emily Fedner</span></a>
+          </div>
+          <div class="marquee">
+            <div class="marquee__inner-wrap">
+              <div class="marquee__inner" aria-hidden="true">
+                <div>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+                <div>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
           <div class="container" data-id="burger-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">The Burger Show</span> <span class="font-palmdale">with Alvin Cailan</span></a>
           </div>
@@ -389,33 +450,6 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="container" data-id="will-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.com/will-coleman"><span class="font-sharp">Will Coleman</span> <span class="font-palmdale">bold bowls</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Will Coleman</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -671,11 +705,11 @@ window.onload = function () {
         'order now',
         'https://orderhungryhouse.com/the-goods-mart'
       );
-      // addButtonToImageTextSection(
-      //   'IDmBbs',
-      //   'order now',
-      //   'https://orderhungryhouse.com/breakfast-by-hungry-house'
-      // );
+      addButtonToImageTextSection(
+        'dAxzfH',
+        'order now',
+        'https://orderhungryhouse.com/babushka-by-emily-fedner'
+      );
       addButtonToImageTextSection(
         'kfZInd',
         'order now',
@@ -884,6 +918,26 @@ window.onload = function () {
         'https://www.tiktok.com/@orderhungryhouse/'
       );
 
+      // Emily Fedner
+      // primaryBannerContent('VsDiNU');
+      addMustHaveTitle('vrEVGZ', `Woldy’s`);
+      fixSliderWidth('vrEVGZ', 3);
+      addAboutSliderTitle('RUmfOV', `Emily Fedner`);
+      addAboutSliderDetails('RUmfOV', `
+      <p>As the child of Russian-Jewish immigrants, Emily’s mission is to highlight diverse and marginalized voices through the lens of food.  She’s spent over half her life working in and around the restaurant industry in positions ranging from the hostess at a local pub to a publicist for chefs and restaurants and a line cook at an Italian mainstay in Manhattan.  You can currently find her at <a href="https://www.instagram.com/petitepastajoint/" target="_blank">Petite Pasta Joint</a>, a popular pasta pop-up based out of the historic Raffetto’s Fresh Pasta shop.</p>
+      <p>Alongside her work in the industry, Emily is the creator behind <a href="https://www.instagram.com/foodloversdiary/" target="_blank">Food Lover’s Diary</a>, a social media platform dedicated to sharing her unique insights into food and culture and advocating for immigrant-owned businesses.</p>
+      <p>Babushka by Emily Fedner is Emily’s tribute to the immigrant story of her parents and her deep connection to her grandparents. The menu features a variety of Eastern European dumplings that highlight the flavors of Emily’s childhood as reimagined through her first-generation American lens. The dumplings are paired with sumptuous butters, sides, and sauces.</p>
+      <p>Babushka by Emily Fedner celebrates hope, culture, adaptation and following the American Dream.</p>
+      `);
+      fixNewsletterSection('lDrYEU');
+      fixInstagramSliderWidth(
+        'NJZxXz',
+        3,
+        '@foodloversdiary',
+        'https://www.instagram.com/foodloversdiary/',
+        'https://www.tiktok.com/@foodloversdiary/'
+      );
+
       // The Food Sermon
       // primaryBannerContent('PbpxoT');
       addMustHaveTitle('rXWvKs', `Rawlston’s`);
@@ -961,7 +1015,7 @@ window.onload = function () {
       );
 
       $(
-        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA, #rfMOAv, #aUVrwp'
+        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #Boburz, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA, #rfMOAv, #aUVrwp'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
@@ -969,7 +1023,7 @@ window.onload = function () {
       `);
 
       $(
-        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo, #SxRzkq, #bjSpQC'
+        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #HPcxKl, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo, #SxRzkq, #bjSpQC'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
@@ -977,7 +1031,7 @@ window.onload = function () {
       `);
 
       $(
-        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #SxRzkq, #bjSpQC, #meqnSo'
+        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #HPcxKl #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #SxRzkq, #bjSpQC, #meqnSo'
       ).append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
@@ -1049,6 +1103,12 @@ window.onload = function () {
         'The Goods Mart',
         'snacks & drinks',
         'https://orderhungryhouse.com/the-goods-mart'
+      );
+      viewAllSectionTitle(
+        'kLytmJ',
+        'Babushka',
+        'by Emily Fedner',
+        'https://orderhungryhouse.com/babushka-by-emily-fedner'
       );
 
       function viewAllSectionTitleWithTime(sectionId, name, tagline, sub, url = '#') {
@@ -1434,6 +1494,8 @@ window.onload = function () {
         </div>
         `);
       }
+
+      $('#rbDtmO .figure__aspect-ratio img').attr('src', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/HH-FMO-POLL-DEMO-v2.gif');
     }, 4000);
   });
 })(jQuery);
