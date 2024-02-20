@@ -47,7 +47,6 @@ window.onload = function () {
   });
 
   $(document).ready(function () {
-    // const queryString = window.location.search;
 
     function fixSliderWidth(sectionId, item) {
       const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
@@ -215,15 +214,6 @@ window.onload = function () {
       `);
     }
 
-    // function primaryBannerContent(sectionId, url = '#') {
-    //   $(`#${sectionId} p`).parent().append(`
-    //   <a href="https://orderhungryhouse.com/about-us" class="regular-line-button border-on-hover font-sharp">
-    //     <span>*Check our delivery zone</span>
-    //     <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu">
-    //   </a>
-    //   `);
-    // }
-
     function addMustHaveTitle(sectionId, name) {
       $(`#${sectionId}`).prepend(`
       <div class="container">
@@ -339,38 +329,6 @@ window.onload = function () {
       // ==============================
       // ========= Home page ==========
       // ==============================
-      // <div class="hover-thumb-wrapper" id="will-thumb">
-      //   <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/will-thumb.png" alt="will-thumb" />
-      // </div>
-      // <div class="menu__item">
-      //   <div class="container" data-id="burger-thumb">
-      //     <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">The Burger Show</span> <span class="font-palmdale">with Alvin Cailan</span></a>
-      //   </div>
-      //   <div class="marquee">
-      //     <div class="marquee__inner-wrap">
-      //       <div class="marquee__inner" aria-hidden="true">
-      //         <div>
-      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //         </div>
-      //         <div>
-      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //         </div>
-      //         <div>
-      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //         </div>
-      //         <div>
-      //           <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //           <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-      //         </div>
-      //       </div>
-      //     </div>
-      //   </div>
-      // </div>
-
-
       const animateBanner = $(`
       <div class="container">
         <div class="hover-thumb-wrapper" id="babushka-thumb">
@@ -923,12 +881,15 @@ window.onload = function () {
       addMustHaveTitle('vrEVGZ', `Woldy’s`);
       fixSliderWidth('vrEVGZ', 3);
       addAboutSliderTitle('RUmfOV', `Emily Fedner`);
-      addAboutSliderDetails('RUmfOV', `
+      addAboutSliderDetails(
+        'RUmfOV',
+        `
       <p>As the child of Russian-Jewish immigrants, Emily’s mission is to highlight diverse and marginalized voices through the lens of food.  She’s spent over half her life working in and around the restaurant industry in positions ranging from the hostess at a local pub to a publicist for chefs and restaurants and a line cook at an Italian mainstay in Manhattan.  You can currently find her at <a href="https://www.instagram.com/petitepastajoint/" target="_blank">Petite Pasta Joint</a>, a popular pasta pop-up based out of the historic Raffetto’s Fresh Pasta shop.</p>
       <p>Alongside her work in the industry, Emily is the creator behind <a href="https://www.instagram.com/foodloversdiary/" target="_blank">Food Lover’s Diary</a>, a social media platform dedicated to sharing her unique insights into food and culture and advocating for immigrant-owned businesses.</p>
       <p>Babushka by Emily Fedner is Emily’s tribute to the immigrant story of her parents and her deep connection to her grandparents. The menu features a variety of Eastern European dumplings that highlight the flavors of Emily’s childhood as reimagined through her first-generation American lens. The dumplings are paired with sumptuous butters, sides, and sauces.</p>
       <p>Babushka by Emily Fedner celebrates hope, culture, adaptation and following the American Dream.</p>
-      `);
+      `
+      );
       fixNewsletterSection('lDrYEU');
       fixInstagramSliderWidth(
         'NJZxXz',
@@ -1014,8 +975,10 @@ window.onload = function () {
         'https://www.tiktok.com/@orderhungryhouse/'
       );
 
+      fixNewsletterSection('oXcaWi');
+
       $(
-        '#SNjQUh, #wYqgUO, #SrbeZX, #pEYBxw, #IxlmJO, #mOPZLD, #Boburz, #ATDLtO, #izPJVI, #iUeHtq, #xJPzqX, #glWFBA, #rfMOAv, #aUVrwp'
+        '#SNjQUh, #xeXNFR, #SrbeZX, #pEYBxw, #IxlmJO, #ZPvJbm, #swMRAd, #etfPrB, #izPJVI, #iUeHtq, #QlansO, #glWFBA, #JspkuC, #dHWmok, #XMnAzb, #aUVrwp'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
@@ -1023,7 +986,7 @@ window.onload = function () {
       `);
 
       $(
-        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #HPcxKl, #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #meqnSo, #SxRzkq, #bjSpQC'
+        '#KFQWjC, #ozFGsL, #TaxJdq, #iaFLfd, #eIRSEZ, #foeNnB, #cQVUhS, #mYEWip, #degirR, #BiqnRo, #DRdvuS, #SEQUMY, #JPfhAi, #ixmhZa, #lOAmHV, #bjSpQC'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
@@ -1031,7 +994,7 @@ window.onload = function () {
       `);
 
       $(
-        '#KFQWjC, #fzkNuE, #TaxJdq, #iaFLfd, #eIRSEZ, #igDyLN, #HPcxKl #mYEWip, #degirR, #BiqnRo, #XRGugI, #SEQUMY, #SxRzkq, #bjSpQC, #meqnSo'
+        '#KFQWjC, #ozFGsL, #TaxJdq, #iaFLfd, #eIRSEZ, #foeNnB, #cQVUhS #mYEWip, #degirR, #BiqnRo, #DRdvuS, #SEQUMY, #ixmhZa, #ixmhZa, #lOAmHV, #bjSpQC, #JPfhAi'
       ).append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
@@ -1057,7 +1020,7 @@ window.onload = function () {
 
       // View all page
       viewAllSectionTitle(
-        'BDXpUK',
+        'SWnCLc',
         'The Burger Show',
         'with Alvin Cailan',
         'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan'
@@ -1069,13 +1032,13 @@ window.onload = function () {
         'https://orderhungryhouse.com/will-coleman'
       );
       viewAllSectionTitle(
-        'wjMzdC',
+        'mGUCLx',
         'Chile Con Miel',
         '',
         'https://orderhungryhouse.com/chile-con-miel'
       );
       viewAllSectionTitle(
-        'qnYtAa',
+        'PcndrS',
         'Woldy Kusina',
         'modern filipino',
         'https://orderhungryhouse.com/woldy-kusina'
@@ -1093,19 +1056,19 @@ window.onload = function () {
         'https://orderhungryhouse.com/apocalypse-burger'
       );
       viewAllSectionTitle(
-        'bLdkpf',
+        'OimBnM',
         'House Specials',
         'from the kitchen',
         'https://orderhungryhouse.com/house-specials'
       );
       viewAllSectionTitle(
-        'LoJjMB',
+        'oFIOUZ',
         'The Goods Mart',
         'snacks & drinks',
         'https://orderhungryhouse.com/the-goods-mart'
       );
       viewAllSectionTitle(
-        'kLytmJ',
+        'RgHnlm',
         'Babushka',
         'by Emily Fedner',
         'https://orderhungryhouse.com/babushka-by-emily-fedner'
@@ -1131,7 +1094,7 @@ window.onload = function () {
         'https://orderhungryhouse.com/breakfast-by-hungry-house'
       );
       viewAllSectionTitleWithTime(
-        'snZrEw',
+        'AYfNgF',
         'Pure Grit BBQ',
         'bbq for all',
         'Exclusively at Our Manhattan Location',
@@ -1478,8 +1441,20 @@ window.onload = function () {
         </button
       `);
 
+      $('.featured-product__image .figure__aspect-ratio').append(`
+        <button type="button" class="menu_item_button">
+          Order Now
+        </button
+      `);
+
       if ($('.menu_item_button').length < 1) {
         $('.item-container__wrapper .item__order-and-image .figure__aspect-ratio').append(`
+        <button type="button" class="menu_item_button">
+          Order Now
+        </button
+      `);
+
+        $('.featured-product__image .figure__aspect-ratio').append(`
         <button type="button" class="menu_item_button">
           Order Now
         </button
@@ -1495,7 +1470,10 @@ window.onload = function () {
         `);
       }
 
-      $('#rbDtmO .figure__aspect-ratio img').attr('src', 'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/HH-FMO-POLL-DEMO-v2.gif');
+      $('#rbDtmO .figure__aspect-ratio img').attr(
+        'src',
+        'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/HH-FMO-POLL-DEMO-v2.gif'
+      );
     }, 4000);
   });
 })(jQuery);
