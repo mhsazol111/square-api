@@ -278,8 +278,6 @@ window.onload = function () {
 
       const oldFooterSection = $('#JwucGZ');
 
-      // <a href="/will-coleman">Chef Will Coleman</a>
-
       const newFooterSection = $(`
       <div class="sq-section main-footer">
         <div class="container">
@@ -295,7 +293,6 @@ window.onload = function () {
               <a href="/chile-con-miel">Chile Con Miel</a>
               <a href="/woldy-kusina">Woldy Kusina</a>
               <a href="/house-specials">House Specials</a>
-              <a href="/the-goods-mart">The Goods Mart</a>
               <a href="/breakfast-by-hungry-house">Breakfast by HH</a>
               <a href="/pure-grit-vegan-bbq">Pure Grit BBQ</a>
             </div>
@@ -354,9 +351,6 @@ window.onload = function () {
         </div>
         <div class="hover-thumb-wrapper" id="breakfast-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/breakfast-thumb.png" alt="breakfast" />
-        </div>
-        <div class="hover-thumb-wrapper" id="good-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/good-thumb.png" alt="good" />
         </div>
       </div>
       <nav class="menu">
@@ -543,33 +537,6 @@ window.onload = function () {
                 </div>
                 <div>
                   <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="container" data-id="good-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.com/the-goods-mart"><span class="font-sharp">The Goods Mart</span> <span class="font-palmdale">snacks & drinks</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">The Goods Mart</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
