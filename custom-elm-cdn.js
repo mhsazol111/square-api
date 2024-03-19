@@ -35,7 +35,7 @@ window.addEventListener('popstate', function (event) {
   );
   addCustomCssToSite(
     'custom-elm-css',
-    'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/custom-elm.css'
+    'https://ucarecdn.com/8c4ce084-06d9-40e9-b787-0a6bb35120a5/customelm.css'
   );
 
   $('body').append(`
@@ -49,7 +49,6 @@ window.addEventListener('popstate', function (event) {
   });
 
   $(document).ready(function () {
-
     function fixSliderWidth(sectionId, item) {
       const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
       if (pcWidth) {
@@ -165,8 +164,8 @@ window.addEventListener('popstate', function (event) {
           dots: false,
           nav: true,
           navText: [
-            '<img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/left-arrow.svg">',
-            '<img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/right-arrow.svg">',
+            '<img src="https://ucarecdn.com/89691f36-27e8-4cea-96f4-0dec1bab91b3/leftarrow.svg">',
+            '<img src="https://ucarecdn.com/c89974f0-aa68-42bf-8869-003918657c98/rightarrow.svg">',
           ],
           responsive: {
             0: {
@@ -252,7 +251,7 @@ window.addEventListener('popstate', function (event) {
         <h2 class="sq_section_heading sq_section_heading_reverse font-palmdale"><span class="font-sharp">${name}</span> ${tagline}</h2>
         <a href="${url}" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
           <span>Learn more</span>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+          <img src="https://ucarecdn.com/64f9499a-9366-43ac-9fa3-9d4e3ac04a34/arrowright.svg" alt="Learn more">
         </a>
       </div>
       `);
@@ -275,7 +274,7 @@ window.addEventListener('popstate', function (event) {
 
       const headerCart = $('button.nav-btn.cart-icon__wrap');
       headerCart.prepend(`
-        <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/bag.svg" alt="cart" class="sq-cart-icon" />
+        <img src="https://ucarecdn.com/8c93cff0-cca0-4e4f-a80a-a962c11260a8/bag.svg" alt="cart" class="sq-cart-icon" />
       `);
 
       const oldFooterSection = $('#JwucGZ');
@@ -290,14 +289,13 @@ window.addEventListener('popstate', function (event) {
           </div>
           <div class="footer-menu">
             <div class="footer-left-menu">
-              <a href="https://www.orderhungryhouse.com/poke-for-the-people">Poke for the People</a>
-              <a href="https://www.orderhungryhouse.com/babushka-by-emily-fedner">Babushka by Emily Fedner</a>
-              <a href="https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan">The Burger Show</a>
-              <a href="https://www.orderhungryhouse.com/chile-con-miel">Chile Con Miel</a>
-              <a href="https://www.orderhungryhouse.square.site/woldy-kusina">Woldy Kusina</a>
-              <a href="https://www.orderhungryhouse.square.site/house-specials">House Specials</a>
-              <a href="https://www.orderhungryhouse.com/breakfast-by-hungry-house">Breakfast by HH</a>
-              <a href="https://www.orderhungryhouse.com/pure-grit-vegan-bbq">Pure Grit BBQ</a>
+              <a href="/babushka-by-emily-fedner">Babushka by Emily Fedner</a>
+              <a href="/the-burger-show-x-hungry-house-by-alvin-cailan">The Burger Show</a>
+              <a href="/chile-con-miel">Chile Con Miel</a>
+              <a href="/woldy-kusina">Woldy Kusina</a>
+              <a href="/house-specials">House Specials</a>
+              <a href="/breakfast-by-hungry-house">Breakfast by HH</a>
+              <a href="/pure-grit-vegan-bbq">Pure Grit BBQ</a>
             </div>
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
@@ -331,62 +329,32 @@ window.addEventListener('popstate', function (event) {
       // ==============================
       const animateBanner = $(`
       <div class="container">
-        <div class="hover-thumb-wrapper" id="poke-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/poke-thumb.png" alt="Poke" />
-        </div>
         <div class="hover-thumb-wrapper" id="babushka-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/babushka-thumb.png" alt="babushka" />
+          <img src="https://ucarecdn.com/84957540-4202-47c0-afd8-78cebe022341/babushkathumb.png" alt="babushka" />
         </div>
         <div class="hover-thumb-wrapper" id="burger-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/burger-thumb.png" alt="burger-thumb" />
+          <img src="https://ucarecdn.com/15301ff5-7968-4ab8-9e23-95a16f13e040/burgerthumb.png" alt="burger-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="pure-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pure-thumb.png" alt="burger-thumb" />
+          <img src="https://ucarecdn.com/711475ce-43b7-4d64-a979-f6cc1432b513/purethumb.png" alt="burger-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="chile-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
+          <img src="https://ucarecdn.com/b0a59f69-c7a1-4953-971b-1adc55fcec75/chilethumb.png" alt="chile-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="melissa-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/melissa-thumb.png" alt="melissa-thumb" />
+          <img src="https://ucarecdn.com/adb29cf4-cc9d-4b19-8730-4e25fb905b38/melissathumb.png" alt="melissa-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="woldy-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
+          <img src="https://ucarecdn.com/54c36ad0-8bb5-4cbf-b40a-95bd14fbbd00/woldythumb.png" alt="woldy" />
         </div>
         <div class="hover-thumb-wrapper" id="house-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/house-thumb.png" alt="house" />
+          <img src="https://ucarecdn.com/2805ba4a-e135-4f7a-8856-933443ee7367/housethumb.png" alt="house" />
         </div>
         <div class="hover-thumb-wrapper" id="breakfast-thumb">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/breakfast-thumb.png" alt="breakfast" />
+          <img src="https://ucarecdn.com/b3ced015-9684-4825-9e79-98a10be3f6b1/breakfastthumb.png" alt="breakfast" />
         </div>
       </div>
       <nav class="menu">
-        <div class="menu__item">
-          <div class="container" data-id="poke-thumb">
-            <a class="menu__item-link" href="https://www.orderhungryhouse.com/poke-for-the-people"><span class="font-sharp">Poke for the People</span> <span class="font-palmdale">freestylepokes</span></a>
-          </div>
-          <div class="marquee">
-            <div class="marquee__inner-wrap">
-              <div class="marquee__inner" aria-hidden="true">
-                <div>
-                  <span class="font-sharp">Poke for the People</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Poke for the People</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Poke for the People</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-                <div>
-                  <span class="font-sharp">Poke for the People</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="menu__item">
           <div class="container" data-id="babushka-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.com/babushka-by-emily-fedner"><span class="font-sharp">Babushka</span> <span class="font-palmdale">by Emily Fedner</span></a>
@@ -395,20 +363,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Babushka</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -422,20 +390,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -449,20 +417,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Pure Grit BBQ</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -476,20 +444,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Chile Con Miel</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -503,20 +471,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Woldy Kusina</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -530,20 +498,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">House Specials</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -557,20 +525,20 @@ window.addEventListener('popstate', function (event) {
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
-                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Breakfast by Hungry House</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
+                  <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://ucarecdn.com/cbc3a3f4-9d75-4dff-9a89-e04dceafa71e/star.svg" alt="star"/></span>
                 </div>
               </div>
             </div>
@@ -580,12 +548,12 @@ window.addEventListener('popstate', function (event) {
       <div class="container">
         <div class="home-banner-bottom">
           <div class="home-live-banner">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-green.svg" alt="Live in NYC!">
+            <img src="https://ucarecdn.com/09e3f593-4a33-4506-93a6-cb701187f013/stargreen.svg" alt="Live in NYC!">
             <span class="font-palmdale">Live in NYC!</span>
           </div>
           <a href="https://orderhungryhouse.com/view-all" class="regular-line-button view-full-menu font-sharp">
             <span>View Full Menu</span>
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="View Full Menu" />
+            <img src="https://ucarecdn.com/64f9499a-9366-43ac-9fa3-9d4e3ac04a34/arrowright.svg" alt="View Full Menu" />
           </a>
         </div>
       </div>
@@ -621,7 +589,7 @@ window.addEventListener('popstate', function (event) {
       addButtonToImageTextSection(
         'fGYgKo',
         'order now',
-        'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan'
+        'https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan'
       );
       addButtonToImageTextSection(
         'CkPrdO',
@@ -667,11 +635,6 @@ window.addEventListener('popstate', function (event) {
         'dAxzfH',
         'order now',
         'https://orderhungryhouse.com/babushka-by-emily-fedner'
-      );
-      addButtonToImageTextSection(
-        'OSVvzn',
-        'order now',
-        'https://orderhungryhouse.com/poke-for-the-people'
       );
       addButtonToImageTextSection(
         'kfZInd',
@@ -755,7 +718,7 @@ window.addEventListener('popstate', function (event) {
         <div class="container">
           <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">brought to you by</span> Square</h2>
           <div class="sq_section_image">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/new-section-2.png" alt="Brought to you by Square" />
+            <img src="https://ucarecdn.com/a4803ab1-ac40-4134-a2dd-dd6fcf04c7a0/newsection2.png" alt="Brought to you by Square" />
           </div>
           <div class="about-bio-text font-sharp-italic">We've teamed up with Square to offer NYC food enthusiasts an exclusive menu that showcases our dedication to exceptional dining and next-level technology. Take a bite out of Alvin Cailan's burgers from The Burger Show through Hungry House thanks to Square's effortless online ordering and payment system</div>
         </div>
@@ -765,7 +728,7 @@ window.addEventListener('popstate', function (event) {
         <div class="container">
           <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">In collaboration with</span> SPAM® Brand</h2>
           <div class="sq_section_image">
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/new-section-1.png" alt="In collaboration with SPAM® Brand" />
+            <img src="https://ucarecdn.com/672d29b7-37b6-4e24-a75a-9d7f3ce7c9ed/newsection1.png" alt="In collaboration with SPAM® Brand" />
           </div>
           <div class="about-bio-text font-sharp-italic">As one of the most iconic brands with devoted fans worldwide, the SPAM® brand is excited to bring a new menu item to NYC. Chef Alvin Cailan tapped into his love for the brand and sizzled up some inspiration with the one-of-a-kind SPAM® Melt - available for a limited time only. This exclusive creation is a testament to the SPAM® brand's versatility and Alvin's culinary prowess. And thanks to the SPAM® brand, you get a free can of SPAM® when you order a SPAM® Melt for delivery while supplies last!</div>
         </div>
@@ -882,7 +845,8 @@ window.addEventListener('popstate', function (event) {
       );
 
       // Emily Fedner
-      addMustHaveTitle('vrEVGZ', `Emily’s`);
+      // primaryBannerContent('VsDiNU');
+      addMustHaveTitle('vrEVGZ', `Woldy’s`);
       fixSliderWidth('vrEVGZ', 3);
       addAboutSliderTitle('RUmfOV', `Emily Fedner`);
       addAboutSliderDetails(
@@ -901,32 +865,6 @@ window.addEventListener('popstate', function (event) {
         '@foodloversdiary',
         'https://www.instagram.com/foodloversdiary/',
         'https://www.tiktok.com/@foodloversdiary/'
-      );
-
-      // Poke for the people.
-      addMustHaveTitle('vrEVGZ', `J’s`);
-      fixSliderWidth('vrEVGZ', 3);
-      addAboutSliderTitle('agEvqz', `J. Preciado`);
-      addAboutSliderDetails(
-        'agEvqz',
-        `
-      <p>Born in Colombia with a Latin American background, J. Preciado is a cosmopolitan chef who has lived and worked in different cities around South America and the world.</p>
-      <p>His interest in photography, design, art and architecture combined with his culinary experience goes beyond simple cooking to celebrating food with vibrant flavors, different textures and colors. Everyone who tries his creations, himself included, loves snapping photos of his dishes—just like the art you share on Instagram!</p>
-      <p>A commitment to democratizing good quality, healthy and delicious food is the driving force behind his creative and innovative menus.  Poke for the People, his latest project, is inspired by the 80’s, when creativity and innovation were the bases for globalization, offering a selection of dishes inspired by Hawaiian, Japanese, and Latin American gastronomy.</p>
-      <p>Fresh, delicious and colorful ingredients are what you can find on this brand!</br>
-      Ready to eat!</br>
-      Good Pokes Good Vibes</br>
-      #PokeForThePeople</br>
-      #Freestylepokes</p>
-      `
-      );
-      fixNewsletterSection('zhrndp');
-      fixInstagramSliderWidth(
-        'mAgKhE',
-        3,
-        '@poke_forthe_people',
-        'https://www.instagram.com/poke_forthe_people/',
-        'https://www.tiktok.com/@orderhungryhouse/'
       );
 
       // The Food Sermon
@@ -1008,7 +946,7 @@ window.addEventListener('popstate', function (event) {
       fixNewsletterSection('oXcaWi');
 
       $(
-        '#SNjQUh, #xeXNFR, #SrbeZX, #pEYBxw, #IxlmJO, #ZPvJbm, #swMRAd, #prNgSM, #etfPrB, #izPJVI, #iUeHtq, #QlansO, #glWFBA, #JspkuC, #dHWmok, #XMnAzb, #aUVrwp'
+        '#SNjQUh, #xeXNFR, #SrbeZX, #pEYBxw, #IxlmJO, #ZPvJbm, #swMRAd, #etfPrB, #izPJVI, #iUeHtq, #QlansO, #glWFBA, #JspkuC, #dHWmok, #XMnAzb, #aUVrwp'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> menu</h2>
@@ -1016,7 +954,7 @@ window.addEventListener('popstate', function (event) {
       `);
 
       $(
-        '#KFQWjC, #ozFGsL, #TaxJdq, #iaFLfd, #eIRSEZ, #foeNnB, #cQVUhS, #JabWUC, #mYEWip, #degirR, #BiqnRo, #DRdvuS, #SEQUMY, #JPfhAi, #ixmhZa, #lOAmHV, #bjSpQC'
+        '#KFQWjC, #ozFGsL, #TaxJdq, #iaFLfd, #eIRSEZ, #foeNnB, #cQVUhS, #mYEWip, #degirR, #BiqnRo, #DRdvuS, #SEQUMY, #JPfhAi, #ixmhZa, #lOAmHV, #bjSpQC'
       ).prepend(`
       <div class="container">
         <h2 class="sq_section_heading font-sharp"><span class="font-palmdale">the</span> addons</h2>
@@ -1024,7 +962,7 @@ window.addEventListener('popstate', function (event) {
       `);
 
       $(
-        '#KFQWjC, #ozFGsL, #TaxJdq, #iaFLfd, #eIRSEZ, #foeNnB, #cQVUhS, #JabWUC, #mYEWip, #degirR, #BiqnRo, #DRdvuS, #SEQUMY, #ixmhZa, #ixmhZa, #lOAmHV, #bjSpQC, #JPfhAi'
+        '#KFQWjC, #ozFGsL, #TaxJdq, #iaFLfd, #eIRSEZ, #foeNnB, #cQVUhS #mYEWip, #degirR, #BiqnRo, #DRdvuS, #SEQUMY, #ixmhZa, #ixmhZa, #lOAmHV, #bjSpQC, #JPfhAi'
       ).append(`
       <div class="container">
         <a href="https://orderhungryhouse.com/view-all" class="button_with_hover button_with_hover_medium button_with_hover_yellow">
@@ -1103,12 +1041,6 @@ window.addEventListener('popstate', function (event) {
         'by Emily Fedner',
         'https://orderhungryhouse.com/babushka-by-emily-fedner'
       );
-      viewAllSectionTitle(
-        'OLeiNC',
-        'Poke for the People',
-        'by J. Preciado',
-        'https://www.orderhungryhouse.com/poke-for-the-people'
-      );
 
       function viewAllSectionTitleWithTime(sectionId, name, tagline, sub, url = '#') {
         $(`#${sectionId}`).prepend(`
@@ -1117,7 +1049,7 @@ window.addEventListener('popstate', function (event) {
           <p class="sq_section_heading-time">${sub}</p>
           <a href="${url}" class="regular-line-button border-on-hover sq_section_learn_more font-sharp">
             <span>Learn more</span>
-            <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/arrow-right.svg" alt="Learn more">
+            <img src="https://ucarecdn.com/64f9499a-9366-43ac-9fa3-9d4e3ac04a34/arrowright.svg" alt="Learn more">
           </a>
         </div>
         `);
@@ -1240,7 +1172,7 @@ window.addEventListener('popstate', function (event) {
       $('#LXATQZ').append(`
       <div class="container">
         <h1>
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star-yellow.svg" alt="FAQs" />
+          <img src="https://ucarecdn.com/5d056f4d-b1d7-49a0-9bbb-87edbde3f12f/staryellow.svg" alt="FAQs" />
           <span>FAQs</span>
         </h1>
       </div>
@@ -1375,11 +1307,11 @@ window.addEventListener('popstate', function (event) {
 
       $('#pxYLal h4').parent().prepend(`
         <div class="star-container">
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
-          <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/white-star.svg" />
+          <img src="https://ucarecdn.com/a5fcbbcb-b211-4b5c-a24a-e977320a4d4b/whitestar.svg" />
+          <img src="https://ucarecdn.com/a5fcbbcb-b211-4b5c-a24a-e977320a4d4b/whitestar.svg" />
+          <img src="https://ucarecdn.com/a5fcbbcb-b211-4b5c-a24a-e977320a4d4b/whitestar.svg" />
+          <img src="https://ucarecdn.com/a5fcbbcb-b211-4b5c-a24a-e977320a4d4b/whitestar.svg" />
+          <img src="https://ucarecdn.com/a5fcbbcb-b211-4b5c-a24a-e977320a4d4b/whitestar.svg" />
         </div>
       `);
 
@@ -1546,7 +1478,7 @@ window.addEventListener('popstate', function (event) {
 
       $('#rbDtmO .figure__aspect-ratio img').attr(
         'src',
-        'https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/HH-FMO-POLL-DEMO-v2.gif'
+        'https://ucarecdn.com/82673874-b03a-48cf-b1de-ff7e24fda263/HHFMOPOLLDEMOv2.gif'
       );
     }, 4000);
   });
