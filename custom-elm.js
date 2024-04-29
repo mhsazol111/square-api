@@ -49,7 +49,6 @@ window.addEventListener('popstate', function (event) {
   });
 
   $(document).ready(function () {
-
     function fixSliderWidth(sectionId, item) {
       const pcWidth = $(`#${sectionId} .fluid-carousel`).width();
       if (pcWidth) {
@@ -292,9 +291,9 @@ window.addEventListener('popstate', function (event) {
             <div class="footer-left-menu">
               <a href="https://www.orderhungryhouse.com/poke-for-the-people">Poke for the People</a>
               <a href="https://www.orderhungryhouse.com/babushka-by-emily-fedner">Babushka by Emily Fedner</a>
-              <a href="https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan">The Burger Show</a>
+              <a href="https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan">Burgers by Alvin Cailan</a>
               <a href="https://www.orderhungryhouse.com/chile-con-miel">Chile Con Miel</a>
-              <a href="https://www.orderhungryhouse.square.site/woldy-kusina">Woldy Kusina</a>
+              <a href="https://www.orderhungryhouse.square.site/woldy-kusina" style="display: none;">Woldy Kusina</a>
               <a href="https://www.orderhungryhouse.square.site/house-specials">House Specials</a>
               <a href="https://www.orderhungryhouse.com/breakfast-by-hungry-house">Breakfast by HH</a>
               <a href="https://www.orderhungryhouse.com/pure-grit-vegan-bbq">Pure Grit BBQ</a>
@@ -349,7 +348,7 @@ window.addEventListener('popstate', function (event) {
         <div class="hover-thumb-wrapper" id="melissa-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/melissa-thumb.png" alt="melissa-thumb" />
         </div>
-        <div class="hover-thumb-wrapper" id="woldy-thumb">
+        <div class="hover-thumb-wrapper" id="woldy-thumb" style="display: none">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/woldy-thumb.png" alt="woldy" />
         </div>
         <div class="hover-thumb-wrapper" id="house-thumb">
@@ -416,25 +415,25 @@ window.addEventListener('popstate', function (event) {
         </div>
         <div class="menu__item">
           <div class="container" data-id="burger-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">The Burger Show</span> <span class="font-palmdale">with Alvin Cailan</span></a>
+            <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">Burgers</span> <span class="font-palmdale">by Alvin Cailan</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
               <div class="marquee__inner" aria-hidden="true">
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Burgers</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Burgers</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Burgers</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
                 <div>
-                  <span class="font-sharp">The Burger Show</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
+                  <span class="font-sharp">Burgers</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                   <span class="font-palmdale">Order Now</span> <span class="star"><img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/star.svg" alt="star"/></span>
                 </div>
               </div>
@@ -495,7 +494,7 @@ window.addEventListener('popstate', function (event) {
             </div>
           </div>
         </div>
-        <div class="menu__item">
+        <div class="menu__item" style="display: none">
           <div class="container" data-id="woldy-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.com/woldy-kusina"><span class="font-sharp">Woldy Kusina</span> <span class="font-palmdale">modern filipino</span></a>
           </div>
@@ -736,7 +735,7 @@ window.addEventListener('popstate', function (event) {
       // primaryBannerContent('AZGPTF');
       addMustHaveTitle('KRrYPo', `Will’s`);
       fixSliderWidth('KRrYPo', 3);
-      addAboutSliderTitle('vMGVOw', `The Burger Show`);
+      addAboutSliderTitle('vMGVOw', `Burgers by Alvin Cailan`);
       addAboutSliderDetails(
         'vMGVOw',
         `Enjoy this mouth watering collaboration on a limited-time-only burger menu inspired by First We Feast’s hit series “The Burger Show.” In celebration of National Burger Month, the 4-part YouTube series features Alvin Cailan, George Motz and “Hot Ones" host, Sean Evans, sets the stage for the new menu debuting at Hungry House this summer. Created by chef Alvin Cailan of famed Los Angeles burger destination, Amboy, the menu is directly inspired by the show’s TV episodes and features a special creative collaboration with SPAM® brand.`
@@ -1051,8 +1050,8 @@ window.addEventListener('popstate', function (event) {
       // View all page
       viewAllSectionTitle(
         'SWnCLc',
-        'The Burger Show',
-        'with Alvin Cailan',
+        'Burgers',
+        'by Alvin Cailan',
         'https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan'
       );
       viewAllSectionTitle(
@@ -1502,6 +1501,16 @@ window.addEventListener('popstate', function (event) {
 
       if ($featuredMenuItems.length) {
         $featuredMenuItems.each((index, item) => {
+          observer.observe(item, config);
+        });
+      }
+
+      const $orderNowMenuItems = $('.order-online-products .figure__image img');
+
+      console.log($orderNowMenuItems);
+
+      if ($orderNowMenuItems.length) {
+        $orderNowMenuItems.each((index, item) => {
           observer.observe(item, config);
         });
       }
