@@ -2031,6 +2031,10 @@ div#\39 c9c8040-35ce-11ec-b1dd-7d918421ee08 {
   justify-content: center;
   gap: 10px;
 }
+#vOkhdM .flex {
+  max-width: 600px;
+  margin: auto;
+}
 #vOkhdM .flex .description {
   margin-top: 20px;
   text-align: center;

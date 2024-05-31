@@ -1449,20 +1449,10 @@ window.addEventListener('popstate', function (event) {
       <div class="container">
         <div class="flex">
           <div class="col">
-            <a href="https://www.catercow.com/catering/8524-hungryhouse/referral" class="neon-button">
+            <a href="https://hungryhouse.flexcateringhq.com/" class="neon-button">
               <span>Order Now</span>
             </a>
-          </div>
-          <div class="col">
-            <a href="https://www.orderhungryhouse.com/catering-group-order" class="neon-button">
-              <span>Group Order Now</span>
-            </a>
-            <div class="description">Great for ordering individual meals - 1 link for everyone to submit their order</div>
-          </div>
-          <div class="col">
-            <a href="https://www.orderhungryhouse.com/catering#Gfkpab" class="neon-button">
-              <span>Event / Inquiry see below</span>
-            </a>
+            <div class="description">For any speciality requests, please email <a href="mailto:catering@orderhungryhouse.com">catering@orderhungryhouse.com</a></div>
           </div>
         </div>
       </div>
