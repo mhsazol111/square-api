@@ -290,13 +290,13 @@ window.addEventListener('popstate', function (event) {
           <div class="footer-menu">
             <div class="footer-left-menu">
               <a href="https://www.orderhungryhouse.com/poke-for-the-people">Poke for the People</a>
-              <a href="https://www.orderhungryhouse.com/babushka-by-emily-fedner">Babushka by Emily Fedner</a>
+              <a href="https://www.orderhungryhouse.com/babushka-by-emily-fedner" style="display: none;">Babushka by Emily Fedner</a>
               <a href="https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan">Burgers by Alvin Cailan</a>
-              <a href="https://www.orderhungryhouse.com/chile-con-miel">Chile Con Miel</a>
+              <a href="https://www.orderhungryhouse.com/chile-con-miel" style="display: none;">Chile Con Miel</a>
               <a href="https://www.orderhungryhouse.square.site/woldy-kusina" style="display: none;">Woldy Kusina</a>
               <a href="https://www.orderhungryhouse.square.site/house-specials">House Specials</a>
               <a href="https://www.orderhungryhouse.com/breakfast-by-hungry-house">Breakfast by HH</a>
-              <a href="https://www.orderhungryhouse.com/pure-grit-vegan-bbq">Pure Grit BBQ</a>
+              <a href="https://www.orderhungryhouse.com/pure-grit-vegan-bbq" style="display: none;">Pure Grit BBQ</a>
             </div>
             <div class="footer-right-menu">
               <div class="footer-right-menu-items">
@@ -333,16 +333,16 @@ window.addEventListener('popstate', function (event) {
         <div class="hover-thumb-wrapper" id="poke-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/poke-thumb.png" alt="Poke" />
         </div>
-        <div class="hover-thumb-wrapper" id="babushka-thumb">
+        <div class="hover-thumb-wrapper" id="babushka-thumb" style="display: none;">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/babushka-thumb.png" alt="babushka" />
         </div>
         <div class="hover-thumb-wrapper" id="burger-thumb">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/burger-thumb.png" alt="burger-thumb" />
         </div>
-        <div class="hover-thumb-wrapper" id="pure-thumb">
+        <div class="hover-thumb-wrapper" id="pure-thumb" style="display: none;">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/pure-thumb.png" alt="burger-thumb" />
         </div>
-        <div class="hover-thumb-wrapper" id="chile-thumb">
+        <div class="hover-thumb-wrapper" id="chile-thumb" style="display: none;">
           <img src="https://envira57dev.wpengine.com/wp-content/themes/hungry-house/img/products/chile-thumb.png" alt="chile-thumb" />
         </div>
         <div class="hover-thumb-wrapper" id="melissa-thumb">
@@ -386,7 +386,7 @@ window.addEventListener('popstate', function (event) {
             </div>
           </div>
         </div>
-        <div class="menu__item">
+        <div class="menu__item" style="display: none;">
           <div class="container" data-id="babushka-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.com/babushka-by-emily-fedner"><span class="font-sharp">Babushka</span> <span class="font-palmdale">by Emily Fedner</span></a>
           </div>
@@ -440,7 +440,7 @@ window.addEventListener('popstate', function (event) {
             </div>
           </div>
         </div>
-        <div class="menu__item">
+        <div class="menu__item" style="display: none;">
           <div class="container" data-id="pure-thumb">
             <a class="menu__item-link" href="https://www.orderhungryhouse.com/pure-grit-vegan-bbq"><span class="font-sharp">Pure Grit BBQ</span> <span class="font-palmdale">Bbq for all</span></a>
           </div>
@@ -467,7 +467,7 @@ window.addEventListener('popstate', function (event) {
             </div>
           </div>
         </div>
-        <div class="menu__item">
+        <div class="menu__item" style="display: none;">
           <div class="container" data-id="chile-thumb">
             <a class="menu__item-link" href="https://orderhungryhouse.com/chile-con-miel"><span class="font-sharp">Chile Con Miel</span> <span class="font-palmdale"></span></a>
           </div>
@@ -1449,7 +1449,7 @@ window.addEventListener('popstate', function (event) {
       <div class="container">
         <div class="flex">
           <div class="col">
-            <a href="https://hungryhouse.flexcateringhq.com/" class="neon-button">
+            <a href="https://www.catercow.com/catering/8524-hungry-house/referral" class="neon-button">
               <span>Order Now</span>
             </a>
             <div class="description">For any speciality requests, please email <a href="mailto:catering@orderhungryhouse.com">catering@orderhungryhouse.com</a></div>

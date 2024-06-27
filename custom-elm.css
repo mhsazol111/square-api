@@ -1440,6 +1440,32 @@ div#\31 a177201-2c51-11ec-a533-2114c163d007 {
   padding: 0;
   background-color: transparent !important;
 }
+
+/* Specific css for pages */
+#LHdcWZ .fmi-container .w-grid.order-grid,
+#BYOWwA .fmi-container .w-grid.order-grid,
+#JimSPk .fmi-container .w-grid.order-grid,
+#GMjPgb .fmi-container .w-grid.order-grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  margin: 0;
+}
+#LHdcWZ .item-container__wrapper .item-container__background,
+#BYOWwA .item-container__wrapper .item-container__background,
+#JimSPk .item-container__wrapper .item-container__background,
+#GMjPgb .item-container__wrapper .item-container__background {
+  border: 1px solid var(--maker-color-neutral-20, #d3d3d3) !important;
+  padding: 1em 1.5em;
+  background-color: #fff !important;
+}
+#LHdcWZ .item-container__wrapper .item__details .item__description,
+#BYOWwA .item-container__wrapper .item__details .item__description,
+#JimSPk .item-container__wrapper .item__details .item__description,
+#GMjPgb .item-container__wrapper .item__details .item__description {
+  display: block;
+}
+
 .item-container__wrapper .item__card {
   flex-wrap: wrap;
   flex-direction: column-reverse;
