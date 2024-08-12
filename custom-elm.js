@@ -291,7 +291,7 @@ window.addEventListener('popstate', function (event) {
             <div class="footer-left-menu">
               <a href="https://www.orderhungryhouse.com/poke-for-the-people">Poke for the People</a>
               <a href="https://www.orderhungryhouse.com/babushka-by-emily-fedner" style="display: none;">Babushka by Emily Fedner</a>
-              <a href="https://www.orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan">Burgers by Alvin Cailan</a>
+              <a href="https://www.orderhungryhouse.com/burgers-by-hungry-house">Burgers by Hungry House</a>
               <a href="https://www.orderhungryhouse.com/chile-con-miel" style="display: none;">Chile Con Miel</a>
               <a href="https://www.orderhungryhouse.square.site/woldy-kusina" style="display: none;">Woldy Kusina</a>
               <a href="https://www.orderhungryhouse.square.site/house-specials">House Specials</a>
@@ -415,7 +415,7 @@ window.addEventListener('popstate', function (event) {
         </div>
         <div class="menu__item">
           <div class="container" data-id="burger-thumb">
-            <a class="menu__item-link" href="https://orderhungryhouse.com/the-burger-show-x-hungry-house-by-alvin-cailan"><span class="font-sharp">Burgers</span> <span class="font-palmdale">by Alvin Cailan</span></a>
+            <a class="menu__item-link" href="https://www.orderhungryhouse.com/burgers-by-hungry-house"><span class="font-sharp">Burgers</span> <span class="font-palmdale">by Hungry House</span></a>
           </div>
           <div class="marquee">
             <div class="marquee__inner-wrap">
@@ -733,9 +733,9 @@ window.addEventListener('popstate', function (event) {
 
       // Alvin Cailan
       // primaryBannerContent('AZGPTF');
-      addMustHaveTitle('KRrYPo', `Will’s`);
+      addMustHaveTitle('KRrYPo', `Hungry House`);
       fixSliderWidth('KRrYPo', 3);
-      addAboutSliderTitle('vMGVOw', `Burgers by Alvin Cailan`);
+      addAboutSliderTitle('vMGVOw', `Burgers by Hungry House`);
       addAboutSliderDetails(
         'vMGVOw',
         `Enjoy this mouth watering collaboration on a limited-time-only burger menu inspired by First We Feast’s hit series “The Burger Show.” In celebration of National Burger Month, the 4-part YouTube series features Alvin Cailan, George Motz and “Hot Ones" host, Sean Evans, sets the stage for the new menu debuting at Hungry House this summer. Created by chef Alvin Cailan of famed Los Angeles burger destination, Amboy, the menu is directly inspired by the show’s TV episodes and features a special creative collaboration with SPAM® brand.`
@@ -744,9 +744,9 @@ window.addEventListener('popstate', function (event) {
       fixInstagramSliderWidth(
         'kCGbLr',
         3,
-        '@theburgershow',
-        'https://www.instagram.com/theburgershow/',
-        'https://www.tiktok.com/@firstwefeast'
+        '@orderhungryhouse',
+        'https://www.instagram.com/orderhungryhouse/',
+        'https://www.tiktok.com/@orderhungryhouse/'
       );
       sectionWithHeadingButton('GMHyPX', 'https://amboyqualitymeatsanddeliciousburgers.com/');
 
